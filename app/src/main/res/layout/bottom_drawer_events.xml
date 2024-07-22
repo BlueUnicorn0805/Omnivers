@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="5dp"
+    app:cardCornerRadius="@dimen/padding2"
+    app:contentPadding="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:id="@+id/tvSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/padding1"
+            android:text="Search"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding1">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding2"
+                android:text="Location"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_8" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerLocation"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding2"
+                android:backgroundTint="@color/colorPrimary"
+                android:entries="@array/array_filter_location"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_5" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="@dimen/padding3"
+            android:background="@color/app_grey_medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding1">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding2"
+                android:text="Distance"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_8" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerDistance"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding2"
+                android:backgroundTint="@color/colorPrimary"
+                android:entries="@array/array_filter_distances"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_5" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="@dimen/padding3"
+            android:background="@color/app_grey_medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding1">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding2"
+                android:text="Date Range"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_8" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerDateRange"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding2"
+                android:backgroundTint="@color/colorPrimary"
+                android:entries="@array/array_months"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_5" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="@dimen/padding3"
+            android:background="@color/app_grey_medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding1">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding2"
+                android:text="Category"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_8" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding2"
+                android:backgroundTint="@color/colorPrimary"
+                android:entries="@array/array_categories"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_5" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="@dimen/padding3"
+            android:background="@color/app_grey_medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding1">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding2"
+                android:text="Tickets"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_8" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerTickets"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding2"
+                android:backgroundTint="@color/colorPrimary"
+                android:entries="@array/array_filter_tickets"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_5" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="@dimen/padding3"
+            android:background="@color/app_grey_medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding1">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding2"
+                android:text="Price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_8" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerPrice"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding2"
+                android:backgroundTint="@color/colorPrimary"
+                android:entries="@array/array_filter_prices"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_5" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

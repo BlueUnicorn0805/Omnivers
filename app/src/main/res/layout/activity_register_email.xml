@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <hawaiiappbuilders.omniversapp.global.ResizableImageView
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/selector_backbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017" />
+
+
+    <ImageView
+        android:id="@+id/imgEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginTop="@dimen/padding1"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        android:src="@drawable/ic_create_account"
+        />
+
+
+
+
+
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:id="@+id/openSansBoldTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding5"
+        android:text="Create Account"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_12"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgEmail" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/openSansTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding6"
+        android:text="Email"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        app:layout_constraintTop_toBottomOf="@+id/openSansBoldTextView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/panelEmailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/openSansTextView"
+        android:layout_marginTop="@dimen/padding1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:background="@drawable/bg_edittext_black_round"
+            android:inputType="textWebEmailAddress"
+            android:hint="sample@email.com"
+            android:padding="10dp"
+            android:textSize="@dimen/font_5" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/tvPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding2"
+        android:text="User Agreement and Privacy Policy"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_6"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:layout_constraintTop_toBottomOf="@+id/panelEmailInput" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/buttonmain_round"
+        android:minHeight="45dp"
+        android:drawableRight="@drawable/ic_navigate_next_24dp"
+        android:drawableTint="@color/white"
+        android:paddingHorizontal="@dimen/padding3"
+        android:text="Next"
+        android:elevation="@dimen/padding1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

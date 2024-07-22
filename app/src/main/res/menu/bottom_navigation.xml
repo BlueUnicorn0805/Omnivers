@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bottom_action_qr"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_qr"
+        android:title="QR Code"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/bottom_action_shop"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_zintapay"
+        android:title="Mahalo Pay"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/bottom_action_favs"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_favs"
+        android:title="Favorites"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/bottom_action_bank"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_bank"
+        android:title="Your Bank"
+        app:showAsAction="ifRoom" />
+</menu>

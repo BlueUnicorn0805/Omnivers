@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:elevation="3dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="10dp"
+    app:contentPadding="10dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/txtHintMsg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding3"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="Create Milestone Payment"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding3"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="You can release this payment once you are 100% satisfied with the work provided."
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding4"
+            android:textColorHint="#80303030">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/edtDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Description"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#808080"
+                android:textSize="@dimen/font_5" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding2"
+            android:textColorHint="#80303030">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/edtAmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Amount(USD)"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#808080"
+                android:textSize="@dimen/font_5" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding2"
+            android:orientation="horizontal">
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blueround"
+                android:minHeight="41dp"
+                android:text="CANCEL"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_5" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnOk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/padding2"
+                android:background="@drawable/selector_blueround"
+                android:minHeight="41dp"
+                android:text="Create"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

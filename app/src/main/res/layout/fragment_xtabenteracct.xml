@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/panelBankInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_back_main"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="5dp"
+            android:text="Routing Number"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_7" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+            android:id="@+id/tvRouting"
+            android:background="@drawable/bg_edittextwhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto_regular"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/app_grey_medium"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/font_5"
+            android:hint="Include leading 0's, ALL 9 digits"
+           />
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/padding1"
+            android:background="@drawable/bg_tranning_panel"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_7" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvBankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding2"
+                    android:hint="Bank Name"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/app_grey_light"
+                    android:textSize="@dimen/font_7" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/padding1"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="Account Number"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_7" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+            android:id="@+id/tvAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="numberPassword"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_edittextwhite"
+            android:fontFamily="@font/roboto_regular"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/font_5" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/padding1"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="Reenter Account Number"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_7" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+            android:id="@+id/tvAccountConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_edittextwhite"
+            android:fontFamily="@font/roboto_regular"
+            android:imeOptions="actionDone"
+            android:inputType="numberPassword"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/font_5" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/tvReadTC"
+            style="@style/TextBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding1"
+            android:layout_marginBottom="0dp"
+            android:text="Read Terms &amp; Conditions to review &amp; accept."
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_7" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tranning_panel">
+
+            <WebView
+                android:id="@+id/webViewTerms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_8" />
+
+        </FrameLayout>
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansAppCompatCheckBox
+            android:id="@+id/chkAgreeSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/padding1"
+            android:buttonTint="@color/white"
+            android:checked="false"
+            android:text="I agree"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_7" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/padding1"
+            android:background="@drawable/buttonmain_round"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="Submit Your Request"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_6" />
+
+    </LinearLayout>
+
+</FrameLayout>

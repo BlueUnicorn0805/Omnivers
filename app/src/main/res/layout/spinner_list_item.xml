@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hawaiiappbuilders.omniversapp.global.OpenSansTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content"
+    android:background="#3f484a"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fontFamily="@font/roboto_regular"
+    android:singleLine="true"
+    android:padding="10dp"
+    android:id="@+id/name"
+    tools:text="Company Name, John Doe"
+    android:textColor="@color/white"
+    android:textColorHint="@color/semiwhite"
+    android:textSize="@dimen/font_5" />

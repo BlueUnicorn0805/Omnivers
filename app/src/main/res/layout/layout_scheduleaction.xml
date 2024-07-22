@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/app_back_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="@dimen/padding1"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <LinearLayout
+            android:id="@+id/btnMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_appt_title" />
+
+            <ImageView
+                android:layout_width="@dimen/button_appt_width"
+                android:layout_height="@dimen/button_appt_height"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_appt_chat" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_appt_title" />
+
+            <ImageView
+                android:layout_width="@dimen/button_appt_width"
+                android:layout_height="@dimen/button_appt_height"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_appt_call" />
+
+
+        </LinearLayout>
+        <!--
+                <LinearLayout
+                    android:id="@+id/btnEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+            android:focusableInTouchMode="true"
+                    android:visibility="gone"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/button_appt_width"
+                        android:layout_height="@dimen/button_appt_height"
+                        android:src="@drawable/ic_appt_mail" />
+
+                    <hawaiiappbuilders.mahaloglobal.OpenSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textSize="@dimen/button_appt_title"
+                        android:textColor="@color/white"/>
+                </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/btnLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Directions"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_appt_title" />
+
+            <ImageView
+                android:layout_width="@dimen/button_appt_width"
+                android:layout_height="@dimen/button_appt_height"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_appt_location" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnReschedule"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meet"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_appt_title" />
+
+            <ImageView
+                android:layout_width="@dimen/button_appt_width"
+                android:layout_height="@dimen/button_appt_height"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_appt_meeting" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnPay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_appt_title" />
+
+            <ImageView
+                android:layout_width="@dimen/button_appt_width"
+                android:layout_height="@dimen/button_appt_height"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_appt_payment" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnNote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_appt_title" />
+
+            <ImageView
+                android:layout_width="@dimen/button_appt_width"
+                android:layout_height="@dimen/button_appt_height"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_appt_note" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnTasks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tasks"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_appt_title" />
+
+            <ImageView
+                android:layout_width="@dimen/button_appt_width"
+                android:layout_height="@dimen/button_appt_height"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_appt_tasks" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_appt_title" />
+
+            <ImageView
+                android:layout_width="@dimen/button_appt_width"
+                android:layout_height="@dimen/button_appt_height"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_appt_phonebook" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnWebsite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_appt_title" />
+
+            <ImageView
+                android:layout_width="@dimen/button_appt_width"
+                android:layout_height="@dimen/button_appt_height"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_appt_website" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/grey_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/app_grey_light"
+        android:visibility="gone" />
+
+</LinearLayout>

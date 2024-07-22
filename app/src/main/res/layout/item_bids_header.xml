@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/padding3"
+    android:paddingLeft="@dimen/padding3"
+    android:paddingTop="@dimen/padding1"
+    android:paddingEnd="@dimen/padding3"
+    android:paddingRight="@dimen/padding3"
+    android:paddingBottom="@dimen/padding1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/headerNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="#"
+            android:visibility="visible"
+            android:textColor="@color/app_grey"
+            android:textSize="@dimen/font_7" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/headerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Name"
+            android:textColor="@color/app_grey"
+            android:textSize="@dimen/font_7" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/headerAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Bid"
+            android:textColor="@color/app_grey"
+            android:textSize="@dimen/font_7" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/headerRating"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Rating"
+            android:textColor="@color/app_grey"
+            android:textSize="@dimen/font_7" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/headerTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="Estimated\nPickup Time"
+            android:textColor="@color/app_grey"
+            android:textSize="@dimen/font_7" />
+    </LinearLayout>
+
+</LinearLayout>

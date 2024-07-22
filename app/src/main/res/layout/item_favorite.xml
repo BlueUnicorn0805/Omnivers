@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/padding1"
+    android:layout_marginTop="@dimen/padding1"
+    android:layout_marginRight="@dimen/padding1"
+    android:layout_marginBottom="@dimen/padding1"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:id="@+id/ivTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:gravity="center"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher_title_foreground"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <hawaiiappbuilders.omniversapp.global.VideoThumbImageView
+            android:id="@+id/ivBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher_title_foreground"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivTitleText" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:id="@+id/restName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_7"
+            app:layout_constraintEnd_toEndOf="@+id/restDescription"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivBanner" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/restWelcomeMsg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restName" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:theme="@style/RatingBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restWelcomeMsg" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/restHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:text="TextView"
+            android:textColor="@color/app_grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/restDistance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textColor="@color/app_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/restHours"
+            app:layout_constraintTop_toTopOf="@+id/restHours" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/restDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restHours" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:id="@+id/restAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:text="1550 Court Pl, Denver, CO 80202, USA"
+            android:textColor="@color/app_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restDescription" />
+
+        <LinearLayout
+            android:id="@+id/panelAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="@dimen/padding1"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restAddress">
+
+            <ImageButton
+                android:id="@+id/ibrestFavorite"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                android:padding="3dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_favorite"
+                android:tint="@color/app_grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/restDescription"
+                app:srcCompat="@drawable/ic_favorite" />
+
+            <ImageButton
+                android:id="@+id/ibrestMap"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                android:padding="3dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_map"
+                android:tint="@color/app_grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/restDescription"
+                app:srcCompat="@drawable/ic_map" />
+
+            <ImageButton
+                android:id="@+id/ibrestDonate"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                android:padding="3dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_donate"
+                android:tint="@color/app_grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/restDescription"
+                app:srcCompat="@drawable/ic_donate" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/ibrestBook"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="@dimen/padding2"
+                android:layout_marginRight="@dimen/padding2"
+                android:background="@drawable/edittext_rounded_grey"
+                android:padding="3dp"
+                android:text="Book Now"
+                android:textSize="@dimen/font_6" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

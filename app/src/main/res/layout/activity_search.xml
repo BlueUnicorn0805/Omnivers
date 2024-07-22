@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="1dp"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/top_bar_blue" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.ProportionalImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:paddingRight="16dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/cashinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:id="@+id/instaCashTitle"
+                    style="@style/TextWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/instacashtm"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:id="@+id/instaCash"
+                    style="@style/TextWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Searching For"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                            android:id="@+id/rgGreatEmp"
+                            style="@style/TextWhite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:checked="true"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:text="Work" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                            android:id="@+id/rgGreatJob"
+                            style="@style/TextWhite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:text="Worker" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                style="@style/TextWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="Skills"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/jobTypeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="start|center_vertical"
+                    android:lines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="Select maximum of  5"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                        style="@style/TextGreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="On Site"
+                        android:textColor="@color/white" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansCheckBox
+                        android:id="@+id/location_chbx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_chkbx" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansCheckBox
+                        android:id="@+id/remote_chbx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_chkbx" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                        style="@style/TextGreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remote"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/submit_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_white"
+                android:ems="16"
+                android:fontFamily="@font/roboto_regular"
+                android:onClick="onClick"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/go_to_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_white"
+                android:ems="16"
+                android:fontFamily="@font/roboto_regular"
+                android:onClick="onClick"
+                android:text="@string/dashboard"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

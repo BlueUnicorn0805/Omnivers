@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/app_back_main"
+        android:elevation="@dimen/padding1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/transaction_history"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/app_grey_dark"
+            android:visibility="gone"
+            app:fontFamily="@font/roboto_bold" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/date"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/app_grey_dark"
+            android:visibility="gone"
+            app:fontFamily="@font/roboto_bold" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:id="@+id/openSansBoldTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checks History"
+            android:textColor="@color/app_teal_light"
+            android:textSize="@dimen/font_12"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansButton
+        android:id="@+id/btnScan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/buttonmain"
+        android:backgroundTint="@color/jungleGreen"
+        android:gravity="center"
+        android:text="Scan a New Check"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCheckHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCorrect"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="4dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

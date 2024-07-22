@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:id="@+id/openSansBoldTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/padding5"
+                android:text="Vault"
+                android:textColor="@color/app_teal_light"
+                android:textSize="@dimen/font_12"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/padding3"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/padding6">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Available Funds:"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvValAvailFunds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_gravity="center_horizontal"
+                    android:text="$0.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/padding1"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/padding6">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Rewards:"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvValRewards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_gravity="center_horizontal"
+                    android:text="$0.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/padding1"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/padding6">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Gift Cards:"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvValGiftCards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_gravity="center_horizontal"
+                    android:text="$0.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnTransactions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_transactions"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Transactions"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+<!--
+            <hawaiiappbuilders.nemt.global.OpenSansButton
+                android:id="@+id/btnTransFunds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_nav_zintapay"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Mahalo Pay Account"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+-->
+
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnTransFunds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_balance"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="@string/easy_bank_transfers"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnDepositCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/baseline_price_check_24"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:drawableTint="@color/white"
+                android:text="Deposit Check"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnMilestones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_milestones"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Milestones"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:drawableTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+            </hawaiiappbuilders.omniversapp.global.OpenSansButton>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnFamilyHierarchy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/baseline_family_restroom_24"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Family Hierarchy"
+                android:textColor="@color/white"
+                android:drawableTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/tvBalanceInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_6" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

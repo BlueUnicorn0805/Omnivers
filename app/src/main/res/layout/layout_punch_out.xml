@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/emp_greet"
+        style="@style/TextBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="Good Morning,"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/emp_name"
+        style="@style/TextBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emp_greet"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="Andrew"
+        android:textSize="22sp"
+        android:visibility="invisible" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/emp_remaining_time"
+        style="@style/TextBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emp_name"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/emp_remaining_time"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/punch_lunch_button"
+            style="@style/TextWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_yellow"
+            android:clickable="true"
+            android:focusable="false"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="LUNCH"
+            android:textSize="28sp" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/punch_out_button"
+            style="@style/TextWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_red"
+            android:clickable="true"
+            android:focusable="false"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="OUT"
+            android:textSize="28sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbar"
+            android:background="@drawable/top_bar_blue"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="64dp"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                style="@style/TextWhite"
+                android:textStyle="bold"
+                android:text="Make a Donation"/>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                style="@style/TextWhite"
+                android:textStyle="bold"
+                android:text="To:"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"></Spinner>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/jobTypeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/white"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="20dp"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:lines="1"
+                    android:text="Select any one"/>
+            </FrameLayout>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                style="@style/TextWhite"
+                android:textStyle="bold"
+                android:text="Amount:"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:hint="Amount"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="20dp"
+                    android:background="@drawable/bg_edittext"/>
+            </LinearLayout>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/donate_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_white"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:ems="16"
+                android:text="Donate"
+                android:layout_marginBottom="20dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/roboto_regular" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

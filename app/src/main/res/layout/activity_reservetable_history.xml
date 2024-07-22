@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="hawaiiappbuilders.omniversapp.ActivityTransaction">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/toolbargradient"
+        android:theme="@style/ToolBarStyle"
+        app:popupTheme="@style/ToolBarStyle">
+    </androidx.appcompat.widget.Toolbar>
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/item_reservetable_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transaction_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tx_btn_dashboard"
+        android:layout_below="@id/header" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/emptyList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tx_btn_dashboard"
+        android:layout_centerInParent="true"
+        android:text="@string/emptyList"
+        android:textSize="@dimen/font_6"
+        android:textColor="@color/app_grey"
+        android:visibility="gone" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansButton
+        android:id="@+id/tx_btn_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/buttonmain"
+        android:ems="16"
+        android:fontFamily="@font/roboto_regular"
+        android:onClick="onClick"
+        android:text="Close"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

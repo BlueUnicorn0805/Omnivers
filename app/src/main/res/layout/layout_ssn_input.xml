@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/dialog_title"
+        style="@style/TextBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:text="Social Security Number"
+        android:textColorHint="@color/app_grey_light" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+        android:id="@+id/edtSSN"
+        style="@style/EditTextStyleBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="Enter SSN"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/app_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="right"
+        android:layout_marginTop="@dimen/padding1"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/edittext_rounded_grey"
+            android:paddingHorizontal="@dimen/padding6"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/submit"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

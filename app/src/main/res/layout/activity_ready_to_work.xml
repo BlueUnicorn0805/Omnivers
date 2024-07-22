@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/top_bar_blue" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                style="@style/TextWhite"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="5dp"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:text="@string/rtw_agreement"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Work Time Range:"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_weight="1">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/white"
+                            android:focusable="false" />
+
+                        <Spinner
+                            android:id="@+id/star_time_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_below="@+id/star_time_button"
+                            android:backgroundTint="@color/white"
+                            android:dropDownWidth="wrap_content"
+                            android:focusable="false" />
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                            android:id="@+id/star_time_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_edittext"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="start|center_vertical"
+                            android:lines="1"
+                            android:onClick="onClick"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:text="9 AM"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                        style="@style/TextWhite"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="To"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_weight="1">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/white"
+                            android:focusable="false" />
+
+                        <Spinner
+                            android:id="@+id/end_time_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_below="@+id/end_time_button"
+                            android:backgroundTint="@color/white"
+                            android:dropDownWidth="wrap_content"
+                            android:focusable="false" />
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                            android:id="@+id/end_time_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_edittext"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="start|center_vertical"
+                            android:lines="1"
+                            android:onClick="onClick"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:text="5 PM"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_weight="3"
+                android:focusable="false"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/submit_ready_to_work"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_white"
+                    android:ems="16"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/lets_go_to_work"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_white"
+                    android:ems="16"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

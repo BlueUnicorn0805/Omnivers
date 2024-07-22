@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:id="@+id/openSansBoldTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/app_back_main"
+        android:elevation="@dimen/padding1"
+        android:gravity="center"
+        android:padding="@dimen/padding3"
+        android:text="Event Details"
+        android:textColor="@color/app_teal_light"
+        android:textSize="@dimen/font_11"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:id="@+id/text_event_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/padding3"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_3"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openSansBoldTextView"
+        tools:text="Event Title" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/text_headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/padding1"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openSansBoldTextView"
+        tools:text="Headline" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMapVid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnShowFilter">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding2"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bannerImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <hawaiiappbuilders.omniversapp.global.VideoThumbImageView
+                    android:id="@+id/imgBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="204dp"
+                    android:background="@drawable/bg_banner_placeholder"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <hawaiiappbuilders.omniversapp.global.YoutubeWebView
+                    android:id="@+id/webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="@dimen/padding1"
+                    tools:visibility="gone" />
+
+                <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                    android:id="@+id/btnPlayV"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_event_vplay"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansButton
+        android:id="@+id/btnPurchase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/padding3"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonmain_round"
+        android:minHeight="35dp"
+        android:paddingHorizontal="@dimen/padding4"
+        android:text="Purchase"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessages" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding4">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_6"
+                android:textStyle="bold" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/tvMessages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/padding1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDateTime"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+            <!--Date-->
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date:"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_6"
+                android:textStyle="bold" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_7"
+                tools:text="January 28 - January 29" />
+            <!--Time-->
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:text="Time:"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_6"
+                android:textStyle="bold" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/tvTimeframes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_7"
+                tools:text="01/28/2023 10:30AM - 6:00PM\n01/29/2023 9:30AM - 5:00PM" />
+
+
+            <!--Location-->
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:text="Location:"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_6"
+                android:textStyle="bold" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/tvLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_7"
+                tools:text="Hope Lutheran\n925 Jordan Creek Parkway\nWest Des Moines, Iowa 50266" />
+
+            <!--Address-->
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:text="Address"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_6"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <!--Tickets-->
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:text="Tickets:"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_6"
+                android:textStyle="bold" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/tvAdmission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_7"
+                tools:text="General Admission $0.00 each" />
+
+            <!--Hide button for now-->
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnContactEventCreator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding3"
+                android:background="@drawable/buttonmain_round"
+                android:minHeight="35dp"
+                android:text="Contact Event Creator"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_7"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMessages" />
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding1"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:orientation="vertical">
+
+                    &lt;!&ndash;POC&ndash;&gt;
+                    <hawaiiappbuilders.mahaloglobal.OpenSansBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding2"
+                        android:text="POC"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_6"
+                        android:textStyle="bold" />
+                    <hawaiiappbuilders.mahaloglobal.OpenSansTextView
+                        android:id="@+id/tvPOC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Contact Name"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_7" />
+
+                    &lt;!&ndash;Email&ndash;&gt;
+                    <hawaiiappbuilders.mahaloglobal.OpenSansBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding2"
+                        android:text="Email"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_6"
+                        android:textStyle="bold" />
+                    <hawaiiappbuilders.mahaloglobal.OpenSansTextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="sample@email.com"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_7" />
+
+                    &lt;!&ndash;Creator&ndash;&gt;
+                    <hawaiiappbuilders.mahaloglobal.OpenSansBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding2"
+                        android:text="Creator"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_6"
+                        android:textStyle="bold" />
+                    <hawaiiappbuilders.mahaloglobal.OpenSansTextView
+                        android:id="@+id/tvCreator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Name"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_7" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding2"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btnEventFavorites"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="@dimen/padding3"
+                    android:layout_marginEnd="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_event_favorites"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnLearnMore"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/btnLearnMore" />
+
+                <ImageView
+                    android:id="@+id/btnEventSchedule"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="@dimen/padding3"
+                    android:layout_marginEnd="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_event_schedule"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnLearnMore"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/btnLearnMore" />
+
+                <ImageView
+                    android:id="@+id/btnEventShare"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="@dimen/padding3"
+                    android:layout_marginEnd="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_event_share"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnLearnMore"
+                    app:layout_constraintEnd_toStartOf="@+id/btnEventSchedule"
+                    app:layout_constraintTop_toTopOf="@+id/btnLearnMore" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

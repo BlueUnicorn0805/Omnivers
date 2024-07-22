@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:id="@+id/ab_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTint="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding2"
+        android:paddingTop="@dimen/padding2"
+        android:paddingRight="@dimen/padding2"
+        android:paddingBottom="@dimen/padding2"
+        android:text="Providers"
+        android:textSize="@dimen/font_6"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
+
+
+

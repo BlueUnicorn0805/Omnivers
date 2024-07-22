@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/layout_toolbar" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansButton
+        android:id="@+id/btnSubmitRequirements"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/buttonmain"
+        android:paddingStart="@dimen/padding3"
+        android:paddingEnd="@dimen/padding3"
+        android:text="Submit Requirements ($20.50)"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginTop="8dp" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansButton
+        android:id="@+id/btnMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/button_white_stroked"
+        android:paddingStart="@dimen/padding3"
+        android:paddingEnd="@dimen/padding3"
+        android:text="Message John Doe"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginTop="8dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmitRequirements"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/textStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:alpha="0.4"
+                android:fontFamily="@font/roboto_regular"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/semiwhite"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Available" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/textNameJobTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                android:textColorHint="@color/semiwhite"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textStatus"
+                tools:text="John Doe" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/textReviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_regular"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/semiwhite"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textNameJobTitle"
+                tools:text="239 Reviews" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/textServicesOffered"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:alpha="0.5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textReviews"
+                tools:text="SERVICES I OFFER\n1 RESEARCH WRITER\n2 Journalistic Writing\n\n3 times a week availability" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:id="@+id/textRequirementsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_regular"
+                android:singleLine="true"
+                android:text="Requirements"
+                android:textColor="@color/black"
+                android:textColorHint="@color/semiwhite"
+                android:textSize="@dimen/font_5"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textServicesOffered" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/textRequirementsSublabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Delivery time starts when John Doe receives requirements from you."
+                android:textColor="@color/black"
+                android:textColorHint="@color/semiwhite"
+                android:textSize="14sp"
+                android:alpha="0.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textRequirementsLabel" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/bg_edittext_white_bg_rounded"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/textRequirementsSublabel"
+                android:layout_marginTop="8dp"
+                tools:layout_editor_absoluteX="16dp">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtRequirements"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="left|top"
+                    android:inputType="text|textMultiLine"
+                    android:padding="@dimen/padding2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/app_grey_light"
+                    android:textSize="@dimen/font_7" />
+
+            </LinearLayout>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:id="@+id/textFAQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="FAQ"
+                android:textColor="@color/black"
+                android:textColorHint="@color/semiwhite"
+                android:textSize="@dimen/font_5"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/textFAQItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="FAQ items here"
+                android:textColor="@color/black"
+                android:textColorHint="@color/semiwhite"
+                android:textSize="@dimen/font_5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textFAQ" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

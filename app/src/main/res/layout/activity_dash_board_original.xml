@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hawaiiappbuilders.omniversapp.ActivityTransaction">
+
+    <LinearLayout
+        android:id="@+id/tbar"
+        android:background="@color/app_blue"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:background="@drawable/top_bar_blue"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="64dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:id="@+id/header"
+        android:layout_below="@+id/tbar"
+        android:background="@color/colorPrimary"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="1"
+                style="@style/TextWhite"
+                android:gravity="center_vertical|start"
+                android:text="@string/insta_cash_balance"/>
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/insta_cash_balance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="1"
+                style="@style/TextWhite"
+                android:gravity="center_vertical|end"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="1"
+                style="@style/TextWhite"
+                android:gravity="center_vertical|start"
+                android:text="@string/insta_savings_balance"/>
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/insta_savings_balance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="1"
+                style="@style/TextWhite"
+                android:gravity="center_vertical|end"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/db"
+        android:visibility="gone"
+        android:layout_below="@id/header"
+        style="@style/TextBlack"
+        android:text="Dashboard"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/dashboard_recyclerView"
+        android:layout_below="@id/db"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_back_main"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_toolbar" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding5"
+            android:text="Ready to work"
+            android:textColor="@color/app_teal_light"
+            android:textSize="@dimen/font_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/text_found_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_6"
+            android:visibility="gone"
+            tools:text="Search by Job Type"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_edittext_gray_round"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/padding1"
+            android:paddingVertical="@dimen/padding1">
+
+            <Spinner
+                android:id="@+id/spinnerJobType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding3"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:entries="@array/job_types"
+                android:textColor="@color/app_grey_dark"
+                android:textSize="@dimen/font_6" />
+
+        </LinearLayout>
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_6"
+            tools:text="Found:" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvContacts"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:background="@drawable/bg_edittext_gray_round"
+            android:paddingVertical="@dimen/padding1" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/btnIHaveContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/padding2"
+            android:layout_marginBottom="@dimen/padding3"
+            android:background="@drawable/buttonmain_round"
+            android:paddingHorizontal="@dimen/padding4"
+            android:text="I have contat info"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:elevation="@dimen/padding1"
+        android:gravity="center"
+        android:padding="@dimen/padding3"
+        android:background="@color/app_back_main"
+        android:text="Account"
+        android:textColor="@color/app_teal_light"
+        android:textSize="@dimen/font_11"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnImportContacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/ic_profile"
+                android:drawableTint="@color/white"
+                android:text="Import Contacts"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/tvNote"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnMyProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding5"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/ic_profile"
+                android:drawableTint="@color/white"
+                android:text="Update My Info"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/tvNote"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnSetWorkAddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/ic_menu_location"
+                android:drawableTint="@color/white"
+                android:text="Set Work Address"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/tvNote"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnFaceToFace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/ic_btn_qrcode"
+                android:drawableTint="@color/white"
+                android:text="Share My Info"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnCreateEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/ic_create_events"
+                android:drawableTint="@color/white"
+                android:text="Create Event"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnGroupInvites"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/ic_groups_invites"
+                android:drawableTint="@color/white"
+                android:text="Group INVITES"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_options"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Settings"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnBusiness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/baseline_reorder_24"
+                android:text="Business"
+                android:drawableTint="@color/white"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/ic_logout"
+                android:text="Logout"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnNotifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/ic_notification"
+                android:drawableTint="@color/white"
+                android:text="Notifications"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnAddPic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/ic_profile"
+                android:drawableTint="@color/white"
+                android:text="Add a Picture"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnInvite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain"
+                android:drawableLeft="@drawable/ic_invite"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Invite a Friend"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutView"
+    android:padding="14dp">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/textTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:alpha="0.4"
+        android:fontFamily="@font/roboto_regular"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/semiwhite"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="3 hours ago" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/textJobTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/roboto_regular"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/semiwhite"
+        android:textSize="@dimen/font_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTimestamp"
+        tools:text="Research Paper (Up to 300 pages)" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/textJobDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="0.5"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textJobTitle"
+        tools:text="I need help with a researcher to write about Hawaii" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:id="@+id/textPayRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textJobDescription"
+        tools:text="$10,000.00" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/textPostedBy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="0.8"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textPayRate"
+        app:layout_constraintStart_toStartOf="@+id/textJobDescription"
+        app:layout_constraintTop_toBottomOf="@+id/textJobDescription"
+        tools:text="Posted by: John Doe" />
+</androidx.constraintlayout.widget.ConstraintLayout>

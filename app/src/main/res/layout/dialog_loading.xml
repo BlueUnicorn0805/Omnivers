@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="100.0dip"
+        android:layout_height="100.0dip"
+        android:background="@drawable/loading_back_bg"
+        android:gravity="center"
+        android:padding="5dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="7.0dip"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_dash_search" />
+
+            <ProgressBar
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:indeterminateDrawable="@drawable/loading_white" />
+        </RelativeLayout>
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansLightTextView
+            android:id="@+id/loading_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/loading"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

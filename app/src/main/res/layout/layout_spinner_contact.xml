@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginTop="@dimen/padding1"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:textColor="@color/app_grey_dark"
+        android:textSize="@dimen/font_6" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/tvContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:textColor="@color/app_grey_dark"
+        android:textSize="@dimen/font_8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/padding1"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:background="@color/app_grey_light" />
+</LinearLayout>

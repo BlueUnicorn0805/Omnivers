@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_friend"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_addcontact"
+            android:title="Add Contact" />
+
+        <item
+            android:id="@+id/nav_message"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_message"
+            android:title="Message" />
+
+        <item
+            android:id="@+id/nav_call"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_call"
+            android:title="Call" />
+
+        <item
+            android:id="@+id/nav_email"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_mail"
+            android:title="Email" />
+
+        <item
+            android:id="@+id/nav_shareloc"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_shareloc"
+            android:title="Share Location" />
+
+        <item
+            android:id="@+id/nav_schedule"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_schedule"
+            android:title="Schedule" />
+
+        <item
+            android:id="@+id/nav_payinstantly"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_payment"
+            android:title="Pay Instantly" />
+
+        <item
+            android:id="@+id/nav_note"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_note"
+            android:title="Note" />
+
+        <item
+            android:id="@+id/nav_sendyourprop"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_schedule"
+            android:title="Send Your Proposal" />
+
+        <item
+            android:id="@+id/nav_contactinfo"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_contactinfo"
+            android:title="Contact Info" />
+
+        <item
+            android:id="@+id/nav_sendyourbiz"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_mail"
+            android:title="Send Your Business" />
+
+        <item
+            android:id="@+id/nav_sendaddressinfo"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_contactinfo"
+            android:title="Send Address Info" />
+
+        <item
+            android:id="@+id/nav_sendbankinfo"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_payment"
+            android:title="Send Banking Info" />
+
+        <item
+            android:id="@+id/nav_invitetoameal"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_message"
+            android:title="Invite to a meal" />
+    </group>
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="none">
+
+    </group>
+
+</menu>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_back_main"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/padding3">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+            android:id="@+id/tvInvoiceQTY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/bg_edittext_gray_round"
+            android:hint="0"
+            android:textColor="@color/white"
+            android:imeOptions="actionNext"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:minHeight="32dp"
+            android:padding="4dp"
+            android:singleLine="true"
+            android:textColorHint="@color/app_grey"
+            android:textSize="@dimen/font_7"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding1"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+            android:id="@+id/tvInvoiceAmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/bg_edittext_gray_round"
+            android:hint="0"
+            android:textColor="@color/white"
+            android:textAlignment="textEnd"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:minHeight="32dp"
+            android:padding="4dp"
+            android:singleLine="true"
+            android:textColorHint="@color/app_grey"
+            android:textSize="@dimen/font_7" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding1"
+        android:layout_marginTop="4dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+            android:id="@+id/tvInvoiceDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/bg_edittext_gray_round"
+            android:hint="Description"
+            android:textColor="@color/white"
+            android:imeOptions="actionNext"
+            android:inputType="textPostalAddress|textCapWords"
+            android:maxLines="1"
+            android:minHeight="32dp"
+            android:padding="4dp"
+            android:singleLine="true"
+            android:textColorHint="@color/app_grey"
+            android:textSize="@dimen/font_7" />
+
+    </LinearLayout>
+
+</LinearLayout>

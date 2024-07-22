@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_back_main">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_img_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20.0dip"
+        android:scaleType="centerInside"
+        android:paddingHorizontal="@dimen/padding5"
+        android:adjustViewBounds="true"
+        android:src="@drawable/intro3" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_11"
+        android:layout_marginHorizontal="24dp"
+        android:fontFamily="@font/productsans_regular"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Lifting Up Communities" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding4"
+        android:justificationMode="inter_word"
+        android:textSize="@dimen/font_intro_content"
+        android:lineSpacingExtra="@dimen/padding1"
+        android:layout_marginHorizontal="24dp"
+        android:textColor="@color/white"
+        android:text="OmniVers App is the only payment app that gives back to its communities through strategic partnerships with non-profits, churches, and more. To learn more about giving opportunities, contact at:\n\nLiftingUpCommunities@AlohaWorldwide.site " />
+
+</LinearLayout>

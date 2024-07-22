@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/app_back_main"
+        android:elevation="@dimen/padding1"
+        android:gravity="center"
+        android:padding="@dimen/padding3"
+        android:text="Settings"
+        android:textColor="@color/app_teal_light"
+        android:textSize="@dimen/font_11"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnChangePass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_changepw"
+                android:drawableTint="@color/white"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Update Password"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnForgotPIN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_forgotpin"
+                android:drawableTint="@color/white"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Update PIN"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnImportContacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_importcontact"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Import Contacts"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnScreenOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_options"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Screen Options"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnBackup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_backup"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Backup"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnDeleteAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_profile"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Delete Account"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_comment"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Support"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnViewSupportTickets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_baseline_confirmation_number_24"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="View Support Tickets"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:drawableTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnSecret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_baseline_keyboard_24"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Secret"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:drawableTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_delete"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        android:title="Delete"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_dup"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        android:title="Duplicate"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_directions"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        android:title="Directions"
+        android:visible="false"
+        app:showAsAction="always" />
+
+</menu>

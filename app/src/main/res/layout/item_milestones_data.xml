@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/panelMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="2dp"
+            android:text="4 Feb 2023"
+            android:textColor="@color/white"
+            android:textSize="9sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/app_grey_dark" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/tvDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="App Creation"
+            android:textColor="@color/white"
+            android:textSize="9sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/app_grey_dark" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/tvStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="In Progress"
+            android:textColor="@color/white"
+            android:textSize="9sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/app_grey_dark" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/tvAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Amount"
+            android:textColor="@color/white"
+            android:textSize="9sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:layout_weight="4" >
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Release"
+                android:minHeight="35dp"
+                android:textColor="@color/black"
+                android:paddingHorizontal="@dimen/padding3"
+                android:paddingVertical="@dimen/padding1"
+                android:layout_gravity="right"
+                android:background="#ffffff"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="5dp"
+        android:background="@color/app_grey_dark" />
+
+</LinearLayout>
+
+

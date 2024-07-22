@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbargradient"
+        app:contentInsetStart="0dp"
+        android:gravity="center_vertical"
+        android:theme="@style/ToolBarStyle"
+        app:popupTheme="@style/ToolBarStyle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                android:layout_width="?actionBarSize"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_title_foreground" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/tvBalances"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding1"
+            android:gravity="right"
+            android:text="Available Funds: $0.0\nRewards: $0.0\nGift Card: $0.0"
+            android:textColor="@color/app_grey_dark"
+            android:textSize="@dimen/font_6" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingTop="30dp"
+            android:paddingRight="30dp">
+
+            <ImageView
+                android:id="@+id/ivQRCode"
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:layout_gravity="center"
+                android:background="@drawable/qr_focus_grey"
+                android:orientation="vertical" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/panelInputPIN"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:visibility="visible">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                style="@style/TextWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/msg_localshop_pininput"
+                android:textColor="@color/app_grey_dark" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/edtPIN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext_black"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:padding="@dimen/padding2"
+                android:textColor="@color/app_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:background="@drawable/buttonmain"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_5" />
+        </LinearLayout>
+
+        <hawaiiappbuilders.omniversapp.global.CountDownView
+            android:id="@+id/countDown"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/padding3"
+            app:ringColor="@color/app_red"
+            android:layout_gravity="center_horizontal"
+            app:ringWidth="10"
+            app:countdownTime="20"
+            app:progressTextSize="@dimen/font_4"
+            app:progressTextColor="@color/app_red" />
+
+    </LinearLayout>
+</RelativeLayout>

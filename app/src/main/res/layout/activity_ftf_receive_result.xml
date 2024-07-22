@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbargradient"
+        android:gravity="center_vertical"
+        android:theme="@style/ToolBarStyle"
+        app:popupTheme="@style/ToolBarStyle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                android:layout_width="?actionBarSize"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_title_foreground" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/app_back_main"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Information Received"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/app_grey_dark" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ftf_info"
+                android:layout_marginTop="@dimen/padding1"
+                android:layout_marginBottom="@dimen/padding1"
+                android:textSize="@dimen/font_5"
+                android:textColor="@color/app_grey_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                tools:listitem="@layout/qr_list_item"
+                android:inputType="textMultiLine"
+                android:text="All info" />
+        </ScrollView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/app_grey_dark" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            style="@style/TextWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="What would you like to do?"
+            android:textStyle="bold" />
+
+        <include layout="@layout/layout_ftf_receive_result_bottom" />
+
+    </LinearLayout>
+
+</LinearLayout>

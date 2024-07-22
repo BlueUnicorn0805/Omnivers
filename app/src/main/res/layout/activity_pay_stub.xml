@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/top_bar_blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/stub_emp_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="Work Name, Add, CSZ"
+                    android:visibility="gone" />
+
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="start"
+                    android:text="Swint Inc" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="Employee"
+                    android:visibility="gone" />
+
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="start"
+                    android:text="Emp 741" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                style="@style/TextBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:lines="1"
+                android:text="Deduction"
+                android:visibility="invisible" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                style="@style/TextBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:lines="1"
+                android:text="Current"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                style="@style/TextBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:lines="1"
+                android:text="YDT"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ps_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/stub_emp_info"
+        android:background="@color/white" />
+
+</RelativeLayout>

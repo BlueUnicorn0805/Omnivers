@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app2="http://schemas.android.com/apk/lib/com.google.android.apps.authenticator2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <hawaiiappbuilders.omniversapp.global.ResizableImageView
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/selector_backbtn" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:id="@+id/openSansBoldTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding2"
+        android:text="New Device Setup"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/app_teal_light"
+        android:textSize="@dimen/font_12"
+        android:textStyle="bold" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding1"
+        android:layout_marginLeft="@dimen/padding6"
+        android:layout_marginRight="@dimen/padding6"
+        android:text="This process will move your account to this phone and disables previous phone once you have been Authenticated. "
+        android:textColor="@color/app_grey_dark"
+        android:textSize="@dimen/font_6"></hawaiiappbuilders.omniversapp.global.OpenSansTextView>
+
+    <LinearLayout
+        android:id="@+id/panelEmailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding3"
+        android:layout_marginTop="@dimen/padding3"
+        android:layout_marginRight="@dimen/padding3"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/account_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_black_round"
+            android:fontFamily="sans-serif"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/padding2"
+            android:singleLine="true"
+            android:textColor="@color/app_grey_dark"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnSendCodeToEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginStart="@dimen/padding2"
+            android:layout_marginTop="@dimen/padding2"
+            android:background="@drawable/buttonmain_round"
+            android:minHeight="40dp"
+            android:paddingHorizontal="@dimen/padding4"
+            android:text="Send code to email"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_7" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/panelEmailCodeAndPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding3"
+        android:layout_marginTop="@dimen/padding3"
+        android:layout_marginRight="@dimen/padding3"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/account_email_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_black_round"
+            android:fontFamily="sans-serif"
+            android:hint="Enter Code"
+            android:inputType="number"
+            android:padding="@dimen/padding2"
+            android:singleLine="true"
+            android:textColor="@color/app_grey_dark"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/account_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_black_round"
+            android:fontFamily="sans-serif"
+            android:hint="Enter Phone"
+            android:inputType="phone"
+            android:padding="@dimen/padding2"
+            android:singleLine="true"
+            android:textColor="@color/app_grey_dark"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnSendCodeToPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginStart="@dimen/padding2"
+            android:layout_marginTop="@dimen/padding2"
+            android:background="@drawable/buttonmain_round"
+            android:minHeight="40dp"
+            android:paddingHorizontal="@dimen/padding4"
+            android:text="Send code to phone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_7" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/panelSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:paddingTop="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding3"
+            android:layout_marginRight="@dimen/padding3"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/account_name_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:accessibilityLiveRegion="polite"
+                android:hint="Account name"
+                app:hintEnabled="false"
+                android:labelFor="@+id/account_name"
+                android:minHeight="66dp"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/account_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:fontFamily="sans-serif"
+                    android:hint="Account name"
+                    android:singleLine="true"
+                    android:textColor="@color/app_grey_dark"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/key_value_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:accessibilityLiveRegion="polite"
+                android:hint="Enter code"
+                android:labelFor="@+id/key_value"
+                android:minHeight="66dp"
+                app:hintEnabled="false"
+                app2:hintTextAppearance="@style/HintTextAppearance">
+
+                <EditText
+                    android:id="@+id/key_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/bg_edittext_black_round"
+                    android:fontFamily="sans-serif"
+                    android:hint="Enter code"
+                    android:inputType="number"
+                    android:padding="@dimen/padding2"
+                    android:singleLine="true"
+                    android:textColor="@color/app_grey_dark"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:background="@drawable/buttonmain_round"
+                    android:minWidth="96dp"
+                    android:minHeight="40dp"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_7" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

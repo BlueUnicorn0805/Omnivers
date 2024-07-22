@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_grey"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding1"
+        android:layout_weight="1"
+        android:padding="@dimen/padding1"
+        android:text="DateTime"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_7" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:padding="@dimen/padding1"
+        android:text="Address"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_7" />
+
+
+</LinearLayout>

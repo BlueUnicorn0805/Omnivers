@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/recycler_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|right">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/zxing_transparent"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/semiwhite"
+                    android:textSize="@dimen/font_6"
+                    android:hint="What can I help you with?"></hawaiiappbuilders.omniversapp.global.OpenSansEditText>
+
+                <ImageView
+                    android:id="@+id/ivSearchItem"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="@dimen/padding1"
+                    android:layout_marginRight="@dimen/padding3"
+                    android:src="@drawable/ic_nav_search"
+                    app:tint="@color/white"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:queryHint="What can I help you with?"
+                app:defaultQueryHint="What can I help you with?"
+                android:layoutDirection="rtl"/>
+
+            <ImageView
+                android:id="@+id/grey_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white" />
+
+            <ExpandableListView
+                android:id="@+id/lvData"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/padding1"
+                android:layout_weight="1"
+                android:childDivider="@drawable/divider"
+                android:divider="@drawable/divider"
+                android:dividerHeight="1px"
+                android:groupIndicator="@drawable/selector_list_expandable"
+                tools:listitem="@layout/item_industries_header"
+                android:scrollbars="none"></ExpandableListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ab_no_providers_found_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/ab_no_providers_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:padding="30dp"
+                android:text="@string/provider_not_found"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

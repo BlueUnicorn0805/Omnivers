@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/btnCartPlusNO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:src="@drawable/ic_plus"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCartQuantityNO"
+        app:layout_constraintEnd_toStartOf="@+id/txtCartQuantityNO"
+        app:layout_constraintTop_toTopOf="@+id/txtCartQuantityNO"
+        app:srcCompat="@drawable/ic_plus" />
+
+    <EditText
+        android:id="@+id/txtCartQuantityNO"
+        android:layout_width="39dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@+id/cartItemImg"
+        app:layout_constraintTop_toBottomOf="@+id/cartItemDescription" />
+
+    <ImageButton
+        android:id="@+id/btnCartMinusNO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:src="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCartQuantityNO"
+        app:layout_constraintStart_toEndOf="@+id/txtCartQuantityNO"
+        app:layout_constraintTop_toTopOf="@+id/txtCartQuantityNO"
+        app:srcCompat="@drawable/ic_minus" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansButton
+        android:id="@+id/btnCartDuplicate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/buttonmain"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="Duplicate"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@+id/btnCartUpdate"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/cartItemImg"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:src="@drawable/aptizer1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/aptizer1" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:id="@+id/cartItemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_1"
+        app:layout_constraintEnd_toStartOf="@+id/cartItemPrice"
+        app:layout_constraintStart_toEndOf="@+id/cartItemImg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/cartItemDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cartItemImg"
+        app:layout_constraintTop_toBottomOf="@+id/cartItemName"
+        app:layout_constraintWidth_default="wrap" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/cartItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansButton
+        android:id="@+id/btnCartUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonmain"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_marginEnd="@dimen/padding3"
+        android:text="Update"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/tvOpQtyLabel"
+        app:layout_constraintEnd_toStartOf="@+id/btnCartDuplicate"/>
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/tvOpQtyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Qty:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/cartItemImg"
+        app:layout_constraintTop_toBottomOf="@+id/cartItemDescription" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/tvOpQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tvOpQtyLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvOpQtyLabel" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCartOptions"
+        android:layout_width="0dp"
+        android:layout_height="344dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCartDuplicate">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Cooking Temp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spnCartTemp"
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Sides (pick 2)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spnCartTemp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvCartSides"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/btnUpdateItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorPrimary"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="Update Item"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rcvCartSides" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

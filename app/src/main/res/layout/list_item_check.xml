@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemCheck"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_back_main"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_grey_light"
+            android:textSize="12sp"
+            app:fontFamily="@font/roboto_regular"
+            tools:text="Jan 1, 2023" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/textTransactionId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/app_grey_light"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:fontFamily="@font/roboto_regular"
+            tools:text="1234" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/textName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            app:fontFamily="@font/roboto_bold"
+            tools:text="John D." />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/textAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/app_teal_light"
+            app:fontFamily="@font/roboto_bold"
+            tools:text="$100.50" />
+    </LinearLayout>
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/textCheckNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding1"
+        android:textColor="@color/app_grey_light"
+        android:textSize="12sp"
+        app:fontFamily="@font/roboto_regular"
+        tools:text="001234" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:weightSum="2">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/btnShowCheck"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_round_white"
+            android:backgroundTint="@color/colorPrimary"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="Show Check"
+            android:textColor="@color/white" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/btnSendEmail"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_round_white"
+            android:backgroundTint="@color/colorPrimary"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="Email to Halo Pay"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

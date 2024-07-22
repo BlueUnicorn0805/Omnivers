@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:toolsNs="http://schemas.android.com/apk/res-auto">
+
+    <CheckBox
+        android:id="@+id/checkbox_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        toolsNs:layout_constraintEnd_toEndOf="parent"
+        toolsNs:layout_constraintStart_toStartOf="parent"
+        toolsNs:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

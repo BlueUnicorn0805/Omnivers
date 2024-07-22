@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/dialog_title"
+        style="@style/TextBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:text="Enter a PIN for purchases"
+        android:textColorHint="@color/app_grey_light" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/dialog_sub_title"
+        style="@style/TextBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Enter a PIN for purchases"
+        android:textColor="@color/app_grey_dark"
+        android:textColorHint="@color/app_grey_dark"
+        android:visibility="gone" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext_black_round"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="Enter PIN"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/app_grey"
+            android:textSize="@dimen/font_5" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <include layout="@layout/layout_underline" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/panelConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pin_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext_black_round"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="Confirm PIN"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/app_grey"
+            android:textSize="@dimen/font_5" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <include layout="@layout/layout_underline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/pin_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_rounded_grey"
+            android:ems="16"
+            android:fontFamily="@font/roboto_regular"
+            android:onClick="onClick"
+            android:text="@string/cancel"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/pin_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_rounded_grey"
+            android:ems="16"
+            android:fontFamily="@font/roboto_regular"
+            android:onClick="onClick"
+            android:text="@string/appointments"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

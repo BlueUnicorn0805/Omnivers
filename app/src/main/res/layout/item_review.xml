@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/padding3"
+    android:paddingLeft="@dimen/padding3"
+    android:paddingTop="@dimen/padding1"
+    android:paddingEnd="@dimen/padding3"
+    android:paddingRight="@dimen/padding3"
+    android:paddingBottom="@dimen/padding1">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:id="@+id/txtReviewMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/padding1"
+        android:visibility="gone"
+        android:text="Very good person. Always deliveried package in time and provided great service."
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_7"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:id="@+id/txtMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rating"
+            android:text="5.0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_7" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding2"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:padding="0dp"
+            android:rating="5"
+            android:stepSize="1.0"
+            android:theme="@style/RatingBar" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding1">
+
+        <hawaiiappbuilders.omniversapp.global.CircleImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_girl" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/txtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/padding1"
+            android:layout_toRightOf="@+id/ivAvatar"
+            android:text="$30.00"
+            android:visibility="gone"
+            android:textColor="@color/app_grey_dark"
+            android:textSize="@dimen/font_7" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/txtUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPrice"
+            android:layout_marginLeft="@dimen/padding1"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivAvatar"
+            android:text="by nitu01 - 2 Weeks ago"
+            android:textColor="@color/app_grey_dark"
+            android:textSize="@dimen/font_6" />
+    </RelativeLayout>
+
+</LinearLayout>

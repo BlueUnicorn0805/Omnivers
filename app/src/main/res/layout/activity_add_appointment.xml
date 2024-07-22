@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbargradient"
+        android:gravity="center_vertical"
+        android:theme="@style/ToolBarStyle"
+        app:popupTheme="@style/ToolBarStyle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                android:layout_width="?actionBarSize"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_title_foreground" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardElevation="4dp"
+        app:contentPaddingBottom="0dp"
+        app:contentPaddingTop="0dp">
+
+        <include layout="@layout/add_appointment_dates" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/todayLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateLL"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/appointment_selected_date"
+            style="@style/TextBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Sun 7 Oct 2018"
+            android:textSize="@dimen/font_6"
+            android:textColor="@color/app_grey" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/storeinfo"
+            style="@style/TextBlack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="right"
+            android:text="Sun 7 Oct 2018"
+            android:textSize="@dimen/font_6"
+            android:textColor="@color/app_grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            style="@style/TextBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="You Requested Appointment With:"
+            android:textSize="@dimen/font_6"
+            android:textColor="@color/black" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:id="@+id/storeName"
+            style="@style/TextBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="right"
+            android:text="StoreName"
+            android:textSize="@dimen/font_6"
+            android:textColor="@color/black" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:id="@+id/orderDate"
+            style="@style/TextBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="right"
+            android:text="Today"
+            android:textSize="@dimen/font_6"
+            android:textColor="@color/black" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            style="@style/TextBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="right"
+            android:text="Please choose time below"
+            android:textSize="@dimen/font_6"
+            android:textColor="@color/app_grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <GridView
+                android:id="@+id/aa_time_grid_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="4"
+                android:scrollbars="none" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="@color/app_divider"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/a"
+                style="@style/TextBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="Doctors Schedule"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/grey_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/a"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/app_grey_light"
+                android:visibility="invisible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/aa_scheduled_time_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/grey_line"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_back_main">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding3"
+        android:elevation="@dimen/padding3"
+        android:background="@color/app_back_main"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Update Password"
+            android:gravity="center"
+            android:textColor="@color/app_teal_light"
+            android:textSize="@dimen/font_11"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/padding5"
+        android:layout_marginTop="@dimen/padding3"
+        android:layout_marginEnd="@dimen/padding5"
+        android:orientation="vertical"
+        android:elevation="@dimen/padding1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Password"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_6" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+            android:id="@+id/edtOriginal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:background="@drawable/bg_edittext_gray_round"
+            android:hint="Current password"
+            android:layout_marginTop="@dimen/padding1"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textColorHint="@color/semiwhite"
+            android:padding="10dp"
+            android:textSize="@dimen/font_5" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding3"
+            android:text="New Password"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_6" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+            android:id="@+id/edtPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:background="@drawable/bg_edittext_gray_round"
+            android:hint="New password"
+            android:layout_marginTop="@dimen/padding1"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textColorHint="@color/semiwhite"
+            android:padding="10dp"
+            android:textSize="@dimen/font_5" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding3"
+            android:text="Re-type New Password"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_6" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+            android:id="@+id/edtConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:background="@drawable/bg_edittext_gray_round"
+            android:hint="Re-type New Password"
+            android:layout_marginTop="@dimen/padding1"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textColorHint="@color/semiwhite"
+            android:padding="10dp"
+            android:textSize="@dimen/font_5" />
+    </LinearLayout>
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding3"
+        android:paddingHorizontal="@dimen/padding4"
+        android:minHeight="@dimen/padding8"
+        android:elevation="@dimen/padding1"
+        android:layout_gravity="right"
+        android:background="@drawable/buttonmain_round"
+        android:drawableLeft="@drawable/ic_menu_check"
+        android:drawablePadding="@dimen/padding1"
+        android:layout_marginBottom="@dimen/padding3"
+        android:textAllCaps="false"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_6" />
+
+</LinearLayout>

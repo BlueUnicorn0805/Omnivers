@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="For use at the restaurant by you and or others"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:id="@+id/restName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding2"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/header20" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/restAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:text="1550 Court Pl, Denver, CO 80202, USA"
+                    android:textColor="@color/app_blue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/padding1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Create Tab Name"
+                    android:textColor="@color/app_grey"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Tab Amount\nNot to Exceed\n(including Gratuity)"
+                    android:textColor="@color/app_grey"
+                    android:textSize="@dimen/font_6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtTabName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext_black"
+                    android:gravity="center"
+                    android:padding="@dimen/padding2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtAmt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/padding2"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext_black"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="@dimen/padding2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_6" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Date"
+                    android:textColor="@color/app_grey"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Time"
+                    android:textColor="@color/app_grey"
+                    android:textSize="@dimen/font_6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:id="@+id/edtDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext_black"
+                    android:gravity="center"
+                    android:padding="@dimen/padding2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:id="@+id/edtTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/padding2"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext_black"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/padding2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_6" />
+            </LinearLayout>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/padding3"
+                android:gravity="center"
+                android:text="Choose Account to Bill"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/font_6" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                    android:id="@+id/radioBiz"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="Business"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                    android:id="@+id/radioPersonal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="Personal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_6" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/btnOpenTab"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonmain"
+                    android:paddingHorizontal="@dimen/padding3"
+                    android:text="Open This Tab"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding3"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonmain"
+                    android:paddingHorizontal="@dimen/padding3"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

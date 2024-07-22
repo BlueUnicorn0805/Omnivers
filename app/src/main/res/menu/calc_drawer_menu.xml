@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_aday"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_aday"
+            android:title="Day" />
+
+        <item
+            android:id="@+id/nav_threedays"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_3days"
+            android:title="3 Days" />
+
+        <item
+            android:id="@+id/nav_week"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_7days"
+            android:title="7 days" />
+
+        <item
+            android:id="@+id/nav_month"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_month"
+            android:title="Month" />
+
+        <item
+            android:id="@+id/nav_agenda"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_month"
+            android:title="Agenda" />
+    </group>
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_addappt"
+            android:checkable="false"
+            android:icon="@drawable/ic_nav_addappt"
+            android:title="Add Appointment" />
+    </group>
+
+</menu>

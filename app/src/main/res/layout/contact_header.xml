@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hawaiiappbuilders.omniversapp.global.OpenSansTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/headerName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_grey_dark"
+    android:fontFamily="@font/roboto_regular"
+    android:padding="6dp"
+    android:singleLine="true"
+    android:textColor="@color/app_grey_medium"
+    android:textColorHint="@color/semiwhite"
+    android:textSize="@dimen/font_5"
+    android:textStyle="bold"
+    tools:text="Test" />

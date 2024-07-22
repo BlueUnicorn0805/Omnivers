@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_back_main"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_back_main"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_toolbar" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/padding5"
+                android:gravity="center"
+                android:text="Spring School Event"
+                android:textColor="@color/app_teal_light"
+                android:textSize="@dimen/font_11"
+                android:textStyle="bold" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/padding2"
+                android:gravity="center"
+                android:text="Vote For Me!"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_10"
+                android:textStyle="bold" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/padding2"
+                android:gravity="center"
+                android:textStyle="normal"
+                android:text="Chuck Lacona"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_back_main"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="This project was inspired from.....\nWe worked on it for over a week."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_6" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3" />
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

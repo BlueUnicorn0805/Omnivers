@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_ll"
+    android:background="@color/app_back_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding1"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/padding2"
+        android:text="Today"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding2"
+        android:layout_marginTop="@dimen/padding1"
+        android:layout_marginRight="@dimen/padding2"
+        android:layout_marginBottom="@dimen/padding1"
+        android:backgroundTint="@color/app_back_main"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivStatus"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_placeholder_phone"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding1"
+                android:text="+861882562356"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/tvNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:maxLines="1"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding1"
+                android:text="chuntianhongsoft@gmail.com"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding1"
+                android:maxLines="1"
+                android:text="Xiao"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding1"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding1"
+                android:text="10:30"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+
+

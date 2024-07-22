@@ -1,0 +1,514 @@
+{
+  "project_info": {
+    "project_number": "436220432542",
+    "project_id": "hawaiihalopaypm",
+    "storage_bucket": "hawaiihalopaypm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436220432542:android:79adce881481ee4ce2ab8f",
+        "android_client_info": {
+          "package_name": "com.project.meetingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiQaD_zmnAdvTH9Dv85TdwbKoLuU0fyqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "436220432542-2po4mjf0n4ol27hjifpc03j54jvr05vl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hawaiiappbuilders.dd"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436220432542:android:a6bf4119cacb049fe2ab8f",
+        "android_client_info": {
+          "package_name": "hawaiiappbuilders.LinkITb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiQaD_zmnAdvTH9Dv85TdwbKoLuU0fyqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "436220432542-2po4mjf0n4ol27hjifpc03j54jvr05vl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hawaiiappbuilders.dd"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436220432542:android:09cf8fa6cb3eed51e2ab8f",
+        "android_client_info": {
+          "package_name": "hawaiiappbuilders.a"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiQaD_zmnAdvTH9Dv85TdwbKoLuU0fyqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "436220432542-2po4mjf0n4ol27hjifpc03j54jvr05vl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hawaiiappbuilders.dd"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436220432542:android:02cd7cffa22261e8e2ab8f",
+        "android_client_info": {
+          "package_name": "hawaiiappbuilders.aloha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiQaD_zmnAdvTH9Dv85TdwbKoLuU0fyqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "436220432542-2po4mjf0n4ol27hjifpc03j54jvr05vl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hawaiiappbuilders.dd"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436220432542:android:abf0ab8f1a656795e2ab8f",
+        "android_client_info": {
+          "package_name": "hawaiiappbuilders.b"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiQaD_zmnAdvTH9Dv85TdwbKoLuU0fyqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "436220432542-2po4mjf0n4ol27hjifpc03j54jvr05vl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hawaiiappbuilders.dd"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436220432542:android:f96590e714920cc2e2ab8f",
+        "android_client_info": {
+          "package_name": "hawaiiappbuilders.c"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiQaD_zmnAdvTH9Dv85TdwbKoLuU0fyqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "436220432542-2po4mjf0n4ol27hjifpc03j54jvr05vl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hawaiiappbuilders.dd"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436220432542:android:b1942a5f60e63f46e2ab8f",
+        "android_client_info": {
+          "package_name": "hawaiiappbuilders.d"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiQaD_zmnAdvTH9Dv85TdwbKoLuU0fyqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "436220432542-2po4mjf0n4ol27hjifpc03j54jvr05vl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hawaiiappbuilders.dd"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436220432542:android:9e1c7e3a99c5a834e2ab8f",
+        "android_client_info": {
+          "package_name": "hawaiiappbuilders.everythingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiQaD_zmnAdvTH9Dv85TdwbKoLuU0fyqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "436220432542-2po4mjf0n4ol27hjifpc03j54jvr05vl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hawaiiappbuilders.dd"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436220432542:android:1af975b40e8c54f4e2ab8f",
+        "android_client_info": {
+          "package_name": "hawaiiappbuilders.mahalo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiQaD_zmnAdvTH9Dv85TdwbKoLuU0fyqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "436220432542-2po4mjf0n4ol27hjifpc03j54jvr05vl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hawaiiappbuilders.dd"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436220432542:android:61e141a8e2cd1899e2ab8f",
+        "android_client_info": {
+          "package_name": "hawaiiappbuilders.nemt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiQaD_zmnAdvTH9Dv85TdwbKoLuU0fyqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "436220432542-2po4mjf0n4ol27hjifpc03j54jvr05vl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hawaiiappbuilders.dd"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436220432542:android:fd8e4f63be8c5e72e2ab8f",
+        "android_client_info": {
+          "package_name": "hawaiiappbuilders.omniversapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiQaD_zmnAdvTH9Dv85TdwbKoLuU0fyqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "436220432542-2po4mjf0n4ol27hjifpc03j54jvr05vl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hawaiiappbuilders.dd"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436220432542:android:dac5be91812e79d4e2ab8f",
+        "android_client_info": {
+          "package_name": "hawaiiappbuilders.pat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiQaD_zmnAdvTH9Dv85TdwbKoLuU0fyqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "436220432542-2po4mjf0n4ol27hjifpc03j54jvr05vl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hawaiiappbuilders.dd"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436220432542:android:ce2169eebd9f1750e2ab8f",
+        "android_client_info": {
+          "package_name": "hawaiiappbuilders.qpon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiQaD_zmnAdvTH9Dv85TdwbKoLuU0fyqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "436220432542-2po4mjf0n4ol27hjifpc03j54jvr05vl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hawaiiappbuilders.dd"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436220432542:android:f03acc60aeac2d30e2ab8f",
+        "android_client_info": {
+          "package_name": "hawaiiappbuilders.udx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiQaD_zmnAdvTH9Dv85TdwbKoLuU0fyqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436220432542-ijbhj8l5pudi0lc4n95jl5hvv4ao0atg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "436220432542-2po4mjf0n4ol27hjifpc03j54jvr05vl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hawaiiappbuilders.dd"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbar"
+            android:background="@drawable/top_bar_blue"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="64dp"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:background="@color/white"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/event_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Title"
+                style="@style/EditTextStyleBlack"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:singleLine="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
+
+            <LinearLayout
+                android:id="@+id/event_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/event_start_date"
+                    android:focusable="false"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/EditTextStyleBlack"
+                    android:maxLines="1"
+                    android:hint="Start Date"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:singleLine="true" />
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/event_start_time"
+                    android:focusable="false"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Start Time"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    style="@style/EditTextStyleBlack"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/event_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/event_end_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="End Date"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_edittext_black"
+                    android:textColor="@color/colorPrimary" />
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/event_end_time"
+                    android:focusable="false"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/EditTextStyleBlack"
+                    android:hint="End Time"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginTop="@dimen/activity_horizontal_margin" />
+
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/event_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/EditTextStyleBlack"
+                android:hint="Address"
+                android:inputType="textPostalAddress"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:singleLine="true" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/event_lat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Latitude"
+                style="@style/EditTextStyleBlack"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:singleLine="true" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/event_lon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/EditTextStyleBlack"
+                android:inputType="numberDecimal"
+                android:hint="Longitude"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:singleLine="true" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/event_cancel"
+                android:onClick="onClick"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@color/colorPrimary"
+                android:ems="10"
+                android:text="@string/cancel"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_regular" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

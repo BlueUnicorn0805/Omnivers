@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:id="@+id/openSansBoldTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:elevation="@dimen/padding1"
+        android:gravity="center"
+        android:padding="@dimen/padding3"
+        android:background="@color/app_back_main"
+        android:text="Screen Options"
+        android:textColor="@color/app_teal_light"
+        android:textSize="@dimen/font_2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="16dp"
+                    android:text="Customize your home screen!\nClick ADD A PICTURE to start. "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/btnAddPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/padding5"
+                    android:layout_marginTop="@dimen/padding3"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/buttonmain"
+                    android:drawableLeft="@drawable/ic_profile"
+                    android:drawableTint="@color/white"
+                    android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                    android:text="Add a Picture"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="10dp"
+                    android:text="Home Button Options"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_5" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupHomeMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                        android:id="@+id/optionShowBoth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/padding8"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:text="Show both icon and title"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_6" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                        android:id="@+id/optionShowIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/padding8"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:text="Show only icon"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_6" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                        android:id="@+id/optionShowTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/padding8"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:text="Show only title"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_6" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                        android:id="@+id/optionRemoveAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/padding8"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:text="Remove both icon and title"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_6" />
+                </RadioGroup>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansSwitchCompat
+                    android:id="@+id/compatShowAvatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/padding3"
+                    android:text="Dashboard Image"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_5" />
+
+                <RadioGroup
+                    android:id="@+id/radioDashboardImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                        android:id="@+id/optionFullscreen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/padding8"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:text="Show as Full Screen"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_6" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                        android:id="@+id/optionAvatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/padding8"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:text="Show as Avatar"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_6" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:text="Temperature Unit Options"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupTempUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                    android:id="@+id/optionUnitFahrenheit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/padding8"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:text="°F"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                    android:id="@+id/optionUnitCelsius"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/padding8"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:text="°C"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansButton
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding3"
+        android:paddingHorizontal="@dimen/padding4"
+        android:minHeight="@dimen/padding8"
+        android:elevation="@dimen/padding1"
+        android:layout_gravity="right"
+        android:background="@drawable/buttonmain_round"
+        android:drawableLeft="@drawable/ic_menu_check"
+        android:drawablePadding="@dimen/padding1"
+        android:layout_marginBottom="@dimen/padding3"
+        android:textAllCaps="false"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_6" />
+
+</LinearLayout>

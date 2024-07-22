@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!--<solid android:color="#a00ea9eb" />-->
+    <solid android:color="#ff0000" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/size_home_btn_round"
+        android:bottomRightRadius="@dimen/size_home_btn_round"
+        android:topLeftRadius="@dimen/size_home_btn_round"
+        android:topRightRadius="@dimen/size_home_btn_round" />
+</shape>

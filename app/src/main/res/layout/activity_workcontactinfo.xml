@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_back_main"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_toolbar" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding5"
+            android:text="I have the contact info"
+            android:textColor="@color/app_teal_light"
+            android:textSize="@dimen/font_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+
+        <Button
+            android:id="@+id/button_scan_recipient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:drawableStart="@drawable/ic_event_scan"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="Scan Recipient" />
+
+        <!--  <Button
+              android:id="@+id/button_mode_hope"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="16dp"
+              android:layout_marginEnd="16dp"
+              android:gravity="center"
+              android:visibility="gone"
+              android:text="SCAN hope"
+              android:textAllCaps="false" />
+
+          <Button
+              android:id="@+id/button_mode_founder"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="16dp"
+              android:layout_marginEnd="16dp"
+              android:gravity="center"
+              android:text="SCAN founder"
+              android:visibility="gone"
+              android:textAllCaps="false" />-->
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/openSansTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/padding5"
+            android:text="Recipient"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/openSansBoldTextView" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/padding1"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext_gray_round"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="\@username, phone, or email"
+                android:inputType="textWebEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/semiwhite"
+                android:textSize="@dimen/font_5" />
+
+            <ImageView
+                android:id="@+id/btnImport"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="@dimen/padding1"
+                android:padding="3dp"
+                android:src="@drawable/ic_attach_contact" />
+        </FrameLayout>
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/text_found_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_6"
+            android:visibility="gone"
+            tools:text="Found: "
+            tools:visibility="visible" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/btnUseThisPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/padding5"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/buttonmain_round"
+            android:paddingHorizontal="@dimen/activity_horizontal_margin"
+            android:text="Use this person"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansButton
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/padding3"
+        android:background="@drawable/buttonmain_round"
+        android:paddingHorizontal="@dimen/padding4"
+        android:text="Search by industry"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/layout_qr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone">
+
+        <com.budiyev.android.codescanner.CodeScannerView
+            android:id="@+id/scanner_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:autoFocusButtonColor="@android:color/white"
+            app:autoFocusButtonVisible="true"
+            app:flashButtonColor="@android:color/white"
+            app:flashButtonVisible="true"
+            app:frameAspectRatioHeight="1"
+            app:frameAspectRatioWidth="1"
+            app:frameColor="@android:color/white"
+            app:frameCornersRadius="0dp"
+            app:frameCornersSize="50dp"
+            app:frameSize="0.5"
+            app:frameThickness="2dp"
+            app:maskColor="#77000000" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

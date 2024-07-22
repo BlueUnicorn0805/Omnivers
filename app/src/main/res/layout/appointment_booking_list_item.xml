@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:id="@+id/ab_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawableTint="@color/app_grey_medium"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding2"
+        android:paddingTop="@dimen/padding2"
+        android:paddingRight="@dimen/padding2"
+        android:paddingBottom="@dimen/padding2"
+        android:text="Providers"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/ab_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawableRight="@drawable/ic_arrow_right"
+        android:drawableTint="@color/app_grey_medium"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding3"
+        android:paddingTop="@dimen/padding2"
+        android:paddingRight="@dimen/padding2"
+        android:paddingBottom="@dimen/padding2"
+        android:text="Providers"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+

@@ -1,0 +1,306 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:context=".MainActivity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/padding3"
+        android:layout_marginRight="@dimen/padding3"
+        android:layout_marginTop="@dimen/padding3"
+        android:layout_marginBottom="@dimen/padding3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Notifications"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_1" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchAllNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/padding3"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_lamp_green" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Listings"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_8" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding2"
+                    android:layout_marginRight="@dimen/padding2"
+                    android:text="Distance Miles(0-10)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_8" />
+
+                <SeekBar
+                    android:id="@+id/seekbarListings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:min="0"
+                    android:max="10"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchListings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_lamp_orange" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Notifications\nDaily Specials"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_8" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding2"
+                    android:layout_marginRight="@dimen/padding2"
+                    android:text="Distance Blocks(0-12)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_8" />
+                <SeekBar
+                    android:id="@+id/seekbarDailySpecials"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:min="0"
+                    android:max="12"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchDailySpecs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_lamp_blue" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Min. Time\nbetween"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_8" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding2"
+                    android:layout_marginRight="@dimen/padding2"
+                    android:text="Seconds(5-300)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_8" />
+                <SeekBar
+                    android:id="@+id/seekbarMinTimeBetweens"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:min="5"
+                    android:max="300"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchMinTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_lamp_blue" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Max.Wait"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_8" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding2"
+                    android:layout_marginRight="@dimen/padding2"
+                    android:text="Minutes(5-300)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_8" />
+                <SeekBar
+                    android:id="@+id/seekbarMaxWait"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:min="5"
+                    android:max="300"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchMaxWait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_lamp_blue" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Push Volume"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_8" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding2"
+                    android:layout_marginRight="@dimen/padding2"
+                    android:text="%(0, 50, 100)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_8" />
+                <SeekBar
+                    android:id="@+id/seekbarPushVolume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:min="0"
+                    android:max="100"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchPushVolume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

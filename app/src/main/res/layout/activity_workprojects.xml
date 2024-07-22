@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/padding3"
+        android:text="Projects for xxx"
+        android:textColor="@color/app_teal_light"
+        android:textSize="@dimen/font_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding2"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/padding2"
+        android:layout_marginBottom="5dp"
+        android:background="#10ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/padding1"
+        android:paddingVertical="@dimen/padding1">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/padding1">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_freelancer_pic" />
+        </androidx.cardview.widget.CardView>
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding2"
+            android:text="Syed Abdullah M. @MrSayyed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_6" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding2"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/padding2"
+        android:layout_marginBottom="5dp"
+        android:background="#10ffffff"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/padding1"
+        android:paddingVertical="@dimen/padding1">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Summary"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Requested"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_9"/>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$3.00 USD"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In Progress"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_9" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$100.00 USD"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Released to Freelancer"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_9" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$500.00 USD"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_8" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/padding2"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/padding2"
+        android:layout_marginBottom="5dp"
+        android:background="#10ffffff"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/padding1"
+        android:paddingVertical="@dimen/padding1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Milestone Payments"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnCreateMilestone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Milestone"
+                android:textColor="@color/white"
+                android:minHeight="30dp"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/padding3"
+                android:paddingVertical="@dimen/padding1"
+                android:layout_gravity="right"
+                android:background="#e60379"
+                android:textSize="@dimen/font_8"/>
+
+        </LinearLayout>
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Created Milestones"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/padding3"
+            android:textSize="@dimen/font_7" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding1"
+            layout="@layout/item_milestones_header"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMilestones"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingVertical="@dimen/padding1"
+            tools:listitem="@layout/item_milestones_data"
+            tools:itemCount="3"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/intro_img_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20.0dip"
+            android:scaleType="centerInside"
+            android:paddingHorizontal="@dimen/padding5"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo_payment_secure" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:fontFamily="@font/productsans_regular"
+            android:text="Security"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_11" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding4"
+            android:text="Credit Card and Checking Accounts are not required."
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_intro_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding4"
+            android:text="Transactions do not use credit card or bank information making our system the safest possible."
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_intro_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding4"
+            android:text="Unparalleled transaction security for apps worldwide with Patent Pending Technology."
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_intro_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding3"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="@dimen/padding1"
+            android:textColor="@color/white"
+            android:text="OmniVers App connects you safely to your friends and family, as well as to your favorite businesses and non-profits using technology provided by: National Funding Group, LLC "
+            android:textSize="@dimen/font_intro_content" />
+
+    </LinearLayout>
+</ScrollView>

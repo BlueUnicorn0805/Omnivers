@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/panelMap"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity" />
+
+        <ImageView
+            android:id="@+id/btnScreen"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="right|top"
+            android:layout_margin="@dimen/padding2"
+            android:padding="@dimen/padding1"
+            android:src="@drawable/selector_map_type_btn"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/panelScrollContents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/panelBidContents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding3"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvDelsInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding3"
+                    android:text="Choose a Bid"
+                    android:textColor="@color/app_grey_dark"
+                    android:textSize="@dimen/font_4"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="7px"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:background="@color/app_red" />
+
+                <include layout="@layout/item_bids_header" />
+
+                <hawaiiappbuilders.omniversapp.global.ExpandableHeightListView
+                    android:id="@+id/lvDataList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/item_bid_data"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

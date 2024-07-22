@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/app_back_main"
+        android:elevation="@dimen/padding1"
+        android:gravity="center"
+        android:padding="@dimen/padding3"
+        android:text="Group Invites"
+        android:textColor="@color/app_teal_light"
+        android:textSize="@dimen/font_1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@drawable/bg_edittext_green"
+            android:padding="@dimen/padding1"
+            android:textColor="@color/white"
+            android:text="@string/invite_group_hint"
+            android:textSize="@dimen/font_6" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/padding2"
+            android:text="@string/title_invite_group"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvGroups"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="@dimen/padding1"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_group" />
+
+            <LinearLayout
+                android:id="@+id/btnAddGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/padding1">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_plus"
+                    app:backgroundTint="@color/app_dark_orange"
+                    app:fabCustomSize="45dp"
+                    app:fabSize="auto"
+                    app:maxImageSize="24dp"
+                    app:tint="@color/white" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:id="@+id/tvGroupName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:maxLength="10"
+                    android:text="@string/title_addnew"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_7" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

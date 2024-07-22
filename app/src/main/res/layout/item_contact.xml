@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/padding1"
+    android:layout_marginTop="@dimen/padding1"
+    android:layout_marginRight="@dimen/padding1"
+    android:layout_marginBottom="@dimen/padding1"
+    app:cardCornerRadius="10dp"
+    app:contentPadding="10dp">
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_placeholder_name"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding1"
+            android:text="Xiao Ming"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/tvPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_placeholder_phone"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding1"
+            android:text="+861882562356"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_placeholder_email"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding1"
+            android:text="chuntianhongsoft@gmail.com"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivSelected"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/padding1"
+        android:src="@drawable/ic_item_selected" />
+
+</androidx.cardview.widget.CardView>
+
+
+
+

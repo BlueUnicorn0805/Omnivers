@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_back_main"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/app_back_main"
+        android:elevation="@dimen/padding1"
+        android:gravity="center"
+        android:padding="@dimen/padding3"
+        android:text="Manage Groups"
+        android:textColor="@color/app_teal_light"
+        android:textSize="@dimen/font_1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/tvGroupTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:text="@string/hint_manage_groups"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/panelGroups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGroupTitle">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/padding1"
+            android:layout_weight="1"
+            android:background="@drawable/bg_round_panel_white"
+            android:padding="@dimen/padding1">
+
+            <Spinner
+                android:id="@+id/spinnerGroups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/padding1"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnAddNewGroup"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:src="@drawable/ic_plus"
+                app:tint="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/panelGroup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/padding2"
+        android:layout_marginBottom="@dimen/padding3"
+        app:cardBackgroundColor="@color/app_back_main"
+        app:cardCornerRadius="@dimen/activity_horizontal_margin"
+        app:contentPadding="@dimen/padding2"
+        app:cardElevation="@dimen/padding1"
+        app:layout_constraintBottom_toTopOf="@+id/btnSkip"
+        app:layout_constraintTop_toBottomOf="@+id/panelGroups">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvContacts"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                tools:itemCount="5"
+                tools:listitem="@layout/item_group_users"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_grey_light" />
+
+            <LinearLayout
+                android:id="@+id/btnAddContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding1"
+                android:gravity="center_vertical"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="@dimen/padding1"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="@dimen/padding1"
+                    android:src="@drawable/ic_plus"
+                    app:tint="@color/white" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="@dimen/padding2"
+                    android:textSize="@dimen/font_6"
+                    android:text="Add"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnSkip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/padding2"
+        android:background="@drawable/buttonmain_round"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_6"
+        android:minHeight="@dimen/padding8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>

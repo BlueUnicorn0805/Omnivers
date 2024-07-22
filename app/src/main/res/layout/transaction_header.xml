@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:gravity="center"
+    android:background="@color/app_back_main"
+    android:elevation="@dimen/padding1"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/transaction_history"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/app_grey_dark"
+        app:fontFamily="@font/roboto_bold" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="@string/date"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/app_grey_dark"
+        app:fontFamily="@font/roboto_bold" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:id="@+id/openSansBoldTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transactions"
+        android:textColor="@color/app_teal_light"
+        android:textSize="@dimen/font_12"
+        android:textStyle="bold"/>
+
+</LinearLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:elevation="3dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="20dp"
+    app:contentPadding="20dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Add Family Member"
+            android:textColor="@color/app_grey"
+            android:textSize="18sp" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Select Title"
+            android:textColor="@color/app_grey"
+            android:textSize="@dimen/font_7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_edittext_gray_round"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:paddingHorizontal="@dimen/padding1"
+            android:paddingVertical="@dimen/padding1">
+
+            <Spinner
+                android:id="@+id/spinner_titles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding1"
+                android:layout_weight="1"
+                android:backgroundTint="#3f484a"
+                android:popupBackground="@drawable/rounded_spinner_item"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6" />
+        </LinearLayout>
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="With Children?"
+            android:textColor="@color/app_grey"
+            android:textSize="@dimen/font_7"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_edittext_gray_round"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:paddingHorizontal="@dimen/padding1"
+            android:paddingVertical="@dimen/padding1"
+            android:visibility="gone">
+
+            <Spinner
+                android:id="@+id/spinner_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding1"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:foregroundTint="@color/black"
+                android:popupBackground="@drawable/rounded_spinner_item"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/edt_first_name"
+                style="@style/EditTextStyleBlackNoPaddings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:hint="First Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:singleLine="true" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/edt_last_name"
+                style="@style/EditTextStyleBlackNoPaddings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:hint="Last Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/edtBirthdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:background="@drawable/bg_edittextwhite"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Enter Birthdate"
+                android:inputType="textWebEmailAddress"
+                android:padding="10dp"
+
+                android:textSize="@dimen/font_5" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding2"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_blueround"
+                android:minHeight="41dp"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_5" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_red"
+                android:minHeight="41dp"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_5" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+

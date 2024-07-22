@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/padding5"
+                android:layout_marginTop="@dimen/padding2"
+                android:background="@drawable/bg_round_panel_white_thicker"
+                android:orientation="vertical"
+                android:padding="@dimen/padding5">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Transportation Options"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_3" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/btnSchedulePickup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/padding1"
+                    android:layout_marginTop="@dimen/padding3"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/buttonmain_round"
+                    android:drawableLeft="@drawable/baseline_local_taxi_24"
+                    android:drawableTint="@color/white"
+                    android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                    android:text="Schedule Pickup"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/btnReadyToPickup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/padding1"
+                    android:layout_marginTop="@dimen/padding3"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/buttonmain_round"
+                    android:drawableLeft="@drawable/baseline_local_taxi_24"
+                    android:drawableTint="@color/white"
+                    android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                    android:text="I am ready to be picked up"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/btnCheckDriverStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/padding1"
+                    android:layout_marginTop="@dimen/padding3"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/buttonmain_round"
+                    android:drawableLeft="@drawable/baseline_local_taxi_24"
+                    android:drawableTint="@color/white"
+                    android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                    android:text="Check driver status"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/btnFavorites"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/padding1"
+                    android:layout_marginTop="@dimen/padding3"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/buttonmain_round"
+                    android:drawableLeft="@drawable/baseline_local_taxi_24"
+                    android:drawableTint="@color/white"
+                    android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                    android:text="Favorites ❤"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/btnTip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/padding1"
+                    android:layout_marginTop="@dimen/padding3"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/buttonmain_round"
+                    android:drawableLeft="@drawable/baseline_local_taxi_24"
+                    android:drawableTint="@color/white"
+                    android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                    android:text="Tip Last/Current Driver"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </LinearLayout>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnSeeCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding5"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_menu_location"
+                android:drawableTint="@color/white"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="See Car on Map"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/tvNote"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnScanValetQR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_btn_qrcode"
+                android:drawableTint="@color/white"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Scan Valet QR Code"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnValertBringCarUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_valet_up"
+                android:drawableTint="@color/white"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Request Car from Valet"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnOpenCarDoor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/baseline_car_rental_24"
+                android:drawableTint="@color/white"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Open Car Door"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

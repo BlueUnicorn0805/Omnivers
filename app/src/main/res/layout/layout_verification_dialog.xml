@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:id="@+id/dialog_title"
+        style="@style/TextWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:text="We've just sent verification code to your business email.\nPlease input verification code."
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_5"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:id="@+id/dialog_sub_title"
+        style="@style/TextWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Enter a PIN for purchases"
+        android:textColor="@color/white"
+        android:textColorHint="@color/semiwhite"
+        android:textSize="@dimen/font_5"
+        android:visibility="gone" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+        android:id="@+id/pin"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="Enter Verification code"
+        android:imeOptions="actionNext"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/semiwhite" />
+
+    <include
+        layout="@layout/layout_underline"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@drawable/button_white"
+            android:ems="16"
+            android:lines="2"
+            android:text="@string/cancel"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@drawable/button_white"
+            android:ems="16"
+            android:lines="2"
+            android:text="Ok"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

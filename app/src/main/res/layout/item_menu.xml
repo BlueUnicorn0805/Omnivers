@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/menuItemImgNO"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:src="@drawable/fillet2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fillet2" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/menuItemNameNO"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_1"
+        app:layout_constraintEnd_toStartOf="@+id/menuItemPriceNO"
+        app:layout_constraintStart_toEndOf="@+id/menuItemImgNO"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/menuItemDescriptionNO"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/menuItemImgNO"
+        app:layout_constraintTop_toBottomOf="@+id/menuItemNameNO" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/menuItemPriceNO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/app_divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuantityNO" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+        android:id="@+id/txtQuantityNO"
+        android:layout_width="39dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/menuItemImgNO"
+        app:layout_constraintTop_toBottomOf="@+id/menuItemDescriptionNO" />
+
+    <ImageButton
+        android:id="@+id/btnPlusNO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/txtQuantityNO"
+        app:layout_constraintEnd_toStartOf="@+id/txtQuantityNO"
+        app:layout_constraintTop_toTopOf="@+id/txtQuantityNO"
+        app:srcCompat="@drawable/ic_plus" />
+
+    <ImageButton
+        android:id="@+id/btnMinusNO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/txtQuantityNO"
+        app:layout_constraintStart_toEndOf="@+id/txtQuantityNO"
+        app:layout_constraintTop_toTopOf="@+id/txtQuantityNO"
+        app:srcCompat="@drawable/ic_minus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:elevation="3dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="20dp"
+    app:contentPadding="20dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sender Ratings"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/font_7" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.omniversapp.global.circularprogressindicator.CircularProgressIndicator
+                        android:id="@+id/progressCompleted"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:direction="clockwise"
+                        app:enableProgressAnimation="true"
+                        app:progressColor="@color/colorPrimary"
+                        app:progressStrokeWidth="5dp" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Completed\nRate"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_7" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding3"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.omniversapp.global.circularprogressindicator.CircularProgressIndicator
+                        android:id="@+id/progressOnTime"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:direction="clockwise"
+                        app:enableProgressAnimation="true"
+                        app:progressColor="@color/colorPrimary"
+                        app:progressStrokeWidth="5dp" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="On Time\nRate"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_7" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding3"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.omniversapp.global.circularprogressindicator.CircularProgressIndicator
+                        android:id="@+id/progressRepeat"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:direction="clockwise"
+                        app:enableProgressAnimation="true"
+                        app:progressColor="@color/colorPrimary"
+                        app:progressStrokeWidth="5dp" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Repeat\nHire Rate"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_7" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:gravity="center"
+                android:text="Reviews"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/font_7" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/padding1"
+                android:background="@color/app_divider" />
+
+            <hawaiiappbuilders.omniversapp.global.ExpandableHeightListView
+                android:id="@+id/lvProfileDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding3"
+                android:gravity="center"
+                android:text="Would you like to bid on this delivery?"
+                android:textColor="@color/app_grey_dark"
+                android:textSize="@dimen/font_7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:orientation="horizontal">
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_blueround"
+                    android:minHeight="41dp"
+                    android:text="CLOSE"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/btnOk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/padding2"
+                    android:background="@drawable/selector_blueround"
+                    android:minHeight="41dp"
+                    android:text="BID"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_5" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>
+

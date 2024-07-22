@@ -1,0 +1,605 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">OmniVers</string>
+
+    <string name="hotel_address">410 Atkinson Drive, Honolulu, HI, 96814</string>
+    <string name="loading">Loading...</string>
+    <string name="saving">Saving...</string>
+    <string name="alert_close">Close</string>
+    <string name="ok">Ok</string>
+    <string name="gotit">Got It</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="or">OR</string>
+    <string name="noname"></string>
+    <string name="low_storage_error">Ocr dependencies cannot be downloaded due to low device storage</string>
+    <string name="mk"></string>
+    <string name="hack_datetime1">yyyy-MM-dd HH:mm:ss</string>
+    <string name="hack_datetime2">yyyy MM dd HH mm ss</string>
+    <string name="hack_date">yyyy-MM-dd-HH-mm-ss</string>
+
+    <string name="title_location_permission">We only use your location to help find businesses and events in your area.\nAccepting allow us to more quickly and easily help you find what you’re looking for.</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="image">Image</string>
+    <string name="pay_money">Pay Money</string>
+    <string name="receive_money">Receive Money</string>
+    <string name="see_transactions">See Transactions</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="date">Date</string>
+    <string name="amount">Amount</string>
+    <string name="to_from">To/From</string>
+    <string name="receive_from">Receive from</string>
+    <string name="pay_to">Pay to</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="top_spending">Top Spending</string>
+    <string name="budget">Budget</string>
+    <string name="used">%Used</string>
+    <string name="budget_analysis">Budget Analysis</string>
+    <string name="master_your_money">Master Your Money</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="form_username">Username</string>
+    <string name="form_password">Password</string>
+    <string name="login_btn_text">Sign In</string>
+    <string name="register_btn_text">Sign Up</string>
+    <string name="create_account">Create Account</string>
+    <string name="get_registered">Get Registered</string>
+
+    <string name="error_invalid_email">Email is invalid</string>
+    <string name="error_password_not_match">Password doesn\'t match</string>
+    <string name="error_password">Please input password</string>
+    <string name="error_invalid_password">Password must be at least 5 character long</string>
+    <string name="error_invalid_phone">Please input valid phone</string>
+    <string name="error_invalid_userame">Please input user name</string>
+    <string name="error_zip_code">Invalid zip code</string>
+    <string name="error_network">Network unavailable, please try again later</string>
+    <string name="error_invalid_credentials">Failed to Complete Request</string>
+    <string name="error_server_response">Server response error</string>
+
+    <string name="error_permission">To use function, needs the permission</string>
+
+    <string name="error_conn_error">Connection err. Please try again after getting connection.</string>
+    <string name="error_gen">An error occurred</string>
+
+    <string name="error_invalid_response">Invalid server response</string>
+
+    <string name="network_failure_title">Network Error</string>
+    <string name="network_failure">There was an error processing the payment, please check your network connection.</string>
+
+    <string name="emptyList">Transaction History is Empty!</string>
+    <string name="emptyFriendList">Empty!</string>
+    <string name="budgetEmptyList">Budget History is Empty!</string>
+    <!--<string name="payment_title">Enter how much money you would like to send</string>-->
+    <string name="payment_title">Send Money</string>
+    <string name="payment_subtitle">Enter Amount to Send</string>
+    <string name="ch_from_frnds">Choose from your friends</string>
+    <string name="ch_from_contacts">Choose from contacts</string>
+    <string name="instacashtm">AvailCash</string>
+    <string name="send_money">Send AvailCash</string>
+    <string name="add_friends">Add Friends from Contacts</string>
+    <string name="chose_recepient">Choose Recipient</string>
+    <string name="local_store_purchase">Local store purchase</string>
+    <string name="work_related">Work Related</string>
+    <string name="appointments">Book an Appointment</string>
+    <string name="job_connection">Job Connection</string>
+    <string name="payroll_services">Payroll Services</string>
+    <string name="punch_in">Clock In</string>
+    <string name="pay_stubs">Pay Stubs</string>
+    <string name="invoicing">Make/Pay Invoicing</string>
+    <string name="donations">Donations</string>
+    <string name="rtw_agreement">This confirms your availability for work.</string>
+    <string name="appointment_settings">Appointment Settings</string>
+    <string name="provider_not_found">Your preferred provider is not found in our database. Please call them to set an appointment and add it to our calender.</string>
+    <string name="estimated_price">Estimated Price</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="finf_job_worker">Find a Job/Worker</string>
+    <string name="done">Done</string>
+    <string name="lets_go_to_work">Lets Get to work</string>
+    <string name="submit">Submit</string>
+    <string name="round_string">Turn on to round up to the nearest dollar and the rest goes to your InstaSavings</string>
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
+    <string name="receive">Receive</string>
+    <string name="insta_cash_balance">AvailCash</string>
+    <string name="insta_savings_balance">AvailSavings</string>
+    <string name="read_scan">Read/Scan</string>
+    <string name="ftf_continue">Continue</string>
+    <string name="save">Save</string>
+
+    <string name="share_title">Share</string>
+    <string name="share_subject">You both will receive free meal when they install the app.</string>
+    <string name="share_body">Check out the YEStaurants! app. It really good!\n https://play.google.com/store/apps/details?id=eAppBuilder1957.d</string>
+
+    <string-array name="time_entries">
+        <item>9 AM</item>
+        <item>10 AM</item>
+        <item>11 AM</item>
+        <item>12 AM</item>
+        <item> 1 PM</item>
+        <item> 2 PM</item>
+        <item> 3 PM</item>
+        <item> 4 PM</item>
+        <item> 5 PM</item>
+        <item> 6 PM</item>
+        <item> 7 PM</item>
+        <item> 8 PM</item>
+        <item> 9 PM</item>
+    </string-array>
+
+    <string name="dashboard_mymoney">My\nMoney</string>
+    <string name="dashboard_activity">Activity</string>
+    <string name="dashboard_mycalendar">Calendar</string>
+    <string name="dashboard_connect">Connect</string>
+    <string name="dashboard_profilecheck">Profile</string>
+
+    <!--<string name="google_search_key">AIzaSyCYOcA954itgsbM_uc3JKvtX0UITg_4qd8</string>-->
+
+    <string-array name="cookingtemp">
+        <item>Rare</item>
+        <item>Medium Rare</item>
+        <item>Medium</item>
+        <item>Medium Well</item>
+        <item>Well</item>
+    </string-array>
+
+    <string name="menu_total_price">Total Items: %d \nCart Sub-Total: $%.2f</string>
+
+    <!-- Authorize.Net payment -->
+    <string name="progress_message">Fetching Token for given Card Data...</string>
+    <string name="progress_title">Please Wait</string>
+    <string name="token">"Token"</string>
+
+    <string name="transaction_info">Transaction Information</string>
+
+    <string name="error">Error</string>
+    <string name="code">"Code: "</string>
+    <string name="message">"Message: "</string>
+    <string name="extra_message">"Extra Message: "</string>
+    <string name="data_descriptor">"Data Descriptor :  "</string>
+    <string name="data_value">"Data Value:  "</string>
+
+    <string name="invalid_card_number">Invalid Card Number</string>
+    <string name="invalid_month">Invalid Month</string>
+    <string name="two_digit_month">Two Digit Month Required</string>
+    <string name="invalid_year">Invalid Year</string>
+    <string name="invalid_cvv">Invalid CVV</string>
+    <string name="invalid_zipcode">Invalid Zipcode</string>
+    <string name="invalid_nickname">Invalid Nickname</string>
+
+    <string name="request_permission_hint">Please allow permissions to use function</string>
+    <string name="error_dsa">Error starting DocumentScannerActivity!</string>
+    <!-- Firebase Push Notification -->
+    <string name="default_notification_channel_id">HawaiiAppsAll</string>
+
+    <!-- Ordering -->
+    <string name="success_make_order">Successfully Sent Your Service Request</string>
+
+    <string name="msg_order_cancelled_order">Order has been canceled.</string>
+    <string name="msg_nsf_cancelled_order">NSF and order has been canceled.</string>
+    <string name="msg_driver_on_location">Driver on Location</string>
+    <string name="msg_order_refused">This order has been: Refused.</string>
+
+    <string-array name="card_mm">
+        <item>MM</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="card_yy">
+        <item>YY</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+    </string-array>
+
+
+    <!--Square SDK-->
+    <string name="address">1455 Market Street  San Francisco, CA, 94103</string>
+    <string name="pay_button">Pay 🍪</string>
+    <string name="lauren_nobel">Lauren Nobel</string>
+    <string name="merchant_id_not_set_message"><![CDATA[To request a Google Pay nonce, replace <b>ConfigHelper.GOOGLE_PAY_MERCHANT_ID</b> with your Google Pay Merchant ID.]]></string>
+    <string name="merchant_id_not_set_title">Missing Google Pay Merchant ID</string>
+    <string name="missing_application_id_message"><![CDATA[Please update <b>sqip.SQUARE_APPLICATION_ID</b> in <b>AndroidManifest.xml</b> if you want to be able to create a nonce.]]></string>
+    <string name="missing_application_id_title">Missing Square Application ID</string>
+    <string name="pay_with_card">Pay with card</string>
+    <string name="place_your_order">Place your order</string>
+    <string name="price">$1.00</string>
+    <string name="refund_helper_text">You can refund this transaction through your Square dashboard, go to squareup.com/dashboard.</string>
+    <string name="retry">Retry</string>
+    <string name="server_host_not_set_message"><![CDATA[Check logcat <b>Info</b> messages for a CURL command to charge the nonce, or replace <b>ConfigHelper.CHARGE_SERVER_HOST</b> with your server host.]]></string>
+    <string name="server_host_not_set_title">Nonce generated but not charged</string>
+    <string name="ship_to">Ship to</string>
+    <string name="successful_order_message">Go to your Square dashboard to see this order reflected in the sales tab.</string>
+    <string name="successful_order_title">Your order was successful</string>
+    <string name="super_cookie">Super Cookie</string>
+    <string name="total">Total</string>
+    <string name="unsuccessful_order">Your order was not successful</string>
+
+    <string name="title_download_progress">Downloading file. Please wait...</string>
+    <string name="cancel_download">Cancel Donwloading</string>
+    <string name="error_download">Couldn\'t download file</string>
+
+    <string name="title_message">Message</string>
+    <string name="title_orderstatus">Status for Orders</string>
+    <string name="title_money">Money</string>
+
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+
+    <string-array name="job_types">
+        <item>Choose Job Type</item>
+        <item>Administration</item>
+        <item>Invester</item>
+        <item>Marketing Manager</item>
+        <item>Researcher</item>
+        <item>Saler</item>
+        <item>Restaurant</item>
+        <item>Construction</item>
+        <item>Office</item>
+        <item>Computer</item>
+        <item>Retail</item>
+        <item>Medical</item>
+    </string-array>
+
+    <string name="msg_request_location_message">Your current location is required to share it. By this we can show everyone else where you are.</string>
+    <string name="msg_never_ask_sharing">Your current location is required for sharing. Please navigate to application settings -> Permissions and grant location permission.</string>
+    <string name="msg_location_permission_title">Location Permission Required.</string>
+    <string name="txt_open_settings">Open Settings</string>
+
+    <string name="you_are_here">You are here!</string>
+
+    <string name="error_empty_user_fields">Please input user information</string>
+    <string name="error_empty_message">Message is invalid</string>
+
+    <string name="desc_about_zinta">MENT has technology built in to make your life easier and safer. One of those services is MahaloPay.\nMahaloPay is a service that transfers funds instantly, available in multiple apps and is provided by National Funding Group, LLC.</string>
+    <string name="desc_about_zinta1">Never go through the signup process again.\n1 Username\n1 Password\n1 PIN</string>
+    <string name="desc_about_zinta2">Use the same login with all these apps:\n1. Yestaurants\n2. UPX Delivery Now\n</string>
+
+    <!--Local Shop Screen-->
+    <string name="msg_localshop_pininput">Enter Halo Pay Pin to pay</string>
+    <string name="desc_hint_zintapay">This security feature protects your online, instore, and person-to-person purchases. Please enter your pin to access your Mahalo Pay payment code. </string>
+
+    <string name="title_order_progress">Order Progress</string>
+
+    <string name="text_to_my_location"><u>To My Location</u></string>
+    <string name="text_to_my_location_repeat"><u>Follow My Location</u></string>
+    <string name="text_to_map_location"><u>To Map Location</u></string>
+
+
+    <!--    <string-array name="spinner_timezone">-->
+    <!--        <item>EDT Eastern=-4</item>-->
+    <!--        <item>CDT Central=-5</item>-->
+    <!--        <item>MDT Mountain=-6</item>-->
+    <!--        <item>PDT Pacific=-7</item>-->
+    <!--        <item>ARST Arizona=-8</item>-->
+    <!--        <item>AKDT Alaska=-9</item>-->
+    <!--        <item>HST Hawaii=-10</item>-->
+    <!--        <item>CST China=8</item>-->
+    <!--        <item>JST Japan=9</item>-->
+    <!--    </string-array>-->
+
+    <string-array name="spinner_timezone">
+        <item>EDT Eastern=-5.0</item>
+        <item>CTZ=-6.0</item>
+        <item>MTZ=-7.0</item>
+        <item>PTZ=-8.0</item>
+        <item>Alaska=-9.0</item>
+        <item>Arizona=-6.1</item>
+        <item>HZT=-10.0</item>
+        <item>IST=5.5</item>
+        <item>China CST=8.0</item>
+        <item>Japan JST=9.0</item>
+    </string-array>
+
+    <string-array name="spinner_language">
+        <item>Local</item>
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Spanish</item>
+        <item>Russian</item>
+        <item>Chinese</item>
+    </string-array>
+
+    <string-array name="spinner_race">
+        <item>White</item>
+        <item>Black</item>
+        <item>Native USA</item>
+        <item>Hispanic</item>
+        <item>Asian</item>
+    </string-array>
+
+    <string-array name="spinner_titles">
+        <item>Mr.</item>
+        <item>Mrs.</item>
+        <item>Miss</item>
+        <item>Ms.</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="spinner_vehicletype">
+        <item>Semi=8249</item>
+        <item>Truck 1 Ton=8245</item>
+        <item>Cargo=8240</item>
+        <item>Truck=8230</item>
+        <item>Car=8220</item>
+        <item>Bike=8210</item>
+        <item>Walk=8205</item>
+    </string-array>
+
+    <string-array name="spinner_family_member_titles">
+        <item>Mom</item> <!--300-->
+        <item>Dad</item> <!--305-->
+        <item>Daughter</item> <!--307-->
+        <item>Son</item> <!--308-->
+        <item>Step Daughter</item> <!--309-->
+        <item>Step Son</item> <!--310-->
+        <item>Uncle</item> <!--311-->
+        <item>Aunt</item> <!--312-->
+        <item>Brother</item> <!--313-->
+        <item>Sister</item> <!--314-->
+        <item>StepMom</item> <!--315-->
+        <item>StepDad</item> <!--316-->
+        <item>Husband</item> <!--317-->
+        <item>Wife</item> <!--318-->
+        <item>xWife</item> <!--319-->
+        <item>xHusband</item> <!--320-->
+        <item>Guardian</item> <!--321-->
+        <item>Spouse</item> <!--???-->
+    </string-array>
+
+    <string-array name="spinner_with_children">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="colors">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>White</item>
+        <item>Black</item>
+        <item>Silver</item>
+        <item>Brown</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="array_months">
+        <item>--All Dates--</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string name="howitworks_page_layout_1_title">Simple setup using your camera</string>
+    <string name="howitworks_page_layout_2_description">When using 2-Step Verification, you\'ll enter your password and a code from this app</string>
+    <string name="howitworks_page_layout_2_title">A unique code used to sign in</string>
+    <string name="welcome_page_headline">Stronger security with\n Mahalo Pay Authenticator</string>
+    <string name="welcome_page_details">Get verification codes for all your accounts using 2-Step Verification</string>
+    <string name="howitworks_page_layout_1_description">To setup an account, you\'ll scan the QR code in your 2-Step Verification settings for Mahalo Pay or any third-party service</string>
+
+    <string name="title_checkout">CHECKOUT</string>
+    <string name="title_available_options">Available Options</string>
+    <string name="title_eat_in_after">Eat In After :</string>
+    <string name="title_table_reserv">Table Reservation</string>
+    <string name="format_table_reserv1">Table Reservation : %1$s</string>
+    <string name="format_table_reserv2">Table Reservation : %1$s %2$s</string>
+    <string name="title_ontable">Food On Table</string>
+    <string name="title_pickup_after">Pick-up After :</string>
+    <string name="title_curbside_pickup_after">Curbside Pickup After :</string>
+    <string name="title_delivery_around">Delivery Around :</string>
+    <string name="title_delivery_around_sport">Delivery at an Event(Sports...)</string>
+    <string name="format_delivery_around1">Delivery Around : %1$s</string>
+    <string name="format_delivery_around2">Delivery Around : %1$s %2$s</string>
+    <string name="title_catering_at">Catering At :</string>
+    <string name="format_catering_at1">Catering At : %1$s</string>
+    <string name="format_catering_at2">Catering At : %1$s %2$s</string>
+    <string name="title_party_at">Party Room At :</string>
+    <string name="format_party_at1">Party Room At : %1$s</string>
+    <string name="format_party_at2">Party Room At : %1$s %2$s</string>
+    <string name="title_submit_order">Submit Order</string>
+    <string name="title_confirm_purchase">Please confirm purchase</string>
+    <string name="msg_confirm_purchase">Ready to commit all Checked Functions?</string>
+
+    <string name="msg_input_order_details">Please input order details.</string>
+    <string name="msg_insufficient_funds">Insufficient funds!</string>
+    <string name="msg_delivery_has_been_requested">Deliver has been requested</string>
+    <string name="msg_funds_not_enough">Your Avail Account does not have enough funds.</string>
+    <string name="msg_trans_funds_now">Would you like to Transfer Funds now?</string>
+
+    <string name="format_pay_with_zinta">Pay with Mahalo Pay™(Current Balance: $%1$,.2f)</string>
+    <string name="title_pay_with_zinta">Pay with Mahalo Pay™(Current Balance: $0.00)</string>
+    <string name="format_pay_with_loyalty">Pay with Rewards(Balance: $%1$,.2f)</string>
+    <string name="title_pay_with_loyalty">Pay with Rewards(Balance: $0.00)</string>
+    <string name="format_pay_with_gift">Pay with Gift Card (Balance: $%1$,.2f)</string>
+    <string name="title_pay_with_gift">Pay with Gift Card (Balance: $0.00)</string>
+    <string name="format_pay_with_bogo">Pay with BOGO (Available: %,d)</string>
+    <string name="title_pay_with_bogo">Pay with BOGO (Available: 0)</string>
+    <string name="title_pay_with_tab">Pay with Tab#</string>
+
+    <string name="title_join_existing_order">Join Existing Order:</string>
+
+    <string name="format_total_item">Total Items: %1$,d</string>
+    <string name="format_sub_total">Sub-Total: $%1$,.2f</string>
+    <string name="format_tax_fees">Tax and Fees: $%1$,.2f</string>
+    <string name="format_total_price">Total: $%1$,.2f</string>
+
+    <!--Confirm Order-->
+    <string name="title_invite">Invite</string>
+    <string name="prompt_invite">Invite this group?</string>
+    <string name="msg_invite_success">Success to invite!</string>
+    <string name="msg_no_contact_in_group">No Contact in the group</string>
+
+    <!--Reservation Table Screen-->
+    <string name="format_non_refundable">$%1$.2f Non Refundable</string>
+    <string name="option_reserve_title_format">Reserve a table $%1$.2f Non Refundable</string>
+    <string name="option_table_title_format">Have Drinks/Food on table $%1$.2f Non Refundable</string>
+
+    <!--Send Invite-->
+    <string name="title_email">Email</string>
+    <string name="title_send_invite">Send Invite</string>
+    <string name="title_send_an_invite">Send an invite</string>
+    <string name="title_send_direction_to_restaurant">Send directions to the restaurant</string>
+    <string name="title_send_direction_to_current">Send directions to my current location</string>
+
+    <!--Invite Groups-->
+    <string name="title_invite_group">Invite a group</string>
+    <string name="invite_group_hint">Make it easy to invite family, friends, and co-workers.\nFor Privacy, all this data is stored on this phone.\n\n Say YES! to starting to enjoy your meal time again.</string>
+    <string name="title_addnew">Add New</string>
+
+    <!--Manage Groups-->
+    <string name="title_manage_groups">Manage Groups</string>
+    <string name="hint_manage_groups">Take the time once to add people to that group.</string>
+
+    <!--Invite Groups-->
+    <string name="title_event_title">Event Title</string>
+    <string-array name="spinner_attire">
+        <item>Casual</item>
+        <item>Formal</item>
+        <item>Party</item>
+    </string-array>
+
+    <string name="title_date">Date</string>
+    <string name="title_time">Time</string>
+    <string name="title_name">Name</string>
+    <string name="error_input_fields">Please input fields</string>
+
+    <string-array name="array_notesfor">
+        <item>Please select</item>
+    </string-array>
+
+    <string-array name="array_filter_location">
+        <item>Des Moines, IA</item>
+    </string-array>
+
+    <string-array name="array_filter_distances">
+        <item>--Any Distance--</item>
+        <item>10 miles</item>
+        <item>20 miles</item>
+        <item>30 miles</item>
+        <item>50 miles</item>
+        <item>100 miles</item>
+    </string-array>
+
+    <string-array name="array_categories">
+        <item>--All Categories--</item>
+        <item>Exhibits/Experiences/Attractions</item>
+        <item>Festivals/Fairs</item>
+        <item>Performing arts</item>
+        <item>Concerts/Shows (clubs and small venues)</item>
+        <item>Concerts/Shows (stadiums, arenas and other medium/large venues)</item>
+        <item>College/University sports (outdoor sports)</item>
+        <item>College/University sports (indoor sports)</item>
+        <item>Professional sports</item>
+        <item>Family Events</item>
+        <item>Church Related</item>
+        <item>Personal (garage sales…)</item>
+        <item>Civic Minded (special gatherings…)</item>
+        <item>Other</item>
+    </string-array>
+
+    <!--<string-array name="array_create_event_categories">
+        <item>Please Select</item> &lt;!&ndash; 0 &ndash;&gt;
+        <item>All Sports</item>     &lt;!&ndash; 1 &ndash;&gt;
+        <item>Donations</item>      &lt;!&ndash; 2 &ndash;&gt;
+        <item>Aqua/Swimming</item>  &lt;!&ndash; 3 &ndash;&gt;
+        <item>Baseball</item>       &lt;!&ndash; 4 &ndash;&gt;
+        <item>Basketball</item>     &lt;!&ndash; 5 &ndash;&gt;
+        <item>Cricket</item>        &lt;!&ndash; 6 &ndash;&gt;
+        <item>Football</item>       &lt;!&ndash; 7 &ndash;&gt;
+        <item>Handball</item>       &lt;!&ndash; 8 &ndash;&gt;
+        <item>Hockey</item>         &lt;!&ndash; 9 &ndash;&gt;
+        <item>Softball</item>       &lt;!&ndash; 10 &ndash;&gt;
+        <item>Volleyball</item>     &lt;!&ndash; 11 &ndash;&gt;
+        <item>Music</item>          &lt;!&ndash; 12 &ndash;&gt;
+    </string-array>-->
+
+    <!--<string-array name="array_filter_categories">
+        <item>All Categories</item> &lt;!&ndash; 0 &ndash;&gt;
+        <item>All Sports</item>     &lt;!&ndash; 1 &ndash;&gt;
+        <item>Donations</item>      &lt;!&ndash; 2 &ndash;&gt;
+        <item>Aqua/Swimming</item>  &lt;!&ndash; 3 &ndash;&gt;
+        <item>Baseball</item>       &lt;!&ndash; 4 &ndash;&gt;
+        <item>Basketball</item>     &lt;!&ndash; 5 &ndash;&gt;
+        <item>Cricket</item>        &lt;!&ndash; 6 &ndash;&gt;
+        <item>Football</item>       &lt;!&ndash; 7 &ndash;&gt;
+        <item>Handball</item>       &lt;!&ndash; 8 &ndash;&gt;
+        <item>Hockey</item>         &lt;!&ndash; 9 &ndash;&gt;
+        <item>Softball</item>       &lt;!&ndash; 10 &ndash;&gt;
+        <item>Volleyball</item>     &lt;!&ndash; 11 &ndash;&gt;
+        <item>Music</item>          &lt;!&ndash; 12 &ndash;&gt;
+    </string-array>-->
+
+    <string-array name="array_filter_tickets">
+        <item>Either</item>
+        <item>Not Required</item>
+        <item>Required</item>
+    </string-array>
+
+    <string-array name="array_filter_prices">
+        <item>All</item>
+        <item>FREE</item>
+        <item>Up to $10 each</item>
+        <item>Up to $25 each</item>
+        <item>Up to $50 each</item>
+        <item>MORE</item>
+    </string-array>
+
+    <!-- Jitsi Meeting -->
+    <string name="welcome_to">Welcome to</string>
+    <string name="video_meeting_conference_app">Video Meeting | Conference App</string>
+    <string name="sign_in_to_your_account">Sign in to your account</string>
+    <string name="email">Email</string>
+    <string name="your_example_com">your@example.com</string>
+    <string name="password">Password</string>
+    <string name="password_hint">• • • • • • • • •</string>
+    <string name="sign_in">Sign In</string>
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="we_need_a_few_details_to_get_your_account_ready">We need a few details to get your account ready</string>
+    <string name="first_name">First Name</string>
+    <string name="first_name_hint">Jhon</string>
+    <string name="last_name">Last Name</string>
+    <string name="last_name_hint">Suradep</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="incoming_meeting_invitation">Incoming Meeting Invitation</string>
+    <string name="sending_meeting_invitation">Sending Meeting Invitation</string>
+    <string name="your_favorites">Your Favorites</string>
+    <string name="easy_bank_transfers">EASY BANK TRANSFERS</string>
+
+
+    <string name="reject_call">Reject Call</string>
+    <string name="answer_call">Answer Call</string>
+    <string name="new_video_chat">New Video Chat</string>
+</resources>
+
+

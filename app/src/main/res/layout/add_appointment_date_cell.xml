@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aa_date_cell_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:paddingTop="@dimen/padding2"
+    android:paddingBottom="@dimen/padding2"
+    android:onClick="onClick"
+    android:orientation="vertical">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/aa_day_of_week"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="SUN"
+        android:textAllCaps="true"
+        android:textColor="@color/app_grey"
+        android:textSize="@dimen/font_8" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:id="@+id/aa_day_of_month"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="6"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_1"
+        android:textStyle="bold" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/aa_month"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="Jul"
+        android:textColor="@color/app_grey"
+        android:textSize="@dimen/font_8" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/aa_year"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="2018"
+        android:textColor="@color/app_grey"
+        android:textSize="@dimen/font_8" />
+</LinearLayout>

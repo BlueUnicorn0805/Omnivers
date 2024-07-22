@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:elevation="3dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="20dp"
+    app:contentPadding="20dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Delivery Complete"
+                android:textColor="@color/app_grey_dark"
+                android:textSize="@dimen/font_5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/padding1"
+                android:background="@color/app_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/groupStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding2"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/radioSignedFor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="Signed for"
+                            android:textColor="@color/app_grey_dark"
+                            android:textSize="@dimen/font_8" />
+
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/radioAtFrontDoor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:text="At Front Door"
+                            android:textColor="@color/app_grey_dark"
+                            android:textSize="@dimen/font_8" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding2"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/radioNeighborAccepted"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Neighbor accepted"
+                            android:textColor="@color/app_grey_dark"
+                            android:textSize="@dimen/font_8" />
+
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/radioOther"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:text="Other Location"
+                            android:textColor="@color/app_grey_dark"
+                            android:textSize="@dimen/font_8" />
+                    </LinearLayout>
+
+                </RadioGroup>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Package was ready?"
+                    android:layout_marginTop="@dimen/padding2"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_7" />
+
+                <RadioGroup
+                    android:id="@+id/groupOnTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/btnOnTimeYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:checked="true"
+                        android:text="Yes"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_8" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/btnOnTimeNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding3"
+                        android:gravity="center"
+                        android:checked="false"
+                        android:text="No"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_8" />
+                </RadioGroup>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding2"
+                    android:text="Package was correct size as stated?"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_7" />
+
+                <RadioGroup
+                    android:id="@+id/groupComplete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/btnCompleteYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:checked="true"
+                        android:text="Yes"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_8" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/btnCompleteNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding3"
+                        android:gravity="center"
+                        android:checked="false"
+                        android:text="No"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_8" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:gravity="center"
+                android:text="Rate the delivery"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_6" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding2"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:layout_gravity="center_horizontal"
+                android:padding="0dp"
+                android:rating="5"
+                android:stepSize="1.0"
+                android:theme="@style/RatingBar" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/tvErrorRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Error, please rate the delivery"
+                android:textColor="@color/app_red"
+                android:textSize="@dimen/font_8" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:gravity="center"
+                android:text="Write a short review"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_7" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:layout_width="match_parent"
+                android:hint="Your Review Here."
+                android:textSize="@dimen/font_6"
+                android:visibility="gone"
+                android:textColor="@color/app_grey_dark"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:orientation="horizontal">
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_blueround"
+                    android:minHeight="41dp"
+                    android:text="CANCEL"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/btnOk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/padding2"
+                    android:background="@drawable/selector_blueround"
+                    android:minHeight="41dp"
+                    android:text="OK"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_6" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>
+

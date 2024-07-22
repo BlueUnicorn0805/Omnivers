@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#107AE7</color>
+    <color name="colorPrimaryDark">#085eb6</color>-->
+    <color name="colorPrimary">#0099a9</color>
+    <color name="colorPrimaryDark">#077884</color>
+    <!--<color name="colorPrimary">#5bb85d</color>
+    <color name="colorPrimaryDark">#5bb85d</color>-->
+
+    <color name="bottom_nav_back">#373A36</color>
+
+    <color name="colorAccent">#044d97</color>
+    <color name="golden">#Ffd700</color>
+    <color name="white">#ffffff</color>
+    <color name="semiwhite">#80ffffff</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="black">#000000</color>
+    <color name="purple">#7a08a4</color>
+
+    <color name="app_back_main">#3f3f3f</color>
+    <color name="app_teal">#00bbd4</color>
+    <color name="doc_scan_background">#FF000000</color>
+    <color name="app_teal_light">#00bbd4</color>
+
+    <color name="app_blue">#107AE7</color>
+    <color name="app_red">#f41105</color>
+    <color name="app_grey">#676767</color>
+    <color name="app_grey_dark">#3d3d3d</color>
+    <color name="app_grey_light">#d8d8d8</color>
+    <color name="app_grey_medium">#808080</color>
+    <color name="app_grey_white">#f8f8f8</color>
+    <color name="app_orange">#FF8000</color>
+    <color name="app_dark_orange">#f6a01a</color>
+
+    <color name="app_divider">#80BFBFBF</color>
+    <color name="green">#00FF00</color>
+
+    <color name="db_1">#347ab6</color>
+    <color name="db_2">#5bb85d</color>
+    <color name="db_3">#efad4f</color>
+    <color name="db_4">#da534f</color>
+
+    <color name="db_5">#75bf43</color>
+    <color name="app_orange_dark">#d9674d</color>
+    <color name="app_orange_light">#ff7252</color>
+
+    <color name="colorTabActive">#fffa8712</color>
+    <color name="bg_tab_transparent">#a0ffffff</color>
+
+    <!-- Order Sheet -->
+    <color name="jungleGreen">#24988D</color>
+    <color name="surfieGreen">#128176</color>
+    <color name="porcelain">#ECEFF0</color>
+    <color name="alto">#DADADA</color>
+    <color name="monteCarlo">#78CCC5</color>
+    <color name="blackAlpha25p">#40000000</color>
+    <color name="tundora">#4A4A4A</color>
+    <color name="amethyst">#BE4DCA</color>
+    <color name="boulder">#7B7B7B</color>
+
+    <color name="colorGooglePayButtonBackground">@color/black</color>
+    <color name="colorSheetOverlay">@color/tundora</color>
+    <color name="colorSheetBackground">@color/white</color>
+    <color name="colorSheetSeparator">@color/alto</color>
+    <color name="colorSheetLabel">@color/colorPrimary</color>
+    <color name="colorSheetInfo">@color/boulder</color>
+    <color name="colorSheetValue">@color/black</color>
+
+    <color name="colorButtonTextEnabled">@color/white</color>
+    <color name="colorButtonTextDisabled">@color/blackAlpha25p</color>
+    <!-- Card Entry -->
+    <color name="colorCardEntryBackground">@color/white</color>
+
+    <color name="colorButtonBackground">@color/colorPrimary</color>
+    <color name="colorButtonBackgroundDisabled">@color/porcelain</color>
+    <color name="colorButtonBackgroundPressed">@color/colorPrimaryDark</color>
+    <color name="colorOrangeHotel">#FF9974</color>
+    <!-- Cookie Activity -->
+    <color name="colorCookieActivityBackground">@color/monteCarlo</color>
+    <color name="colorCookieActivityTextColor">@color/white</color>
+    <color name="keyUnlockBg">#00B33B</color>
+    <color name="keyUnlockStroke">#19C652</color>
+    <color name="keyUnlock">#80ffffff</color>
+
+    <color name="keyLockBg">#ffffff</color>
+    <color name="keyLockStroke">#d4d4d4</color>
+    <color name="keyLock">#B2B1AB</color>
+    <!-- Rating Bar -->
+    <color name="ratingNormal">#a0a0a0</color>
+    <color name="ratingActive">#f9901a</color>
+
+    <color name="user_status_on">#77bf8f</color>
+    <color name="user_status_clicked">#5077bf8f</color>
+    <color name="user_status_off">#FF4500</color>
+
+    <color name="tab_color_bottom_active">#00727E</color>
+    <color name="tab_color_bottom_normal">#0099a9</color>
+
+    <color name="tab_color_home_active">#077884</color>
+    <color name="tab_color_home_normal">#0099a9</color>
+
+    <color name="color_home_events_back">#3f3f3f</color>
+    <color name="color_home_events_bottom">#191c1d</color>
+    <color name="color_home_events_bottom_active">#000000</color>
+
+    <!-- Jitsi Meeting -->
+    <!--<color name="colorPrimary">#28a165</color>
+    <color name="colorPrimaryDark">#288A59</color>
+    <color name="colorAccent">#FF5722</color>-->
+    <color name="colorPrimaryText">#2E2D2D</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorTextIcons">#FFFFFF</color>
+    <color name="colorBackground">#FAFAFA</color>
+    <color name="colorHintText">#BDBDBD</color>
+    <color name="colorMeetingInvitationStart">#28a165</color>
+    <color name="colorMeetingInvitationEnd">#2CCF7E</color>
+    <color name="black_overlay">#66000000</color>
+
+
+    <color name="remoteBackground">#484258</color>
+    <color name="localBackground">#827b92</color>
+    <color name="charcol">#36454F</color>
+    <color name="red">#F44336</color>
+    <color name="gold">#Ffd700</color>
+
+</resources>

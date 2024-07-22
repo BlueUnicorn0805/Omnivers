@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main">
+
+    <FrameLayout
+        android:id="@+id/btnMenu2"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <hawaiiappbuilders.omniversapp.global.ResizableImageView
+            android:id="@+id/btnToolbarHome"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/padding2"
+            android:src="@mipmap/ic_launcher_title_foreground" />
+
+    </FrameLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMenu2">
+
+        <LinearLayout
+            android:id="@+id/constraintLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Review Check Details"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <!-- amount -->
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/textAmountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:alpha="0.4"
+                android:text="Amount"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/edtAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_edittext_white_bg_rounded"
+                android:drawableTint="@color/app_grey_medium"
+                android:hint="Deposit Amount"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/app_grey_medium"
+                android:textSize="@dimen/font_6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textAmountLabel"
+                tools:visibility="visible" />
+
+            <!-- written to -->
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/textCustomerLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:alpha="0.4"
+                android:text="Written To"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtAmount" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/edtWrittenTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_edittext_white_bg_rounded"
+                android:drawableTint="@color/app_grey_medium"
+                android:hint="Name"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/app_grey_medium"
+                android:textSize="@dimen/font_6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textCustomerLabel"
+                tools:visibility="visible" />
+
+            <!-- written to (address) -->
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/textAddressLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:alpha="0.4"
+                android:text="Address"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtAmount" />
+
+            <!-- memo -->
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_edittext_white_bg_rounded"
+                android:drawableTint="@color/app_grey_medium"
+                android:hint="Address"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/app_grey_medium"
+                android:textSize="@dimen/font_6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textCustomerLabel"
+                tools:visibility="visible" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/textMemo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:alpha="0.4"
+                android:text="Memo"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtAmount" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/edtMemo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_edittext_white_bg_rounded"
+                android:drawableTint="@color/app_grey_medium"
+                android:hint="Memo"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/app_grey_medium"
+                android:textSize="@dimen/font_6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textCustomerLabel"
+                tools:visibility="visible" />
+
+            <!-- bank name -->
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/textBank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:alpha="0.4"
+                android:text="Bank Name"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtAmount" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/edtBank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_edittext_white_bg_rounded"
+                android:drawableTint="@color/app_grey_medium"
+                android:hint="Bank Name"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/app_grey_medium"
+                android:textSize="@dimen/font_6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textCustomerLabel"
+                tools:visibility="visible" />
+
+            <!-- account number -->
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/textAccountNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:alpha="0.4"
+                android:text="Account No."
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtAmount" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/edtAccountNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_edittext_white_bg_rounded"
+                android:drawableTint="@color/app_grey_medium"
+                android:hint="Account No."
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/app_grey_medium"
+                android:textSize="@dimen/font_6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textCustomerLabel"
+                tools:visibility="visible" />
+
+            <!-- check number -->
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/textCheckNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:alpha="0.4"
+                android:text="Check No."
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtAmount" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/edtCheckNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_edittext_white_bg_rounded"
+                android:drawableTint="@color/app_grey_medium"
+                android:hint="Check No."
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/app_grey_medium"
+                android:textSize="@dimen/font_6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textCustomerLabel"
+                tools:visibility="visible" />
+
+            <!-- routing number -->
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/textRoutingNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:alpha="0.4"
+                android:text="Routing No."
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtAmount" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                android:id="@+id/edtRoutingNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_edittext_white_bg_rounded"
+                android:drawableTint="@color/app_grey_medium"
+                android:hint="Routing No."
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/app_grey_medium"
+                android:textSize="@dimen/font_6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textCustomerLabel"
+                tools:visibility="visible" />
+
+            <!-- front image -->
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/baseline_looks_two_24"
+                    android:visibility="gone"
+
+                    app:tint="@color/white" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Front Image"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/frontImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sample3"
+                android:adjustViewBounds="true"
+                android:background="@color/app_grey_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout9" />
+
+            <!-- back image -->
+            <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frontImage">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/baseline_looks_3_24"
+                    android:visibility="gone"
+                    app:tint="@color/white" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Back Image"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- buttons -->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_grey_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnIncorrect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/buttonmain"
+                android:backgroundTint="@color/db_4"
+                android:gravity="center"
+                android:text="Incorrect"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnCorrect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/buttonmain"
+                android:backgroundTint="@color/db_2"
+                android:gravity="center"
+                android:text="Correct"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

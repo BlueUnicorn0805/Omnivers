@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/top_bar_blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/logo"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingTop="30dp"
+            android:paddingRight="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/qr_focus_white"
+                android:orientation="vertical" />
+
+            <com.budiyev.android.codescanner.CodeScannerView
+                android:id="@+id/scanner_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:autoFocusButtonColor="@android:color/white"
+                app:autoFocusButtonVisible="true"
+                app:flashButtonColor="@android:color/white"
+                app:flashButtonVisible="true"
+                app:frameColor="@android:color/white"
+                app:frameCornersSize="50dp"
+                app:frameCornersRadius="0dp"
+                app:frameAspectRatioWidth="1"
+                app:frameAspectRatioHeight="1"
+                app:frameSize="0.8"
+                app:frameThickness="2dp"
+                app:maskColor="#77000000"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/scanButtons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:visibility="visible">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                style="@style/TextWhite"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|bottom"
+                android:text="Focus on QR code"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

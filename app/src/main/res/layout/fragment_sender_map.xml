@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/panelMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padding2"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/padding1"
+                app:cardCornerRadius="10dp">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/btnStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/user_status_on"
+                    android:paddingLeft="@dimen/padding3"
+                    android:paddingTop="@dimen/padding1"
+                    android:paddingRight="@dimen/padding3"
+                    android:paddingBottom="@dimen/padding1"
+                    android:text="On Duty"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding1"
+                android:elevation="@dimen/padding1"
+                app:cardCornerRadius="10dp">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansAppCompatCheckBox
+                    android:id="@+id/chkSlammed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/padding3"
+                    android:paddingTop="@dimen/padding1"
+                    android:paddingRight="@dimen/padding3"
+                    android:buttonTint="@color/app_blue"
+                    android:paddingBottom="@dimen/padding1"
+                    android:text="Slammed"
+                    android:textColor="@color/app_blue"
+                    android:textSize="@dimen/font_5" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- Adding bottom sheet after main content -->
+    <include layout="@layout/bottom_drawer_dels" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding1">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/tvDateTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Party\nDateTime"
+        android:layout_marginLeft="@dimen/padding1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_7" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/tvResName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding1"
+        android:layout_weight="1.5"
+        android:text="Restaurant\nName"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_7" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/tvPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding1"
+        android:layout_weight="1"
+        android:text="Phone\nNumber"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_7" />
+
+</LinearLayout>

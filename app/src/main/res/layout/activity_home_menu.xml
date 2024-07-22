@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_back_main"
+        android:orientation="vertical"
+        tools:context="hawaiiappbuilders.omniversapp.ActivityTransaction">
+
+        <FrameLayout
+            android:id="@+id/btnMenu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/padding2"
+                android:src="@mipmap/ic_launcher_title_foreground" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:id="@+id/tvTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/padding2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6"
+                android:textStyle="bold"
+                tools:text="20°C" />
+
+            <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                android:id="@+id/btnNav"
+                android:layout_width="@dimen/padding5"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="@dimen/padding3"
+                android:visibility="gone"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_draw_humburger"
+                app:tint="@color/white" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginBottom="48dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnMenu2">
+
+
+            <LinearLayout
+                android:id="@+id/btnTopGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btnProfile"
+                    android:layout_width="@dimen/size_home_btn"
+                    android:layout_height="@dimen/size_home_btn"
+                    android:layout_margin="@dimen/padding2"
+                    android:background="@drawable/selector_home_button"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                        android:layout_width="@dimen/size_home_icon1"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Menu 1"
+                        android:src="@drawable/ic_homemenu_profile" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Account"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_8"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnShop"
+                    android:layout_width="@dimen/size_home_btn"
+                    android:layout_height="@dimen/size_home_btn"
+                    android:layout_margin="@dimen/padding2"
+                    android:background="@drawable/selector_home_button"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                        android:layout_width="@dimen/size_home_icon1"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Menu 1"
+                        android:src="@drawable/ic_homemenu_shop" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shop"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_8"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/btnCommunity"
+                    android:layout_width="@dimen/size_home_btn"
+                    android:layout_height="@dimen/size_home_btn"
+                    android:layout_margin="@dimen/padding2"
+                    android:background="@drawable/selector_home_button"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                        android:layout_width="@dimen/size_home_icon1"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Menu 1"
+                        android:src="@drawable/ic_homemenu_community" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Community"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_8"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnCenterGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btnCamera"
+                    android:layout_width="@dimen/size_home_btn"
+                    android:layout_height="@dimen/size_home_btn"
+                    android:layout_margin="@dimen/padding2"
+                    android:background="@drawable/selector_home_button"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                        android:layout_width="@dimen/size_home_icon1"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Menu 1"
+                        android:src="@drawable/ic_homemenu_camera" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Camera"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_8"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnMyCar"
+                    android:layout_width="@dimen/size_home_btn"
+                    android:layout_height="@dimen/size_home_btn"
+                    android:layout_margin="@dimen/padding2"
+                    android:background="@drawable/selector_home_button"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                        android:layout_width="@dimen/size_home_icon1"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Menu 1"
+                        android:src="@drawable/ic_homemenu_car" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transportation Options"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_8"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnShipReceive"
+                    android:layout_width="@dimen/size_home_btn"
+                    android:layout_height="@dimen/size_home_btn"
+                    android:layout_margin="@dimen/padding2"
+                    android:background="@drawable/selector_home_button"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                        android:layout_width="@dimen/size_home_icon1"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Menu 1"
+                        android:src="@drawable/ic_homemenu_ship" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ship/Receive"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_8"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnBottomGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnCenterGroup">
+
+                <LinearLayout
+                    android:id="@+id/btnJobs"
+                    android:layout_width="@dimen/size_home_btn"
+                    android:layout_height="@dimen/size_home_btn"
+                    android:layout_margin="@dimen/padding2"
+                    android:background="@drawable/selector_home_button"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                        android:layout_width="@dimen/size_home_icon1"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Menu 1"
+                        android:src="@drawable/ic_homemenu_jobs" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jobs"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_8"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/btnEvents"
+                    android:layout_width="@dimen/size_home_btn"
+                    android:layout_height="@dimen/size_home_btn"
+                    android:layout_margin="@dimen/padding2"
+                    android:background="@drawable/selector_home_button"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                        android:layout_width="@dimen/size_home_icon1"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Menu 1"
+                        android:src="@drawable/ic_homemenu_events" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Events"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_8"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnVault"
+                    android:layout_width="@dimen/size_home_btn"
+                    android:layout_height="@dimen/size_home_btn"
+                    android:layout_margin="@dimen/padding2"
+                    android:background="@drawable/selector_home_button"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                        android:layout_width="@dimen/size_home_icon1"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Menu 1"
+                        android:src="@drawable/ic_homemenu_vault" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vault"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_8"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_order_status"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:textStyle="italic"
+                tools:text="Just Ordered"/>
+
+            <ImageView
+                android:id="@+id/ivProgress"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#ff0000"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/bg_package_progress" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/black"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:fabCradleMargin="5dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="5dp"
+        app:hideOnScroll="true">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/menu_home" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnQRCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_homemenu_qrcode"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="8dp"
+        app:layout_anchor="@id/bottomAppBar"
+        app:tint="@color/white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/app_bar_cancel"
+        style="@style/TextBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Cancel"
+        android:visibility="gone" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/app_bar_add"
+        style="@style/TextBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Add Resume"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/app_bar_done"
+        style="@style/TextBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Done"
+        android:visibility="gone" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/app_bar_logout"
+        style="@style/TextBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Log Out"
+        android:visibility="gone" />
+</RelativeLayout>

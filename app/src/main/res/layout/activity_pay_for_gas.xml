@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/blackAlpha25p"
+                app:cardCornerRadius="12sp"
+                app:cardElevation="2dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingRight="15dp"
+                app:contentPaddingTop="30dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_edittext_gray_round"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="14dp"
+                        android:paddingHorizontal="@dimen/padding1"
+                        android:paddingVertical="@dimen/padding1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <Spinner
+                            android:id="@+id/spinnerVehicles"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/white"
+                            android:padding="4dp"
+                            android:popupBackground="@drawable/rounded_spinner_item"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_6"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+                        <ImageView
+                            android:id="@+id/ivHighlight1"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_baseline_shopping_bag_24"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toStartOf="@id/ivHighlight2"
+                            app:layout_constraintHorizontal_weight="1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:id="@+id/textHighlight1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:alpha="0.4"
+                            android:text="Bell\nService"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="@+id/ivHighlight1"
+                            app:layout_constraintStart_toStartOf="@+id/ivHighlight1"
+                            app:layout_constraintTop_toBottomOf="@+id/ivHighlight1" />
+
+
+                        <ImageView
+                            android:id="@+id/ivHighlight2"
+                            android:layout_width="0dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/baseline_remove_circle_24"
+                            app:layout_constraintEnd_toStartOf="@id/ivHighlight3"
+                            app:layout_constraintHorizontal_weight="1"
+                            app:layout_constraintStart_toEndOf="@id/ivHighlight1"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:id="@+id/textHighlight2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:alpha="0.4"
+                            android:text="Remove Vehicle\n"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/ivHighlight2"
+                            app:layout_constraintStart_toStartOf="@+id/ivHighlight2"
+                            app:layout_constraintTop_toBottomOf="@+id/ivHighlight2" />
+
+                        <ImageView
+                            android:id="@+id/ivHighlight3"
+                            android:layout_width="0dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_edit"
+                            app:layout_constraintEnd_toStartOf="@id/ivHighlight4"
+                            app:layout_constraintHorizontal_weight="1"
+                            app:layout_constraintStart_toEndOf="@id/ivHighlight2"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:id="@+id/textHighlight3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:alpha="0.4"
+                            android:text="Edit Vehicle\n"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/ivHighlight3"
+                            app:layout_constraintStart_toStartOf="@+id/ivHighlight3"
+                            app:layout_constraintTop_toBottomOf="@+id/ivHighlight3" />
+
+                        <ImageView
+                            android:id="@+id/ivHighlight4"
+                            android:layout_width="0dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/outline_add_circle_24"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_weight="1"
+                            app:layout_constraintStart_toEndOf="@id/ivHighlight3"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:id="@+id/textHighlight4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:alpha="0.4"
+                            android:text="Add Vehicle\n"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/ivHighlight4"
+                            app:layout_constraintStart_toStartOf="@+id/ivHighlight4"
+                            app:layout_constraintTop_toBottomOf="@+id/ivHighlight4" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnAddGas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/baseline_local_gas_station_24"
+                android:drawableTint="#16E41E"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Add Gas"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnCheckLogs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/baseline_menu_book_24"
+                android:drawableTint="#16E41E"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Logs"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnPlots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/baseline_timeline_24"
+                android:drawableTint="#16E41E"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Plots"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/tvNote"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnStatistics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/baseline_query_stats_24"
+                android:drawableTint="#16E41E"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Statistics"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

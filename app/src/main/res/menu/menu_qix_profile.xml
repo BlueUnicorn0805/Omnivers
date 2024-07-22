@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_mydate"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        android:title="My Profile Data"
+        app:showAsAction="always"></item>
+
+    <!--<item
+        android:id="@+id/menu_notifications"
+        android:title="Notifications"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        app:showAsAction="always"></item>-->
+
+    <item
+        android:id="@+id/menu_preperences"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        android:title="Preferences"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_notifications"
+                android:icon="@drawable/ic_navigate_next_24dp"
+                android:title="Notifications"
+                app:showAsAction="always"></item>
+            <item
+                android:id="@+id/menu_addpic"
+                android:icon="@drawable/ic_navigate_next_24dp"
+                android:title="Add a Picture"
+                app:showAsAction="always"></item>
+            <item
+                android:id="@+id/menu_screenoptions"
+                android:icon="@drawable/ic_navigate_next_24dp"
+                android:title="Screen Options"
+                app:showAsAction="always"></item>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_logout"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        android:title="Logout"
+        app:showAsAction="always"></item>
+</menu>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/menu_make_money"
+        android:title="Make Money"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/menu_business_owners"
+        android:title="Business Owners"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        app:showAsAction="always"></item>
+</menu>

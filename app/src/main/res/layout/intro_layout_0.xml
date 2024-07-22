@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:orientation="horizontal"
+        android:paddingVertical = "@dimen/padding5"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_app_logo_white" />
+
+    </LinearLayout>
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/productsans_regular"
+        android:gravity="center"
+        android:text="Welcome To OmniVers App"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_11" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="@dimen/padding4"
+        android:gravity="center"
+        android:justificationMode="inter_word"
+        android:lineSpacingExtra="@dimen/padding1"
+        android:text="Everything Simple &amp; Secure!"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_intro_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="@dimen/padding4"
+        android:justificationMode="inter_word"
+        android:lineSpacingExtra="@dimen/padding1"
+        android:text="Where security and convenience meet."
+        android:textColor="@color/app_teal_light"
+        android:textSize="@dimen/font_intro_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="@dimen/padding4"
+        android:justificationMode="inter_word"
+        android:lineSpacingExtra="@dimen/padding1"
+        android:text="Easy. Fast. Secure."
+        android:textColor="@color/app_teal_light"
+        android:textSize="@dimen/font_intro_content"
+        android:visibility="gone" />
+
+</LinearLayout>

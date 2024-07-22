@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/menu_face2face"
+        android:title="Face-To-Face"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        app:showAsAction="always"></item>
+
+    <!--<item
+        android:id="@+id/menu_notifications"
+        android:title="Notifications"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        app:showAsAction="always"></item>-->
+
+    <item
+        android:id="@+id/menu_sendmsg"
+        android:title="Send App Messages"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        android:visible="false"
+        app:showAsAction="always"></item>
+
+</menu>

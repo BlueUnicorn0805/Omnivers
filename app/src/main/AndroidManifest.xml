@@ -1,0 +1,1497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"
+        tools:ignore="ScopedStorage" />
+    <!--<uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />-->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!--<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />-->
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.CAMERA_AUX" />
+
+
+    <!--<uses-permission android:name="android.permission.READ_CALL_LOG" />-->
+
+    <application
+        android:name=".KTXApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/omni_ios_app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/omni_ios_app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+
+        <!--<activity
+            android:name=".agoravideocall.VideoCallingAct"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:showOnLockScreen="true"
+            />-->
+
+        <activity
+            android:name=".depositcheck.DocumentScannerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="hawaiiappbuilders.CHECK_SCAN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="sqip.SQUARE_APPLICATION_ID"
+            android:value="sandbox-sq0idb-9AvHrJt6ROQYfL_byuiIbA" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA6zZ1zcwK-jdVqK_niTUBJoBjnvtxOg6c" />
+
+        <activity
+            android:name=".ActivitySplash"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.VIEW" />-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.DEFAULT" />-->
+            <!--                <category android:name="android.intent.category.BROWSABLE" />-->
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+
+            <!--                <data-->
+            <!--                    android:host="hawaiiappbuilders.udx"-->
+            <!--                    android:pathPattern="/app/list"-->
+            <!--                    android:scheme="http" />-->
+            <!--            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".milestone.MilestoneActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus" />
+
+        <activity
+            android:name=".milestone.ProfessionalsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus" />
+
+        <activity
+            android:name=".milestone.ProfessionalDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".milestone.JobHuntDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus" />
+
+        <activity
+            android:name=".crowdfunding.CrowdfundingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus" />
+
+        <activity
+            android:name=".crowdfunding.HowMuchFundsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus" />
+
+        <activity
+            android:name=".limits.ActivityLimits"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus" />
+
+        <activity
+            android:name=".ActivityIntro"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus" />
+
+        <activity
+            android:name=".ActivityIntroGif"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus" />
+
+        <activity
+            android:name=".ActivityTransaction"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus">
+
+            <intent-filter>
+                <action android:name="eAppBuilder1957.d.transactions" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ConnectionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:label="@string/title_message"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter>
+                <action android:name="ConnectionActivity.TEXT_MSG" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="ConnectionActivity.NEW_APPOINTMENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ConnectionActivity.APPOINTMENT_UPDATE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="ConnectionActivity.NEW_TASK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ViewLocationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:label="@string/title_message"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+            <intent-filter>
+                <action android:name="ViewLocationActivity.SHARE_LOCATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ImportContactActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".PushMsgActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:label="@string/title_message"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+
+        <activity
+            android:name=".ActivityBlank"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:label="Video Call"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+
+        <activity
+            android:name=".carousel.ActivityAdvertiseWithUs"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+
+        <activity
+            android:name=".ActivityAddMeet"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:label="@string/title_message"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+
+        <activity
+            android:name=".ViewMeetingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:label="@string/title_message"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+
+        <activity
+            android:name=".PushOrderStatusActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:label="@string/title_orderstatus"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="PushOrderStatusActivity.NEW_ORDER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PushMoneyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:label="@string/title_money"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="eAppBuilder1957.d.money_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ActivityInvoice"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus" />
+
+        <!--<activity
+            android:name="hawaiiappbuilders.mahalomeeting.JitsiMeet"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="adjustResize">            &lt;!&ndash;<intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="alpha.jitsi.net"
+                    android:scheme="https" />
+                <data
+                    android:host="beta.meet.jit.si"
+                    android:scheme="https" />
+                <data
+                    android:host="meet.jit.si"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="org.jitsi.meet" />
+            </intent-filter>&ndash;&gt;
+        </activity>-->
+
+        <service
+            android:name=".services.LocationMonitoring"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name=".messaging.AppFirebaseMessagingService"
+            android:exported="false"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_fcm_pm" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/golden" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <service
+            android:name=".global.CountDownBroadcastService"
+            android:exported="false" />
+
+        <activity
+            android:name=".ActivityIFareDashBoard"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".iFareDelsActivity"
+            android:exported="false"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".ActivityRecentDels"
+            android:exported="false"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+
+        <activity
+            android:name=".ActivityIFareMyDeliveries"
+            android:exported="false"
+            android:label="My Deliveries"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".DeliveryDetailsActivity"
+            android:exported="false"
+            android:label="Delivery Information"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".ActivityHomeMenu"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MaterialBlackStatus"
+            android:windowSoftInputMode="stateHidden">
+
+
+            <intent-filter>
+                <action android:name="receivedstatusidfromotherpage" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ActivityHomeEvents"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/AppTheme.MaterialBlackStatus"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="ActivityHomeEvents.DIAL_PHONE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--
+                <activity
+                    android:name="hawaiiappbuilders.omni.meeting.MeetActivity"
+                    android:exported="false"
+                    android:screenOrientation="fullSensor" />
+        -->
+
+        <activity
+            android:name=".ActivityPaySend"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MaterialBlackStatus"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".ActivityPayRequest"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MaterialBlackStatus"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".ActivityPayCart"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".ActivityPayCartMultiProducts"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".ActivityVote"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".ActivityCreateEvent"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MaterialBlackStatus"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".ActivityEventDetails"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.MaterialBlackStatus"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <activity
+            android:name=".ActivityEvents"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".ActivityMenuPurchase"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ActivityMenuMoney"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ActivityMenuVault"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ActivityMenuProfile"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ActivityMenuSettings"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ActivityInviteGroup"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ActivityConfirmMilestoneWork"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ActivityWorkContact"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ActivityWorkSearchByIndustry"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ActivityWorkProjects"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".InviteFriendToEventActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ActivityComment"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ActivityMenuLocation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="scanvalet" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ServiceListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityFavorite"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".RestaurantListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.BlackStatus" />
+
+        <activity
+            android:name=".ActivityAddTabs"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityReserveTable"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityReserveHistory"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ActivityCatering"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityCaterHistory"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ActivityDelivery"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityDeliverySports"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityDeliveryHistory"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ActivityParty"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityPartyHistory"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ContactListActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="Send Message"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".MenuListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".CartListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityOrderInfo"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityPickupInfo"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".CheckoutActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".FoodCheckoutActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".NewDeliveryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".OrderConfirmationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ShareLocationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:label="@string/title_send_invite"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityManageGroups"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityInviteGroupDetails"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityGroupsAddContact"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".InviteActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityMyWork"
+            android:configChanges="density|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityMyWorkSmallBiz"
+            android:configChanges="density|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityBizInfo"
+            android:configChanges="density|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityScreenOptions"
+            android:configChanges="density|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ZAUHowItWorksActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus" />
+
+        <activity
+            android:name=".ActivityLogin"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ActivityLoginAuth"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ZAUQRCodeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ZAUEnterKeyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".SelectLanguageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".SelectTimezoneActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".AboutZintaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityChangePassword"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityPermission"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ForgotPwdActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ActivityShowId"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".ActivityRegistration"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".RegisterEmailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".RegisterEmailVerifyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".RegisterPhoneActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".RegisterPhoneVerifyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".RegisterCheckNameActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".QRCodeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityNotUsableResponse"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityDepositCheck"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".depositcheck.checks.ActivityCheckHistory"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".depositcheck.camera.ScanANewCheckActivity"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".depositcheck.checks.ActivityReviewCheck"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ActivityLocalShop"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityDefault"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".ActivityContacts"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityWorkRelated"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ReadyToWorkActivty"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".SkillsResumeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".SelectJobTypeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityAppointmentSetting"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityBank"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityTransIntro"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityPayStub"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityInvoicing"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityDonation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityAddAppointment"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityPayrollServices"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityPunchIn"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityScanQRCode"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityScanRecipient"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityScanQRCodeFTFRequest"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityDisplayPrice"
+            android:exported="false"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityDisplayPriceFTFRequest"
+            android:exported="false"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityPaymentSuccessfull"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityPaymentSuccessfullFTFRequest"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityPunch"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityAppointmentBooking"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityServiceProvider"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityHoursWorked"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityFTFRequest"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityProfile"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityDeleteAccount"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityAddNewContact"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivitySettings"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".AboutZintaPayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityFundTransfer"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityFTFSendReceive"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ActivityFTFReceiveResult"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityFTFReceiveCertification"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityFTFReceiveSuccessfull"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <receiver
+            android:name=".global.LogoutUserBroadcastReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".services.RestartService"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".ImagePickerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeQWithActionBar.NoActionBar" />
+
+        <activity
+            android:name=".MyCarActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityInvoiceDetails"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatus">
+            <intent-filter>
+                <action android:name="ActivityInvoiceDetails.NEW_INVOICE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ActivitySearchContact"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivitySecret"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MaterialBlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivitySearchMeet"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityHotelExperience"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MaterialBlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityDoorAccess"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MaterialBlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityAccessibleDoors"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MaterialBlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityFamilyHierarchy"
+            android:exported="false"
+            android:theme="@style/AppTheme.MaterialBlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ActivityReceiveValetConfirm"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+
+        <activity
+            android:name=".ActivityPayForGas"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MaterialBlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ViewAddressInMapActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MaterialBlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".videocall.InCallActivityAgora"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MaterialBlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".videocall.IncomingVideoCallActivityAgora"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MaterialBlackStatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <receiver
+            android:name=".AlarmNotifyReceiver"
+            android:directBootAware="true"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".location.GeocodeAddressIntentService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".services.FCMReceiver"
+            android:exported="false"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+
+                <category android:name="com.bradford.test.cantpush" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.CustomFCMListener"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Jitsi Meeting -->
+
+
+        <!-- <activity
+             android:name=".meeting.activities.MainActivity"
+
+             android:exported="false"
+             android:screenOrientation="fullSensor" />-->
+
+        <!--    <service
+                android:name="hawaiiappbuilders.Omni.meeting.firebase.MessagingService"
+                android:exported="true">
+                <intent-filter>
+                    <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                </intent-filter>
+            </service>
+
+
+            <service
+                android:name="org.jitsi.meet.sdk.ConnectionService"
+                android:exported="true"
+                android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE">
+                <intent-filter>
+                    <action android:name="android.telecom.ConnectionService" />
+                </intent-filter>
+            </service>-->
+
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="remove" />
+
+
+        <activity
+            android:name=".videocall.MakeCallActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".videocall.InCallActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".videocall.IncomingVideoCallActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+    <!--Required permissions-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!--Optional permissions-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <!-- For devices running Android 12 (API level 32) or higher and integrating Agora Video SDK version v4.1.0 or lower, you also need to add the following permissions -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <!-- For Android 12.0 or higher, the following permissions are also required -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+
+</manifest>

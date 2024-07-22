@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/panelApptment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:onClick="onClick"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:id="@+id/tvRescheduleTitle"
+            style="@style/TextWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/app_grey_dark"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Add Appointment to your Calendar"
+            android:textSize="18sp" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:id="@+id/tvApptTitle"
+            style="@style/TextBlack"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:text="Attendee: Mike Smith"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_2" />
+
+        <LinearLayout
+            android:id="@+id/panelNewApptInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding1"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Email or Phone :"
+                    android:minWidth="120dp"
+                    android:padding="@dimen/padding1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansAutoCompleteTextView
+                    android:id="@+id/edtApptContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext_black"
+                    android:gravity="center_vertical"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_7" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Event Title :"
+                    android:minWidth="60dp"
+                    android:padding="@dimen/padding1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtApptTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext_black"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_7" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardElevation="4dp"
+        android:visibility="gone"
+        app:contentPaddingBottom="0dp"
+        app:contentPaddingTop="0dp">
+
+        <include layout="@layout/add_appointment_dates" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/layout_times"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/aa_time_grid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="4"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansButton
+        android:id="@+id/btnCloseApptTimePanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonmain"
+        android:onClick="onClick"
+        android:text="Cancel"
+        android:textColor="@color/white" />
+</LinearLayout>

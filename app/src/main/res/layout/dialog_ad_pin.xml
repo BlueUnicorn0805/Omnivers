@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/dialog_amount"
+        style="@style/TextBlackNoMargins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        tools:text="Amount: $100.23"
+        android:textStyle="bold"
+        android:textColorHint="@color/app_grey_light" />
+
+    <include layout="@layout/layout_underline" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/dialog_title"
+        style="@style/TextBlackNoMargins"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:text="Enter PIN to Complete Payment"
+        android:textColorHint="@color/app_grey_light" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/dialog_sub_title"
+        style="@style/TextBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Enter a PIN for purchases"
+        android:textColor="@color/app_grey_dark"
+        android:textColorHint="@color/app_grey_dark"
+        android:visibility="gone" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+        android:id="@+id/pin"
+        style="@style/EditTextStyleBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="Enter PIN"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/app_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/pin_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/edittext_rounded_grey"
+            android:ems="16"
+            android:fontFamily="@font/roboto_regular"
+            android:onClick="onClick"
+            android:text="@string/cancel"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/pin_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/edittext_rounded_grey"
+            android:ems="16"
+            android:fontFamily="@font/roboto_regular"
+            android:onClick="onClick"
+            android:text="Continue"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <!--<item
+        android:id="@+id/menu_pay"
+        android:title="Pay"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        app:showAsAction="always"></item>-->
+    <item
+        android:id="@+id/menu_pay"
+        android:title="Pay"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/menu_face_to_face"
+        android:title="Face-to-Face Friend Share"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/menu_local_store_purchase"
+        android:title="Local Store Mahalo Pay"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/menu_transer_funds"
+        android:title="Local Setup/Transfer Funds"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/menu_analytics"
+        android:title="Analytics"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/menu_transactions"
+        android:title="Transactions"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        app:showAsAction="always"></item>
+    <!--<item
+        android:id="@+id/menu_analysis"
+        android:title="Analysis"
+        android:icon="@drawable/ic_navigate_next_24dp"
+        app:showAsAction="always"></item>-->
+</menu>

@@ -1,0 +1,5 @@
+<resources>
+
+    <string name="insta_cash_balance">InstaCash Balance</string>
+    <string name="insta_savings_balance">InstaSavings Balance</string>
+</resources>

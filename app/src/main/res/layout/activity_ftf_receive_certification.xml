@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbargradient"
+        android:gravity="center_vertical"
+        android:theme="@style/ToolBarStyle"
+        app:popupTheme="@style/ToolBarStyle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                android:layout_width="?actionBarSize"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_title_foreground" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                        style="@style/TextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="QIX Certified"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                        android:id="@+id/tvDate"
+                        style="@style/TextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="06-06-2020"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                        android:id="@+id/tvTime"
+                        style="@style/TextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="02:47 PM"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="128dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_cert_gold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/app_grey_dark" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/ftf_fnln"
+                style="@style/TextBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Name Last Name" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/app_grey_dark" />
+
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnClose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonmain"
+                android:ems="6"
+                android:fontFamily="@font/roboto_regular"
+                android:onClick="onClick"
+                android:text="Close"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                style="@style/TextBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Upgrade"
+                android:textSize="@dimen/font_1"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivCertBronze"
+                        android:layout_width="100dp"
+                        android:layout_height="128dp"
+                        android:src="@drawable/ic_cert_bronze" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                        style="@style/TextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Free Email"
+                        android:lines="2"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="@dimen/font_7"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivCertSilver"
+                        android:layout_width="100dp"
+                        android:layout_height="128dp"
+                        android:src="@drawable/ic_cert_silver" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                        style="@style/TextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9.95 yr Purchase"
+                        android:lines="2"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_7"
+                        android:gravity="center"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivCertGold"
+                        android:layout_width="100dp"
+                        android:layout_height="128dp"
+                        android:src="@drawable/ic_cert_gold" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                        style="@style/TextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="19.95 yr Fully Vetted"
+                        android:lines="2"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="@dimen/font_7"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

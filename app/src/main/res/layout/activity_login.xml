@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="hawaiiappbuilders.omniversapp.ActivityLogin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_app_logo_white" />
+
+                </LinearLayout>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/padding3"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center"
+                    android:text="Powered &amp; Secured by:"
+                    android:textColor="#0099a9"
+                    android:textSize="22dp" />
+
+                <RelativeLayout
+                    android:id="@+id/btnZintaPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                        android:id="@+id/logo1"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginVertical="@dimen/padding1"
+                        android:src="@drawable/ic_login_logo_notg1" />
+
+                </RelativeLayout>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansItalicTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:text="Patent Pending"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_4"
+                    android:textStyle="italic"
+                    android:visibility="gone" />
+
+                <info.hoang8f.android.segmented.SegmentedGroup
+                    android:id="@+id/segmentedAuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    segmentedgroup:sc_border_width="1dp"
+                    segmentedgroup:sc_checked_text_color="@color/white"
+                    segmentedgroup:sc_corner_radius="15dp"
+                    segmentedgroup:sc_tint_color="@color/colorPrimary"
+                    segmentedgroup:sc_unchecked_tint_color="@color/bg_tab_transparent">
+
+                    <RadioButton
+                        android:id="@+id/btnPassword"
+                        style="@style/RadioButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Password" />
+
+                    <RadioButton
+                        android:id="@+id/btnBioAuth"
+                        style="@style/RadioButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Biometrics Auth" />
+
+                    <RadioButton
+                        android:id="@+id/btnBioAuth2"
+                        style="@style/RadioButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Biometrics Auth" />
+
+                </info.hoang8f.android.segmented.SegmentedGroup>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/panelLoginPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Email"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/app_grey_dark" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/login_username"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_edittext_black_round"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="@string/title_email"
+                                android:inputType="textWebEmailAddress"
+                                android:padding="10dp"
+                                android:textSize="@dimen/font_5" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="@dimen/padding1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Password"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/app_grey_dark" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintEnabled="false"
+                            app:passwordToggleEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/login_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_edittext_black_round"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="@string/form_password"
+                                android:inputType="textPassword"
+                                android:padding="10dp"
+                                android:textSize="@dimen/font_5" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                            android:id="@+id/btnForgotPwd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="@dimen/padding2"
+                            android:text="Forgot Password?"
+                            android:textColor="@color/app_blue"
+                            android:textSize="@dimen/font_5" />
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                            android:id="@+id/login_btn"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/padding3"
+                            android:layout_weight="1"
+                            android:background="@drawable/buttonmain_round"
+                            android:ems="22"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="@string/login_btn_text"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_5" />
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                            android:id="@+id/register_btn"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/padding3"
+                            android:layout_weight="1"
+                            android:background="@drawable/buttonmaingreen_round"
+                            android:ems="22"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="@string/create_account"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_5" />
+
+                        <LinearLayout
+                            android:id="@+id/viewQRMenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding2"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_qr_menu" />
+
+                            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/padding1"
+                                android:text="See our QR code?\nTap to see our\nproduct / services"
+                                android:textColor="@color/app_grey_dark"
+                                android:textSize="@dimen/font_5" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/btnFinger"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/padding3"
+                            android:clickable="true"
+                            android:src="@drawable/ic_fingerprint" />
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+

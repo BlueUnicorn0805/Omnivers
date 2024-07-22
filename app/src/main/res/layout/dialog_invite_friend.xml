@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="@dimen/padding2"
+        android:layout_marginRight="@dimen/padding2"
+        android:gravity="center"
+        android:text="If you have the email, we will send them an invite."
+        android:textColor="@color/black" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+        android:id="@+id/tvEmail"
+        style="@style/EditTextStyleBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding2"
+        android:layout_marginTop="@dimen/padding1"
+        android:layout_marginRight="@dimen/padding2"
+        android:hint=""
+        android:textSize="16sp"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/black" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansCheckBox
+        android:id="@+id/chkPersonalize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding2"
+        android:layout_marginTop="@dimen/padding1"
+        android:layout_marginRight="@dimen/padding2"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:text="Check will personalize the email to include your name." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding2"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/pin_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/padding2"
+            android:layout_marginRight="@dimen/padding2"
+            android:background="@drawable/edittext_rounded_grey"
+            android:ems="16"
+            android:fontFamily="@font/roboto_regular"
+            android:onClick="onClick"
+            android:text="@string/cancel"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/pin_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/padding2"
+            android:background="@drawable/edittext_rounded_grey"
+            android:ems="16"
+            android:fontFamily="@font/roboto_regular"
+            android:onClick="onClick"
+            android:text="Submit"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

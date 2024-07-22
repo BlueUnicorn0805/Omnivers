@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scanButtons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/padding1"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansCheckBox
+                    android:id="@+id/add_amt"
+                    style="@style/TextWhite"
+                    android:buttonTint="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:button="@drawable/selector_chkbx"
+                    android:focusable="false"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:text="Pay Amount" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/ftf_amt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/bg_edittextwhite"
+                    android:ems="16"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:hint="Amt"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/padding2"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/app_grey_medium"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansCheckBox
+                android:id="@+id/add_loc"
+                style="@style/TextWhite"
+                android:buttonTint="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_chkbx"
+                android:focusable="false"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="Save Location" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansCheckBox
+                android:id="@+id/call_later"
+                style="@style/TextWhite"
+                android:buttonTint="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_chkbx"
+                android:focusable="false"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="Call Now" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansCheckBox
+                android:id="@+id/send_message"
+                style="@style/TextWhite"
+                android:buttonTint="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_chkbx"
+                android:focusable="false"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="Send Text Message" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansCheckBox
+                android:id="@+id/send_mail"
+                style="@style/TextWhite"
+                android:buttonTint="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_chkbx"
+                android:focusable="false"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="Send Email" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansCheckBox
+                android:id="@+id/mk_apt"
+                style="@style/TextWhite"
+                android:buttonTint="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_chkbx"
+                android:focusable="false"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="Make Appointment" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansCheckBox
+                android:id="@+id/add_friend"
+                style="@style/TextWhite"
+                android:buttonTint="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_chkbx"
+                android:focusable="false"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="Add New Friend" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/ftf_continue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonmain"
+            android:ems="6"
+            android:fontFamily="@font/roboto_regular"
+            android:onClick="onClick"
+            android:text="@string/ftf_continue"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/ftf_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonmain"
+            android:ems="6"
+            android:fontFamily="@font/roboto_regular"
+            android:onClick="onClick"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

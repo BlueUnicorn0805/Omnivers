@@ -1,0 +1,1158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/openSansBoldTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/padding2"
+                    android:text="My Info"
+                    android:textColor="@color/app_teal_light"
+                    android:textSize="@dimen/font_12"
+                    android:textStyle="bold" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/btnDeleteAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/buttonmain"
+                    android:text="Delete Account"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_4"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_back_main"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_horizontal_margin">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/app_back_main"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                                android:id="@+id/tvUserName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding2"
+                                android:text="Your @handle"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_6" />
+
+                            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                                android:id="@+id/tvHandle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding1"
+                                android:gravity="center"
+                                android:text="Handle/Username"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_12" />
+
+                            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding1"
+                                android:text="Purpose:\nTo be given out publicly so people can send you funds and invites"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_7" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="Select Time Zone"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/padding1"
+                    android:paddingVertical="@dimen/padding1">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_nav_world"
+                        app:tint="@color/white" />
+
+                    <Spinner
+                        android:id="@+id/spinnerTimeZone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding3"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:entries="@array/spinner_timezone"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_6" />
+
+                </LinearLayout>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="5dp"
+                    android:text="Video URL"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6"
+                    android:visibility="gone" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/videoURL"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/semiwhite"
+                    android:textSize="@dimen/font_5"
+                    android:visibility="gone" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="5dp"
+                    android:text="First Name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/fName"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/semiwhite"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="5dp"
+                    android:text="Last Name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/lName"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/semiwhite"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/title"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:visibility="gone" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="5dp"
+                    android:text="Email"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/eMail"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:imeOptions="actionNext"
+                    android:inputType="textWebEmailAddress"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/semiwhite"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="5dp"
+                    android:text="Phone Number"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/pNumber"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/semiwhite"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="5dp"
+                    android:text="Gendar"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6"
+                    android:visibility="visible" />
+
+                <RadioGroup
+                    android:id="@+id/groupGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/white"
+                        android:checked="true"
+                        android:text="Male"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_5" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/white"
+                        android:text="Female"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_5" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                        android:id="@+id/radioOther"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/white"
+                        android:text="Other"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_5" />
+
+                </RadioGroup>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="5dp"
+                    android:text="Marital Status"
+                    android:textColor="@color/app_grey_dark"
+                    android:textSize="@dimen/font_6"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/groupMarital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                        android:id="@+id/radioMarried"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/app_grey_dark"
+                        android:text="Married"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_5" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                        android:id="@+id/radioSingle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/app_grey_dark"
+                        android:checked="true"
+                        android:text="Single"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_5" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                        android:id="@+id/radioDivorced"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/app_grey_dark"
+                        android:text="Divorced"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_5" />
+
+                </RadioGroup>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Street Number"
+                    android:visibility="gone" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/streetNumber"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress|textCapWords"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:visibility="gone" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="5dp"
+                    android:text="Street Address"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="5dp"
+                    android:text="* Number and Name should be separated with space"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_8"
+                    android:visibility="visible" />
+
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/streetAddress"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress|textCapWords"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/semiwhite"
+                    android:textSize="@dimen/font_5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginBottom="5dp"
+                        android:text="Zip"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_6" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                        android:id="@+id/zip"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:background="@drawable/bg_edittext_gray_round"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:padding="@dimen/padding2"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/semiwhite"
+                        android:textSize="@dimen/font_5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="vertical">
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="City"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_6" />
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                            android:id="@+id/city"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:background="@drawable/bg_edittext_gray_round"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPostalAddress|textCapWords"
+                            android:maxLines="1"
+                            android:padding="@dimen/padding2"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/semiwhite"
+                            android:textSize="@dimen/font_5" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding1"
+                        android:layout_weight="4"
+                        android:orientation="vertical">
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="State"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_6" />
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                            android:id="@+id/st"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:background="@drawable/bg_edittext_gray_round"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPostalAddress|textCapWords"
+                            android:maxLines="1"
+                            android:padding="@dimen/padding2"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/semiwhite"
+                            android:textSize="@dimen/font_5" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:id="@+id/tvDOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:inputType="textPostalAddress|textCapWords"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:singleLine="true"
+                    android:text="1994-05-26"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/semiwhite"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/tvTitle"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress|textCapWords"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/semiwhite"
+                    android:textSize="@dimen/font_5"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/padding1"
+                    android:paddingVertical="@dimen/padding1">
+
+                    <Spinner
+                        android:id="@+id/spinnerTitles"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding1"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:entries="@array/spinner_titles"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_6" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/padding2"
+                    android:layout_marginTop="@dimen/padding2"
+                    android:background="@drawable/bg_round_panel_white_thicker"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding1">
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/padding2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="For Government Supported Transport called NEMT The Government Requires this information."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding2"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:layout_marginRight="@dimen/padding2"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_marginBottom="5dp"
+                            android:text="Medicaid #"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_6" />
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                            android:id="@+id/medicaid"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:background="@drawable/bg_edittext_gray_round"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="@dimen/padding2"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/semiwhite"
+                            android:textSize="@dimen/font_5" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding2"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:layout_marginRight="@dimen/padding2"
+                        android:layout_marginBottom="@dimen/padding1"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_marginBottom="5dp"
+                            android:text="Medicare #"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_6" />
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                            android:id="@+id/medicare"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:background="@drawable/bg_edittext_gray_round"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="@dimen/padding2"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/semiwhite"
+                            android:textSize="@dimen/font_5" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/padding2"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="Weight (KG)"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_6" />
+
+                            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                                android:id="@+id/weight"
+                                style="@style/EditTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="0dp"
+                                android:background="@drawable/bg_edittext_gray_round"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberDecimal"
+                                android:maxLength="6"
+                                android:maxLines="1"
+                                android:padding="@dimen/padding2"
+                                android:singleLine="true"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/semiwhite"
+                                android:textSize="@dimen/font_5" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="Height (CM)"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_6" />
+
+                            <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                                android:id="@+id/height"
+                                style="@style/EditTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="0dp"
+                                android:background="@drawable/bg_edittext_gray_round"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberDecimal"
+                                android:maxLength="6"
+                                android:maxLines="1"
+                                android:padding="@dimen/padding2"
+                                android:singleLine="true"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/semiwhite"
+                                android:textSize="@dimen/font_5" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding2"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:layout_marginRight="@dimen/padding2"
+                        android:layout_marginBottom="@dimen/padding1"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_marginBottom="5dp"
+                            android:text="Language"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_6" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_edittext_gray_round"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="@dimen/padding1"
+                            android:paddingVertical="@dimen/padding1">
+
+                            <Spinner
+                                android:id="@+id/spinnerLanguage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:entries="@array/spinner_timezone"
+                                android:textColor="@color/app_grey_dark"
+                                android:textSize="@dimen/font_6" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding2"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:layout_marginRight="@dimen/padding2"
+                        android:layout_marginBottom="@dimen/padding1"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_marginBottom="5dp"
+                            android:text="Race\nOptional: Entirely voluntary. We provide it for those who choose to share this information. Please note that choosing not to answer will not impact your application or services in any way."
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_6" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_edittext_gray_round"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="@dimen/padding1"
+                            android:paddingVertical="@dimen/padding1">
+
+                            <Spinner
+                                android:id="@+id/spinnerRace"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:entries="@array/spinner_timezone"
+                                android:textColor="@color/app_grey_dark"
+                                android:textSize="@dimen/font_6" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    style="@style/TextWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding3"
+                    android:text="Social Media Links"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="By entering the required information just once, and you will have the capability to disseminate it as needed. An intriguing feature is that in the Face-to-Face section, as you decide what information to share, a unique QR Code is generated specifically for you. The party you are interacting with can scan this code via the application, or alternatively, you can capture a screenshot and distribute it at your discretion. This functions similarly to a bespoke business card. It is designed for readability, facilitates the addition of your details as a contact, and even provides the option for immediate monetary transactions. Quite impressive, isn’t it?"
+                    android:textSize="@dimen/font_8" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtFaceBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress|textCapWords"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/semiwhite"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Twitter"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtTwitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress|textCapWords"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/semiwhite"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="YouTube"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtYoutube"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress|textCapWords"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/semiwhite"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LinkedIn"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtLinkedIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress|textCapWords"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/semiwhite"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Snapchat"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtSnapchat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress|textCapWords"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/semiwhite"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Instagram"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtInstagram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress|textCapWords"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/semiwhite"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WhatsApp"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtWhatsApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress|textCapWords"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/semiwhite"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    style="@style/TextWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pintrest"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtPintrest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/padding11"
+                    android:background="@drawable/bg_edittext_gray_round"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress|textCapWords"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/semiwhite"
+                    android:textSize="@dimen/font_5" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginLeft="@dimen/padding3"
+            android:layout_marginRight="@dimen/padding3"
+            android:layout_marginBottom="@dimen/padding3"
+            android:orientation="horizontal">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttonmain_round"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_5"
+                android:visibility="gone" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding2"
+                android:background="@drawable/buttonmain_round"
+                android:drawableLeft="@drawable/ic_menu_check"
+                android:drawablePadding="@dimen/padding1"
+                android:elevation="@dimen/padding1"
+                android:minHeight="@dimen/padding8"
+                android:paddingHorizontal="@dimen/padding4"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/panelVerify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:visibility="visible"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@color/app_back_main"
+        android:orientation="vertical">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            style="@style/TextBlack"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding1"
+            android:text="This is a one time process to verify ownership of your account.\nEnter the amount of deposit."
+            android:textSize="@dimen/font_5" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+            android:id="@+id/tvVerifyAmount"
+            style="@style/EditTextStyleBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:layout_marginTop="@dimen/padding3"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:layout_marginHorizontal="0dp"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="@dimen/font_6" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/padding3"
+            android:background="@drawable/buttonmain"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_6" />
+    </LinearLayout>
+</FrameLayout>

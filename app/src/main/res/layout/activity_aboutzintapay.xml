@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <hawaiiappbuilders.omniversapp.global.ResizableImageView
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:tint="@color/app_grey_dark"
+        android:src="@drawable/selector_backbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding5"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/padding5"
+        android:layout_marginBottom="68dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <hawaiiappbuilders.omniversapp.global.ResizableImageView
+            android:id="@+id/resizableImageView"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_authenticator_notg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.139" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansLightTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding6"
+            android:gravity="center"
+            android:text="@string/desc_hint_zintapay"
+            android:textColor="@color/app_grey_dark"
+            android:textSize="@dimen/font_5" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/btnClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding6"
+            android:background="@drawable/buttonmain"
+            android:text="@string/gotit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_4" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

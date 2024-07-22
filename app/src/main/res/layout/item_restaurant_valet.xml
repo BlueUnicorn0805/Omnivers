@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/padding1"
+    android:layout_marginTop="@dimen/padding1"
+    android:layout_marginRight="@dimen/padding1"
+    android:layout_marginBottom="@dimen/padding1"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/panelItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/bannerImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <hawaiiappbuilders.omniversapp.global.VideoThumbImageView
+                android:id="@+id/imgBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop" />
+
+            <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                android:id="@+id/bannerPlaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher1_foreground" />
+
+        </FrameLayout>
+
+        <hawaiiappbuilders.omniversapp.global.NexaBoldTextView
+            android:id="@+id/restName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bannerImages" />
+
+        <hawaiiappbuilders.omniversapp.global.NexaLightTextView
+            android:id="@+id/restWelcomeMsg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restName" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:theme="@style/RatingBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restWelcomeMsg" />
+
+        <hawaiiappbuilders.omniversapp.global.NexaLightTextView
+            android:id="@+id/restDistance"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="right"
+            android:text="TextView"
+            android:textColor="@color/app_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ratingBar"
+            app:layout_constraintBottom_toBottomOf="@+id/ratingBar"/>
+
+        <hawaiiappbuilders.omniversapp.global.NexaLightTextView
+            android:id="@+id/restHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:text="TextView"
+            android:textColor="@color/app_grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+        <hawaiiappbuilders.omniversapp.global.NexaBoldTextView
+            android:id="@+id/restAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="1550 Court Pl, Denver, CO 80202, USA"
+            android:textColor="@color/app_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restHours" />
+
+        <LinearLayout
+            android:id="@+id/panelAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restAddress">
+
+            <ImageButton
+                android:id="@+id/ibrestFavorite"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                android:padding="3dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_favorite"
+                android:tint="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/ic_favorite" />
+
+            <ImageButton
+                android:id="@+id/ibrestDirections"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                android:padding="3dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_map"
+                android:tint="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/ic_map" />
+
+            <ImageButton
+                android:id="@+id/ibDonate"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                android:padding="3dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_donate"
+                android:tint="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/ic_donate" />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/panelAction3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/panelAction">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="@dimen/padding1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/panelAction">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <hawaiiappbuilders.omniversapp.global.NexaLightTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:minWidth="100dp"
+                        android:text="Tag:"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_6"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+                    <hawaiiappbuilders.omniversapp.global.NexaLightEditText
+                        android:id="@+id/edtTag"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding2"
+                        android:background="@drawable/bg_edittext_black"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <hawaiiappbuilders.omniversapp.global.NexaLightTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:minWidth="100dp"
+                        android:text="Color:"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_6"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding2"
+                        android:background="@drawable/bg_edittext_black"
+                        android:padding="5dp">
+
+                        <Spinner
+                            android:id="@+id/spinnerColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/app_grey"
+                            android:entries="@array/colors" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <hawaiiappbuilders.omniversapp.global.NexaLightTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:minWidth="100dp"
+                        android:text="Make:"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_6"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+                    <hawaiiappbuilders.omniversapp.global.NexaLightEditText
+                        android:id="@+id/edtMake"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding2"
+                        android:background="@drawable/bg_edittext_black"
+                        android:padding="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <hawaiiappbuilders.omniversapp.global.NexaLightTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:minWidth="100dp"
+                        android:text="Model:"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_6"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+                    <hawaiiappbuilders.omniversapp.global.NexaLightEditText
+                        android:id="@+id/edtModel"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding2"
+                        android:background="@drawable/bg_edittext_black"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+                <hawaiiappbuilders.omniversapp.global.NexaLightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:text="When you are ready for the Valet, press the button below."
+                    android:textColor="@color/app_grey_dark"
+                    android:textSize="@dimen/font_6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+                <hawaiiappbuilders.omniversapp.global.NexaButton
+                    android:id="@+id/btnReady"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding2"
+                    android:layout_marginHorizontal="@dimen/padding2"
+                    android:background="@drawable/selector_tomatoround"
+                    android:text="I am ready now."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/panelDone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="@dimen/padding1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="#B0303030"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/panelAction">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvSentTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:minWidth="100dp"
+                    android:text="Sent:09:33"
+                    android:gravity="center"
+                    android:textColor="@color/app_red"
+                    android:textSize="@dimen/font_10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:minWidth="100dp"
+                    android:text="Message Sent To"
+                    android:gravity="center"
+                    android:textColor="@color/app_red"
+                    android:textSize="@dimen/font_10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvStoreName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:minWidth="100dp"
+                    android:text="Valet R Us"
+                    android:gravity="center"
+                    android:textColor="#0000ff"
+                    android:textSize="@dimen/font_10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:minWidth="100dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="They will be right..."
+                    android:gravity="center"
+                    android:textColor="@color/app_red"
+                    android:textSize="@dimen/font_10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+                <hawaiiappbuilders.omniversapp.global.NexaButton
+                    android:id="@+id/btnSkip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding2"
+                    android:layout_marginHorizontal="@dimen/padding2"
+                    android:background="@drawable/selector_tomatoround"
+                    android:text="Done"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_4" />
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="?android:attr/listDivider"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/panelAction3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,64 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:gravity="center_vertical"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Priyanka@pay"
+            android:id="@+id/friends_name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/app_grey_dark"
+            app:fontFamily="@font/roboto_bold" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trans id #9876543210"
+            android:id="@+id/friends_email"
+            android:textColor="@color/app_grey"
+            android:textSize="12sp"
+            app:fontFamily="@font/roboto_regular" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$50.00"
+            android:id="@+id/transaction_amount"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/app_blue"
+            app:fontFamily="@font/roboto_bold" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29 June 2018"
+            android:id="@+id/transaction_date"
+            android:textColor="@color/app_grey"
+            android:textSize="12sp"
+            app:fontFamily="@font/roboto_regular" />
+
+    </LinearLayout>
+
+</LinearLayout>

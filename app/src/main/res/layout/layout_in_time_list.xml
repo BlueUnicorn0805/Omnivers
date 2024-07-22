@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/show_times"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            style="@style/TextBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="In:"
+            android:textColor="@color/app_red"
+            android:textStyle="bold" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/show_times_in"
+            style="@style/TextBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:text="08:03"
+            android:textColor="@color/app_red"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            style="@style/TextBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="Lunch:"
+            android:textColor="@color/app_red"
+            android:textStyle="bold" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/show_times_lunch"
+            style="@style/TextBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="12:00"
+            android:textColor="@color/app_red"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            style="@style/TextBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="Out:"
+            android:textColor="@color/app_red"
+            android:textStyle="bold" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/show_times_out"
+            style="@style/TextBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="12:45"
+            android:textColor="@color/app_red"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/tpb_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tpb_title"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:src="@drawable/back_primary" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/tpb_title"
+        style="@style/TextBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tpb_done"
+        android:layout_toRightOf="@+id/tpb_back"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Paymet Done"
+        android:textSize="22sp" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/tpb_done"
+        style="@style/TextBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/add_appointment"
+        android:clickable="true"
+        android:focusable="false"
+        android:onClick="onClick"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Done"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

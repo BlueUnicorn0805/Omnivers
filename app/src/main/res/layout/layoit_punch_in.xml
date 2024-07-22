@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/emp_greet"
+        style="@style/TextBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="Good Morning,"
+        android:textSize="22sp" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/emp_name"
+        style="@style/TextBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emp_greet"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="Andrew"
+        android:textSize="22sp" />
+
+    <TextClock
+        android:id="@+id/emp_punch_in_time"
+        style="@style/TextBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emp_name"
+        android:layout_weight="1"
+        android:format12Hour="hh:mm a"
+        android:gravity="center_horizontal"
+        android:text="11:30 AM"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/emp_punch_in_time"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/emp_punch_in_button"
+            style="@style/TextWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_green_dark"
+            android:clickable="true"
+            android:focusable="false"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="IN"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+</RelativeLayout>

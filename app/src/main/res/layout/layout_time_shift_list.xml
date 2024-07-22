@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shift_infoLL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_grey_light"
+        android:gravity="start"
+        android:paddingLeft="10dp"
+        android:text="Last Shift"
+        android:textColor="@color/app_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            style="@style/TextBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:paddingLeft="10dp"
+            android:text="28 Tuesday" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                style="@style/TextBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:drawablePadding="@dimen/padding2"
+                android:gravity="center_horizontal"
+                android:text="9H 00M"
+                android:textColor="@color/app_grey" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_grey_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            style="@style/TextBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:paddingLeft="10dp"
+            android:text="27 Monday" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                style="@style/TextBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:drawablePadding="@dimen/padding2"
+                android:gravity="center_horizontal"
+                android:text="9H 00M"
+                android:textColor="@color/app_grey" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

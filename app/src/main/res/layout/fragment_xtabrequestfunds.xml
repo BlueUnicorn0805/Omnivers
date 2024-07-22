@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/padding1"
+                    android:paddingBottom="@dimen/padding1"
+                    android:paddingLeft="@dimen/padding3"
+                    android:paddingRight="@dimen/padding3">
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLines="4"
+                        android:text="Funds Availability"
+                        android:textColor="@color/white"
+                        android:visibility="visible"
+                        android:textSize="@dimen/font_6" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLines="4"
+                        android:text="Funds Transfer &amp; Availability is based on your institutions processing times."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_7" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                        android:id="@+id/tvTrasnAvailableFunds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Available Balance \n$ 0.0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_6" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding2"
+                        android:gravity="center"
+                        android:text="Amount to Transfer"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_6" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                        android:id="@+id/edtAmountToTransfer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:background="@drawable/input_area_white"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:inputType="numberDecimal"
+                        android:minHeight="30dp"
+                        android:hint="Enter an amount 0.00"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_5" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupTransMode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                            android:id="@+id/radioSendToBank"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_6"
+                            android:buttonTint="@color/white"
+                            android:text="To Your Bank"/>
+
+                        <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                            android:id="@+id/radioLoadToAva"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_6"
+                            android:checked="true"
+                            android:buttonTint="@color/white"
+                            android:text="From Your Bank to Load Account" />
+
+                    </RadioGroup>
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansAppCompatCheckBox
+                        android:id="@+id/chkExpress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:theme="@style/WhiteCheck"
+                        android:text="Express (Banks charge us for this, so to cover our costs we charge the fee of 1%)"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_6" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                        android:id="@+id/btnSubmitYourRequest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:background="@drawable/buttonmain_round"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Submit Your Request"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_6" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="Recent Transfers"
+                android:layout_marginTop="@dimen/padding2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding3"
+                android:layout_marginRight="@dimen/padding3"
+                layout="@layout/item_header_transfer"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lvTransfer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp"
+                android:layout_marginLeft="@dimen/padding3"
+                tools:listitem="@layout/item_transfer"
+                android:layout_marginRight="@dimen/padding3"
+                android:background="@color/app_back_main"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

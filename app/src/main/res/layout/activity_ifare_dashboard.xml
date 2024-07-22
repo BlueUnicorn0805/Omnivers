@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical"
+    tools:context="hawaiiappbuilders.omniversapp.ActivityIFareDashBoard">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context="hawaiiappbuilders.omniversapp.ActivityIFareDashBoard">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/btnRequestNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/padding5"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/buttonmain_round"
+            android:paddingHorizontal="@dimen/activity_horizontal_margin"
+            android:drawableLeft="@drawable/ic_all_dels"
+            android:drawableTint="@color/white"
+            android:text="Request Package Pickup"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/tvNote"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/btnViewDelsStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/padding3"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/buttonmain_round"
+            android:paddingHorizontal="@dimen/activity_horizontal_margin"
+            android:drawableLeft="@drawable/ic_pickup_dels"
+            android:drawableTint="@color/white"
+            android:text="Shipping Status"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/tvNote"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/tvStartHere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/padding3"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/buttonmain_round"
+            android:paddingHorizontal="@dimen/activity_horizontal_margin"
+            android:drawableLeft="@drawable/ic_profile"
+            android:drawableTint="@color/white"
+            android:text="Become a driver"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/tvNote"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

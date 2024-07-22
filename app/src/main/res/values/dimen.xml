@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="viewpager_next_item_visible">8dp</dimen>
+    <dimen name="viewpager_current_item_horizontal_margin">0dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="dashboard_menu_text">14sp</dimen>
+    <dimen name="dashboard_button_width">110dp</dimen>
+    <dimen name="dashboard_button_height">110dp</dimen>
+
+    <dimen name="padding0">0dp</dimen>
+    <dimen name="padding1">5dp</dimen>
+    <dimen name="padding2">10dp</dimen>
+    <dimen name="padding3">15dp</dimen>
+    <dimen name="padding4">20dp</dimen>
+    <dimen name="padding5">25dp</dimen>
+    <dimen name="padding6">30dp</dimen>
+    <dimen name="padding7">35dp</dimen>
+    <dimen name="padding8">40dp</dimen>
+    <dimen name="padding9">45dp</dimen>
+    <dimen name="padding10">50dp</dimen>
+    <dimen name="padding11">70dp</dimen>
+    <dimen name="padding12">100dp</dimen>
+    <dimen name="padding13">170dp</dimen>
+
+    <dimen name="header20">20sp</dimen>
+    <dimen name="header24">24sp</dimen>
+    <dimen name="header30">30sp</dimen>
+
+    <dimen name="font_1">20.0sp</dimen>
+    <dimen name="font_2">19.0sp</dimen>
+    <dimen name="font_3">18.0sp</dimen>
+    <dimen name="font_4">17.0sp</dimen>
+    <dimen name="font_5">16.0sp</dimen>
+    <dimen name="font_6">15.0sp</dimen>
+    <dimen name="font_7">14.0sp</dimen>
+    <dimen name="font_8">12.0sp</dimen>
+    <dimen name="font_9">10.0sp</dimen>
+    <dimen name="font_10">20.0sp</dimen>
+    <dimen name="font_11">25.0sp</dimen>
+    <dimen name="font_12">30.0sp</dimen>
+
+    <!--Square Payment-->
+    <dimen name="buttonInset">8dp</dimen>
+    <dimen name="buttonRadius">32dp</dimen>
+    <dimen name="buttonHorizontalPadding">16dp</dimen>
+    <dimen name="buttonVerticalPadding">18dp</dimen>
+    <dimen name="buttonMinWidth">160dp</dimen>
+    <dimen name="buttonTextSize">18sp</dimen>
+    <dimen name="sheetRadius">12dp</dimen>
+    <dimen name="sheetPadding">8dp</dimen>
+    <dimen name="orderMargin">32dp</dimen>
+    <dimen name="sheetSeparatorHeight">1dp</dimen>
+    <dimen name="order_sheet_padding">8dp</dimen>
+    <dimen name="order_sheet_info_horizontal_padding">40dp</dimen>
+
+    <!-- Value Overriding for the BottomNavigation -->
+    <dimen name="design_bottom_navigation_item_max_width">600dp</dimen>
+    <dimen name="design_bottom_navigation_active_item_max_width">600dp</dimen>
+
+    <dimen name="design_bottom_navigation_text_size">11sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size">12sp</dimen>
+
+    <dimen name="button_appt_width">45dp</dimen>
+    <dimen name="button_appt_height">45dp</dimen>
+    <dimen name="button_appt_title">9sp</dimen>
+
+    <dimen name="pv_pin_view_item_size">48dp</dimen>
+    <dimen name="pv_pin_view_item_radius">5dp</dimen>
+    <dimen name="pv_pin_view_item_spacing">5dp</dimen>
+    <dimen name="pv_pin_view_item_line_width">2dp</dimen>
+    <dimen name="pv_pin_view_cursor_width">2dp</dimen>
+
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">120dp</dimen>
+
+    <dimen name="intro_img_height">320.0dip</dimen>
+    <dimen name="font_intro_content">16.0sp</dimen>
+
+    <dimen name="size_home_icon1">55dip</dimen>
+    <dimen name="size_home_icon2">45dip</dimen>
+    <dimen name="size_home_icon3">70dip</dimen>
+
+    <dimen name="size_home_btn">100dip</dimen>
+    <dimen name="size_home_btn_round">30dip</dimen>
+
+    <dimen name="zeropx">0px</dimen>
+    <dimen name="zerodp">0dp</dimen>
+    <dimen name="zerosp">0sp</dimen>
+    <dimen name="sq_layout_padding">2dp</dimen>
+    <dimen name="image_padding">4dp</dimen>
+    <dimen name="gap">5dp</dimen>
+    <dimen name="tag_padding">6dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="margin12">12dp</dimen>
+    <dimen name="drawable_width">24dp</dimen>
+    <dimen name="thirtydp">30dp</dimen>
+    <dimen name="angleside">32dp</dimen>
+    <dimen name="sq_button_size">35dp</dimen>
+    <dimen name="widget_ocr_button">50dp</dimen>
+    <dimen name="ocr_button_size">70dp</dimen>
+    <dimen name="seventydp">70dp</dimen>
+    <dimen name="eightydp">80dp</dimen>
+    <dimen name="layout_margin">100dp</dimen>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="widget_text_size">15sp</dimen>
+
+
+
+    <dimen name="local_preview_margin_top">28dp</dimen>
+    <dimen name="local_preview_margin_right">24dp</dimen>
+
+    <!-- buttons -->
+    <dimen name="call_button_size">60dp</dimen>
+    <dimen name="other_button_size">54dp</dimen>
+</resources>

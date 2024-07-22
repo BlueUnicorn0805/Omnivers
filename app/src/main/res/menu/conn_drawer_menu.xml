@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Contacts">
+        <menu>
+            <group
+                android:id="@+id/group1"
+                android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/nav_addnew"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_nav_addcontact"
+                    android:title="Add New" />
+
+
+                <item
+                    android:id="@+id/nav_edit"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_nav_edit"
+                    android:title="Edit Contact" />
+
+                <item
+                    android:id="@+id/nav_importcontacts"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_nav_contactinfo"
+                    android:title="Import Contacts" />
+                <item
+                    android:id="@+id/nav_restore"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_nav_edit"
+                    android:title="Restore" />
+
+
+            </group>
+        </menu>
+    </item>
+    <!--<item android:title="Family Settings">
+        <menu>
+            <group
+                android:id="@+id/group2"
+                android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/nav_family_hierarchy"
+                    android:checkable="false"
+                    android:icon="@drawable/baseline_family_restroom_24"
+                    android:title="Family Hierarchy" />
+
+
+                &lt;!&ndash; <item
+                     android:id="@+id/nav_editgroup"
+                     android:checkable="false"
+                     android:icon="@drawable/ic_nav_group"
+                     android:title="Edit Groups" />&ndash;&gt;
+
+                &lt;!&ndash;<item
+                    android:id="@+id/nav_shareloc"
+                    android:checkable="false"
+                    android:visible="false"
+                    android:icon="@drawable/ic_share_location"
+                    android:title="Share Location" />&ndash;&gt;
+
+
+                &lt;!&ndash;<item
+                    android:id="@+id/nav_txt_msg"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_txt_msg"
+                    android:title="Text Messages" />&ndash;&gt;
+
+                &lt;!&ndash;<item
+                    android:id="@+id/nav_send_email"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_nav_mail"
+                    android:title="Email" />&ndash;&gt;
+            </group>
+        </menu>
+    </item>-->
+
+    <item android:title="Actions">
+        <menu>
+            <group
+                android:id="@+id/group3"
+                android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_invite"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_invite"
+                    android:title="Invite this friend" />
+
+                <!-- <item
+                     android:id="@+id/nav_ftf"
+                     android:checkable="false"
+                     android:icon="@drawable/ic_nav_message"
+                     android:title="Face To Face" />-->
+
+                <item
+                    android:id="@+id/nav_settings"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_nav_note"
+                    android:visible="false"
+                    android:title="Set Video URL" />
+
+                <item
+                    android:id="@+id/nav_home_address"
+                    android:checkable="false"
+                    android:visible="false"
+                    android:icon="@drawable/baseline_home_24"
+                    android:title="Set Home Address" />
+
+                <item
+                    android:id="@+id/nav_work_address"
+                    android:checkable="false"
+                    android:visible="false"
+                    android:icon="@drawable/baseline_maps_home_work_24"
+                    android:title="Set Work Address" />
+
+            </group>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <hawaiiappbuilders.omniversapp.global.ResizableImageView
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/selector_backbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017" />
+
+
+
+    <ImageView
+        android:id="@+id/imgNumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginTop="@dimen/padding1"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        android:src="@drawable/ic_number"
+        />
+
+
+
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:id="@+id/openSansBoldTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding2"
+        android:text="Create Account"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_12"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgNumber" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/openSansTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/padding3"
+        android:text="Phone"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openSansBoldTextView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/padding1"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openSansTextView"
+        app:layout_constraintVertical_bias="0.5">
+
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:id="@+id/countryCodePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/padding2"
+            app:ccp_countryPreference="US,IN,NZ"
+            app:ccp_defaultNameCode="US"
+            app:ccp_textColor="@color/black"
+            app:ccp_textSize="@dimen/font_4" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/panelEmailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext_black_round"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="555-555-1234"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textSize="@dimen/font_5" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:id="@+id/tvPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/padding2"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="By tapping NEXT, you confirm that you are authorized to use the phone number entered and agree to receive SMS texts verifying your Identity and as otherwise permitted by OmniVers App.\nUser Agreement and Privacy Policy. Carrier fees may apply."
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/buttonmain_round"
+        android:drawableRight="@drawable/ic_navigate_next_24dp"
+        android:drawableTint="@color/white"
+        android:elevation="@dimen/padding1"
+        android:minHeight="48dp"
+        android:paddingHorizontal="@dimen/padding3"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

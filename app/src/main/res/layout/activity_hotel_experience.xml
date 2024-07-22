@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/colorOrangeHotel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:text="Hotel Experience"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_current_location_pin"
+                app:layout_constraintBottom_toBottomOf="@+id/textLocation"
+                app:layout_constraintStart_toStartOf="@+id/textTitle"
+                app:layout_constraintTop_toTopOf="@+id/textLocation"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/textLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hotel_address"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textTitle"
+                app:layout_constraintTop_toBottomOf="@+id/textLocation">
+
+                <ImageView
+                    android:id="@+id/ivLeft"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="14dp"
+                    android:background="@drawable/hotelleft"
+                    app:layout_constraintEnd_toStartOf="@id/ivRight"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/ivRight"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@drawable/hotelbalcony"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/ivLeft"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="0dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/facebook"
+                    app:layout_constraintEnd_toStartOf="@id/iv2"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="0dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/linkedin"
+                    app:layout_constraintEnd_toStartOf="@id/iv3"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/iv1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="0dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/instagram"
+                    app:layout_constraintEnd_toStartOf="@id/iv4"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/iv2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:layout_width="0dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/twitter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/iv3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textAnnouncements"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:text="Announcements"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="14dp"
+                android:alpha="0.3"
+                android:background="@color/app_grey_light"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textAnnouncements"
+                app:layout_constraintTop_toBottomOf="@+id/textAnnouncements" />
+
+            <TextView
+                android:id="@+id/textMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="ROOM STATUS"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+            <TextView
+                android:id="@+id/textSubMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.5"
+                android:text="Ready for occupancy"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/textMessage"
+                app:layout_constraintStart_toStartOf="@+id/textMessage"
+                app:layout_constraintTop_toBottomOf="@+id/textMessage" />
+
+            <TextView
+                android:id="@+id/textMessage2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="HAPPY HOUR!"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textSubMessage"
+                app:layout_constraintStart_toStartOf="@+id/textSubMessage"
+                app:layout_constraintTop_toBottomOf="@+id/textSubMessage" />
+
+            <TextView
+                android:id="@+id/textSubMessage2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.5"
+                android:text="Join us for our daily Happy Hour from 2-4pm in the Lobby."
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/textMessage2"
+                app:layout_constraintStart_toStartOf="@+id/textMessage2"
+                app:layout_constraintTop_toBottomOf="@+id/textMessage2" />
+
+
+            <TextView
+                android:id="@+id/textHighlights"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:text="Highlights"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSubMessage2" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="14dp"
+                android:alpha="0.3"
+                android:background="@color/app_grey_light"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textHighlights"
+                app:layout_constraintTop_toBottomOf="@+id/textHighlights" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+                <ImageView
+                    android:id="@+id/ivHighlight1"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_baseline_shopping_bag_24"
+                    app:layout_constraintEnd_toStartOf="@id/ivHighlight2"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/textHighlight1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:alpha="0.4"
+                    android:text="Bell\nService"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ivHighlight1"
+                    app:layout_constraintStart_toStartOf="@+id/ivHighlight1"
+                    app:layout_constraintTop_toBottomOf="@+id/ivHighlight1" />
+
+
+                <ImageView
+                    android:id="@+id/ivHighlight2"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/baseline_local_taxi_24"
+                    app:layout_constraintEnd_toStartOf="@id/ivHighlight3"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/ivHighlight1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/textHighlight2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:alpha="0.4"
+                    android:text="Taxi\n"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ivHighlight2"
+                    app:layout_constraintStart_toStartOf="@+id/ivHighlight2"
+                    app:layout_constraintTop_toBottomOf="@+id/ivHighlight2" />
+
+                <ImageView
+                    android:id="@+id/ivHighlight3"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_baseline_room_service_24"
+                    app:layout_constraintEnd_toStartOf="@id/ivHighlight4"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/ivHighlight2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/textHighlight3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:alpha="0.4"
+                    android:text="Room\nService"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ivHighlight3"
+                    app:layout_constraintStart_toStartOf="@+id/ivHighlight3"
+                    app:layout_constraintTop_toBottomOf="@+id/ivHighlight3" />
+
+                <ImageView
+                    android:id="@+id/ivHighlight4"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_baseline_wc_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/ivHighlight3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/textHighlight4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:alpha="0.4"
+                    android:text="Concierge\n"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ivHighlight4"
+                    app:layout_constraintStart_toStartOf="@+id/ivHighlight4"
+                    app:layout_constraintTop_toBottomOf="@+id/ivHighlight4" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+                <ImageView
+                    android:id="@+id/ivHighlight5"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_baseline_local_bar_24"
+                    app:layout_constraintEnd_toStartOf="@id/ivHighlight6"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/textHighlight5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:alpha="0.4"
+                    android:text="Bar\n"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ivHighlight5"
+                    app:layout_constraintStart_toStartOf="@+id/ivHighlight5"
+                    app:layout_constraintTop_toBottomOf="@+id/ivHighlight5" />
+
+                <ImageView
+                    android:id="@+id/ivHighlight6"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_baseline_location_on_24"
+                    app:layout_constraintEnd_toStartOf="@id/ivHighlight7"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/ivHighlight5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/textHighlight6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:alpha="0.4"
+                    android:text="Directions\n"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ivHighlight6"
+                    app:layout_constraintStart_toStartOf="@+id/ivHighlight6"
+                    app:layout_constraintTop_toBottomOf="@+id/ivHighlight6" />
+
+                <ImageView
+                    android:id="@+id/ivHighlight7"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_baseline_vpn_key_24"
+                    app:layout_constraintEnd_toStartOf="@id/ivHighlight8"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/ivHighlight6"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/textHighlight7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:alpha="0.4"
+                    android:text="Access\n"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ivHighlight7"
+                    app:layout_constraintStart_toStartOf="@+id/ivHighlight7"
+                    app:layout_constraintTop_toBottomOf="@+id/ivHighlight7" />
+
+                <ImageView
+                    android:id="@+id/ivHighlight8"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_baseline_clean_hands_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/ivHighlight7"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/textHighlight8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:alpha="0.4"
+                    android:text="SPA\n"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ivHighlight8"
+                    app:layout_constraintStart_toStartOf="@+id/ivHighlight8"
+                    app:layout_constraintTop_toBottomOf="@+id/ivHighlight8" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnCallHotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/bg_button_orange"
+                android:drawableTint="@color/white"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Call Hotel"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnTextHotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_button_orange"
+                android:drawableTint="@color/white"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:text="Text Hotel"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnCallHotel" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

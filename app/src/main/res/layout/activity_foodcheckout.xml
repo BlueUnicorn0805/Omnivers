@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/title_checkout"
+            android:textSize="@dimen/font_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/txtSubTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Sub-Total: $23.00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/txtTaxAndFees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="8dp"
+            android:text="Tax and Fees: $2.00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSubTotal" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/txtDelFees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="8dp"
+            android:text="Delivery Fees: $0.00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTaxAndFees" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
+            android:text="Total: $25.00"
+            app:layout_constraintBottom_toTopOf="@+id/paymentTypeGroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDelFees" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/txtItemCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Total Items: 2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <LinearLayout
+            android:id="@+id/paymentTypeGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTotal">
+
+            <RadioButton
+                android:id="@+id/rbZinta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/title_pay_with_zinta" />
+
+            <RadioButton
+                android:id="@+id/rbLoyal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/title_pay_with_loyalty" />
+
+            <RadioButton
+                android:id="@+id/rbGift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/title_pay_with_gift" />
+
+            <RadioButton
+                android:id="@+id/rbBogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/title_pay_with_bogo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbTab"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/title_pay_with_tab" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtTabNum"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding3"
+                    android:background="@drawable/bg_edittext_black"
+                    android:inputType="number"
+                    android:padding="@dimen/padding1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbJoin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/title_join_existing_order" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtOrderNum"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding3"
+                    android:background="@drawable/bg_edittext_black"
+                    android:inputType="number"
+                    android:padding="@dimen/padding1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/padding3"
+            android:layout_marginTop="@dimen/padding1"
+            android:layout_marginRight="@dimen/padding2"
+            android:layout_marginBottom="@dimen/padding1"
+            android:background="@color/app_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/paymentTypeGroup" />
+
+        <LinearLayout
+            android:id="@+id/paymentAdditionalOptions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separator">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                    android:text="@string/title_available_options"
+                    android:textColor="@color/app_orange"
+                    android:textSize="@dimen/font_5" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_red" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbEatInTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/title_eat_in_after" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinnerEatTimeOpts"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:layout_weight="3"
+                    android:backgroundTint="@color/black" />
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/rbReservation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_table_reserv" />
+
+            <CheckBox
+                android:id="@+id/chkOnTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding5"
+                android:text="@string/title_ontable" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbPickupAfter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:checked="false"
+                    android:text="@string/title_pickup_after" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinnerPickupTimeOpts"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:layout_weight="3"
+                    android:backgroundTint="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbCurbsidePickup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:checked="false"
+                    android:text="@string/title_curbside_pickup_after" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinnerCurbsideTimeOpts"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:layout_weight="3"
+                    android:backgroundTint="@color/black" />
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/rbDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/title_delivery_around" />
+
+            <RadioGroup
+                android:id="@+id/groupDel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding3"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbDelUPX"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="UPX Delivery Service (Fee: $xx.99)" />
+
+                <RadioButton
+                    android:id="@+id/rbDelSelf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Self Delivery (Fee: $xx.99) " />
+
+                <RadioButton
+                    android:id="@+id/rbDel3rdParty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3rd Party Delivery Service (Fee: $xx.99)" />
+            </RadioGroup>
+
+            <RadioButton
+                android:id="@+id/rbDeliverySports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/title_delivery_around_sport"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rbCatering"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/title_catering_at" />
+
+            <RadioButton
+                android:id="@+id/rbParty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/title_party_at" />
+        </LinearLayout>
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/btnClose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/padding2"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/buttonmain"
+            android:text="@string/title_submit_order"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/paymentAdditionalOptions" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

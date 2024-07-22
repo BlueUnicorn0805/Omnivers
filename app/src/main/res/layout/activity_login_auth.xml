@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/padding4">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="240dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/iv_authenticator" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:gravity="center"
+                android:text="Match this code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6" />
+
+            <LinearLayout
+                android:id="@+id/option5"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/padding3"
+                android:background="@drawable/shape_auth_rect"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvCode51"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1234"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_5" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="@color/black"/>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvCode52"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1234"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_5" />
+            </LinearLayout>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:id="@+id/tvRemainingSecs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding3"
+                android:gravity="center"
+                android:text="15"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_12" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:gravity="center"
+                android:text="seconds remaining for this code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_6" />
+
+            <LinearLayout
+                android:id="@+id/option1"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/padding3"
+                android:background="@drawable/shape_auth_rect_dark"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvCode11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1234"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="@color/white"/>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvCode12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1234"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/option2"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/padding2"
+                android:background="@drawable/shape_auth_rect_dark"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvCode21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1234"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="@color/white"/>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvCode22"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1234"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/option3"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/padding2"
+                android:background="@drawable/shape_auth_rect_dark"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvCode31"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1234"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="@color/white"/>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvCode32"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1234"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/option4"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/padding2"
+                android:background="@drawable/shape_auth_rect_dark"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/padding3"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvCode41"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1234"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="@color/white"/>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvCode42"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1234"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:id="@+id/panelMenuBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A0505050"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/panelMenus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/fbAddReminder"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:id="@+id/btnScanQRCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scan a QR code"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_7" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:elevation="1dp"
+                    android:src="@drawable/quantum_gm_ic_local_see_googblue_24"
+                    android:visibility="visible"
+                    app:backgroundTint="@color/white"
+                    app:elevation="0dp"
+                    app:fabCustomSize="40dp"
+                    app:fabSize="mini" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnEnterSetupKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter a setup key"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_7" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnAddA1C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:elevation="1dp"
+                    android:src="@drawable/quantum_gm_ic_keyboard_googblue_24"
+                    android:visibility="visible"
+                    app:backgroundTint="@color/white"
+                    app:elevation="0dp"
+                    app:fabCustomSize="40dp"
+                    app:fabSize="mini" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fbAddReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:fabSize="mini"
+            android:clickable="true"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+

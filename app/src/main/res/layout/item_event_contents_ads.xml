@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/padding2"
+    android:layout_marginVertical="@dimen/padding1"
+    android:gravity="center_vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="00dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.YoutubeImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/ivPlay"
+                android:layout_width="@dimen/padding12"
+                android:layout_height="@dimen/padding12"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/ic_play_video"
+                android:tint="@color/colorPrimary"/>
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_6"
+                android:fontFamily="@font/productsans_regular"
+                android:layout_marginTop="@dimen/padding1"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/padding1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Back-to-School Service"/>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/tvDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_8"
+                android:layout_marginBottom="@dimen/padding1"
+                android:layout_marginTop="@dimen/padding1"
+                android:layout_marginLeft="@dimen/padding1"
+                android:drawableLeft="@drawable/ic_mark_location"
+                android:drawableTint="@color/colorPrimary"
+                android:drawablePadding="@dimen/padding1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="8.3 mi"/>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="@dimen/padding3"
+                android:textSize="@dimen/font_8"
+                android:fontFamily="@font/productsans_regular"
+                android:layout_marginTop="@dimen/padding1"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginLeft="@dimen/padding1"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Free!"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

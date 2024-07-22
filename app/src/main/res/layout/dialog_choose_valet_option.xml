@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:elevation="3dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="20dp"
+    app:contentPadding="20dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.ResizableImageView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:src="@drawable/ic_valetservice"
+                android:text="Choose the Valet Service"
+                android:textColor="@color/app_grey_dark"
+                android:textSize="@dimen/font_5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/padding1"
+                android:background="@color/app_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.omniversapp.global.NexaBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company Information"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_7"
+                    android:textStyle="bold" />
+
+                <hawaiiappbuilders.omniversapp.global.NexaLightTextView
+                    android:id="@+id/tvCo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_textview_underline"
+                    android:drawableTint="@color/colorPrimary"
+                    android:maxLines="1"
+                    android:text="Company"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.NexaLightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:text="Address"
+                    android:visibility="gone"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_7"
+                    android:textStyle="bold" />
+
+                <hawaiiappbuilders.omniversapp.global.NexaLightTextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_textview_underline"
+                    android:drawableTint="@color/colorPrimary"
+                    android:maxLines="1"
+                    android:text="Address"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.omniversapp.global.NexaLightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:text="City, State, Zip"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="gone"
+                    android:textSize="@dimen/font_7"
+                    android:textStyle="bold" />
+
+                <hawaiiappbuilders.omniversapp.global.NexaLightTextView
+                    android:id="@+id/tvCSZ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_textview_underline"
+                    android:drawableTint="@color/colorPrimary"
+                    android:maxLines="1"
+                    android:text="CSZ"
+                    android:textSize="@dimen/font_6" />
+
+            </LinearLayout>
+
+            <hawaiiappbuilders.omniversapp.global.NexaBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding1"
+                android:text="Driver"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_7"
+                android:textStyle="bold" />
+
+            <hawaiiappbuilders.omniversapp.global.NexaLightTextView
+                android:id="@+id/tvDriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_textview_underline"
+                android:drawableTint="@color/colorPrimary"
+                android:maxLines="1"
+                android:text="Driver Name"
+                android:textSize="@dimen/font_6" />
+
+            <hawaiiappbuilders.omniversapp.global.NexaBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:gravity="center"
+                android:text="Current Driver Rating"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_7" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/padding2"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:padding="0dp"
+                android:rating="5"
+                android:stepSize="1.0"
+                android:theme="@style/RatingBar" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/padding1"
+                android:background="@color/app_divider" />
+
+            <hawaiiappbuilders.omniversapp.global.NexaLightTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose your option"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_7"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/groupService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding1"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.omniversapp.global.NexaRadioButton
+                    android:id="@+id/btnOption1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Pleae drop car off at our Valet location"
+                    android:textColor="@color/app_grey_dark"
+                    android:textSize="@dimen/font_7" />
+
+                <hawaiiappbuilders.omniversapp.global.NexaRadioButton
+                    android:id="@+id/btnOption2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:checked="false"
+                    android:text="We will meet you at your car in our Valet area and Drop you off at the door of nearby locations"
+                    android:textColor="@color/app_grey_dark"
+                    android:textSize="@dimen/font_7" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonmain"
+                    android:minHeight="41dp"
+                    android:text="CANCEL"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_7"
+                    android:visibility="visible" />
+
+                <hawaiiappbuilders.omniversapp.global.NexaButton
+                    android:id="@+id/btnOk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding1"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonmain"
+                    android:minHeight="41dp"
+                    android:text="OK"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_7" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>
+

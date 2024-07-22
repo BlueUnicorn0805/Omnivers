@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/top_bar_blue" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                        style="@style/TextBlack"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:text="Status" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/in_indicator"
+                            style="@style/TextBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:drawableLeft="@drawable/dot_green"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:text="In"
+                            android:textColor="@color/app_grey" />
+
+                        <TextView
+                            android:id="@+id/out_indicator"
+                            style="@style/TextBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:drawableLeft="@drawable/dot_red"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:text="Out"
+                            android:textColor="@color/app_grey"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/app_grey_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                        style="@style/TextBlack"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:text="Time In" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/punch_in_time"
+                            style="@style/TextBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_horizontal"
+                            android:text="9:30 AM"
+                            android:textColor="@color/app_grey" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:background="@color/app_grey_light"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/punch_in"
+                        layout="@layout/layoit_punch_in"
+                        android:visibility="invisible" />
+
+                    <include
+                        android:id="@+id/punch_out"
+                        layout="@layout/layout_punch_out"
+                        android:visibility="visible" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:background="@color/app_grey_light"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/punch_rcv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone" />
+
+                        <include
+                            android:id="@+id/layout_time_shift_list"
+                            layout="@layout/layout_time_shift_list" />
+
+                        <include
+                            android:id="@+id/layout_in_time_list"
+                            layout="@layout/layout_in_time_list" />
+                    </FrameLayout>
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                        android:id="@+id/ftf_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/button_white"
+                        android:ems="10"
+                        android:fontFamily="@font/roboto_regular"
+                        android:onClick="onClick"
+                        android:text="@string/cancel"
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

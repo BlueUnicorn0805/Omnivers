@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/appointment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/appointment_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:src="@drawable/back"
+                android:visibility="invisible" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                style="@style/TextWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/appointment_add"
+                android:layout_toRightOf="@+id/appointment_back"
+                android:gravity="center"
+                android:text="My Calendar Events" />
+
+            <ImageView
+                android:id="@+id/appointment_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/add_appointment"
+                android:clickable="true"
+                android:onClick="onClick" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/topLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appointment_toolbar"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/appointmentWeekSelector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/weekLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topLL"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/symbolOfWeek"
+            layout="@layout/date_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dateLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weekLL"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/dateOfWeek"
+            layout="@layout/date_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/todayLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateLL"
+        android:background="@color/app_grey_light"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/appointmentSelectedDate"
+            style="@style/TextBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/actions"
+        android:layout_below="@+id/todayLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_scheduleaction"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/appointment_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actions" />
+
+    <LinearLayout
+        android:id="@+id/panelNotes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actions"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_edittext_black"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="1">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/tvNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"
+                android:inputType="text|textMultiLine"
+                android:padding="@dimen/padding2"
+                android:textColor="@color/app_grey_dark"
+                android:scrollbars="vertical"
+                android:textColorHint="@color/app_grey" />
+        </ScrollView>
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+            style="@style/EditTextStyleBlack"
+            android:id="@+id/edtNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/app_grey"
+            android:hint="Input your note"
+            android:gravity="left|top"
+            android:padding="@dimen/padding2"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:inputType="text|textMultiLine"
+            android:textColor="@color/app_grey_dark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:fitsSystemWindows="true"
+            android:orientation="horizontal">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnCancelNote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding1"
+                android:layout_weight="2"
+                android:background="@drawable/buttonmain"
+                android:gravity="center"
+                android:maxLines="1"
+                android:minHeight="45dp"
+                android:padding="@dimen/padding2"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnAddNote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding1"
+                android:layout_marginRight="@dimen/padding1"
+                android:layout_weight="2"
+                android:background="@drawable/buttonmain"
+                android:gravity="center"
+                android:maxLines="1"
+                android:minHeight="45dp"
+                android:padding="@dimen/padding2"
+                android:text="Add the note"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panelMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actions"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/svMessages"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_edittext_black"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="1">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/tvReceivedMessages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"
+                android:hint="Received Messages from"
+                android:inputType="text|textMultiLine"
+                android:padding="@dimen/padding2"
+                android:textColor="@color/app_grey_dark"
+                android:textColorHint="@color/app_grey" />
+        </ScrollView>
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+            android:id="@+id/edtMsgSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/bg_edittext_black"
+            android:gravity="left|top"
+            android:hint="Message to send"
+            android:inputType="text|textMultiLine"
+            android:padding="@dimen/padding2"
+            android:textColor="@color/app_grey_dark"
+            android:textColorHint="@color/app_grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:fitsSystemWindows="true"
+            android:orientation="horizontal">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnDoneMsg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding1"
+                android:layout_weight="2"
+                android:background="@drawable/buttonmain"
+                android:gravity="center"
+                android:maxLines="1"
+                android:minHeight="45dp"
+                android:padding="@dimen/padding2"
+                android:text="Done"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                android:id="@+id/btnSendMsg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding1"
+                android:layout_marginRight="@dimen/padding1"
+                android:layout_weight="2"
+                android:background="@drawable/buttonmain"
+                android:gravity="center"
+                android:maxLines="1"
+                android:minHeight="45dp"
+                android:padding="@dimen/padding2"
+                android:text="Send"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/panelAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/todayLL"
+        layout="@layout/layout_change_appointment"/>
+    
+</RelativeLayout>

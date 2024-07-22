@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding1"
+    android:paddingLeft="@dimen/padding3"
+    android:paddingRight="@dimen/padding3"
+    android:paddingStart="@dimen/padding3"
+    android:paddingEnd="@dimen/padding3"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/padding1"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/txtNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="#"
+            android:visibility="visible"
+            android:textColor="@color/app_grey"
+            android:textSize="@dimen/font_7" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/txtName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="@dimen/font_7"
+            android:textColor="@color/app_grey_dark"
+            android:text="Name"/>
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/txtAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="@dimen/font_6"
+            android:text="Amount"
+            android:textColor="@color/app_grey_dark"/>
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/txtRating"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="@dimen/font_6"
+            android:text="5"
+            android:gravity="center"
+            android:textColor="@color/app_grey_dark"/>
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:id="@+id/txtPickupTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="@dimen/font_6"
+            android:text="16:30"
+            android:gravity="center"
+            android:textColor="@color/app_grey_dark"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+include ':app', ':countrycodepicker', ':segmentedcontrol'
+include ':openCVLibrary310'
+include ':CurrencyEditText'
+//todo::  Need to change all the DevID and R2 from BaseFunctions

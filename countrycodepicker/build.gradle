@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+
+group = 'com.github.joielechong'
+version = "2.4.2"
+def verCode = 242
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        minSdkVersion 14
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 29
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    namespace 'com.rilixtech.widget.countrycodepicker'
+}
+
+dependencies {
+//  implementation fileTree(dir: 'libs', include: ['*.jar'])
+//  testImplementation 'junit:junit:4.12'
+//  api 'io.michaelrocks:libphonenumber-android:8.10.7'
+//  api 'io.michaelrocks:libphonenumber-android:8.10.16'
+    api 'io.michaelrocks:libphonenumber-android:8.12.5'
+    implementation 'androidx.annotation:annotation:1.1.0'
+}

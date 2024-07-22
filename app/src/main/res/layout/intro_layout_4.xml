@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/intro_img_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20.0dip"
+            android:scaleType="centerInside"
+            android:paddingHorizontal="@dimen/padding5"
+            android:adjustViewBounds="true"
+            android:src="@drawable/intro4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/productsans_regular"
+            android:layout_marginHorizontal="24dp"
+            android:text="Day One Savings"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_11" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/padding2"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textSize="@dimen/font_intro_content"
+                android:lineSpacingExtra="@dimen/padding1"
+                android:layout_marginHorizontal="24dp"
+                android:textColor="@color/white"
+                android:text="Business and organizational partners of OmniVers App and/or Halo Pay receive the most aggressive processing rate on the market with options to lower your rates even more."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textSize="@dimen/font_intro_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:lineSpacingExtra="@dimen/padding1"
+                android:layout_marginHorizontal="24dp"
+                android:textColor="@color/white"
+                android:text="Say goodbye to credit card fees day one, or over time. You know your needs better than anyone else. Our programs are built to help you take back control of your business or organization."/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

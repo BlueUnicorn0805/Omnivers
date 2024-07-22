@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hawaiiappbuilders.omniversapp.global.OpenSansTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:padding="@dimen/padding1"
+    android:layout_marginLeft="@dimen/padding2"
+    android:textColor="@color/colorPrimary"
+    android:textSize="@dimen/font_7"
+    android:text="text"
+    android:textAlignment="inherit" />

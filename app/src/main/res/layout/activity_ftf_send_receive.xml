@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back_main"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/app_back_main"
+        android:elevation="@dimen/padding1"
+        android:gravity="center"
+        android:padding="@dimen/padding2"
+        android:text="Share My Info"
+        android:textColor="@color/app_teal_light"
+        android:textSize="@dimen/font_1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp">
+
+            <include
+                android:id="@+id/ftf_send_top"
+                layout="@layout/layout_ftf_receive_top" />
+
+            <include
+                android:id="@+id/ftf_receive_top"
+                layout="@layout/layout_ftf_send_top"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <info.hoang8f.android.segmented.SegmentedGroup
+            android:id="@+id/segmentedAuth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="5dp"
+            android:orientation="horizontal"
+            segmentedgroup:sc_border_width="1dp"
+            segmentedgroup:sc_checked_text_color="@color/white"
+            segmentedgroup:sc_corner_radius="15dp"
+            segmentedgroup:sc_tint_color="@color/colorPrimary"
+            segmentedgroup:sc_unchecked_tint_color="@color/white">
+
+            <RadioButton
+                android:id="@+id/btnSend"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/send" />
+
+            <RadioButton
+                android:id="@+id/btnReceive"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/receive" />
+
+        </info.hoang8f.android.segmented.SegmentedGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                style="@style/TextWhite"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/send"
+                android:textSize="@dimen/font_6"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioGroup
+                android:id="@+id/ftf_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                    android:id="@+id/ftf_send_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"
+                    android:checked="true" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansRadioButton
+                    android:id="@+id/ftf_receive_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white" />
+
+            </RadioGroup>
+
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                style="@style/TextWhite"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/receive"
+                android:textSize="@dimen/font_6"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/scanButtons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <include
+                android:id="@+id/ftf_send_bottom"
+                layout="@layout/layout_ftf_send_bottom" />
+
+            <include
+                android:id="@+id/ftf_receive_bottom"
+                layout="@layout/layout_ftf_receive_bottom"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

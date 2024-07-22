@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_inapp"
+        android:title="Share In App"
+        android:icon="@drawable/ic_arrow_from"></item>
+
+    <item
+        android:id="@+id/menu_inemail"
+        android:title="Share In Email"
+        android:icon="@drawable/ic_placeholder_email"></item>
+
+</menu>

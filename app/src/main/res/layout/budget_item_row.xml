@@ -1,0 +1,76 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#5BC5E2"
+            android:contentDescription="@string/image"
+            android:id="@+id/image"
+            android:padding="10dp"
+            android:src="@drawable/ic_home_white" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$2,854"
+                android:id="@+id/spending_amount"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/app_grey"
+                app:fontFamily="@font/roboto_regular" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:id="@+id/spending_type"
+                android:textColor="@color/app_grey"
+                android:textSize="12sp"
+                app:fontFamily="@font/roboto_regular" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$2500"
+        android:ems="6"
+        android:gravity="center"
+        android:id="@+id/budget"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/app_grey"
+        app:fontFamily="@font/roboto_regular" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="109%"
+        android:ems="6"
+        android:gravity="center"
+        android:id="@+id/used_percent"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/app_grey"
+        app:fontFamily="@font/roboto_regular" />
+</LinearLayout>

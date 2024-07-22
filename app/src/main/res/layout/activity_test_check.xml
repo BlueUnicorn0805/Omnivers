@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/panelCalls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_back_main"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/panelPhoneTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding1">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/tvPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding1"
+                android:text="Phone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btnPhoneFilter"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="@dimen/padding1"
+                    android:src="@drawable/ic_nav_filter"
+                    app:tint="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btnPhoneDot"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/padding2"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="@dimen/padding1"
+                    android:src="@drawable/ic_draw_menu"
+                    android:visibility="gone"
+                    app:tint="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/panelPhoneContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding1">
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansAutoCompleteTextView
+                android:id="@+id/edtPhoneNumber"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/padding1"
+                android:background="@drawable/bg_edittextwhite"
+                android:inputType="phone"
+                android:padding="@dimen/padding1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/font_6" />
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/btnPhoneDial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:inputType="text|textMultiLine"
+                android:paddingHorizontal="@dimen/padding2"
+                android:paddingVertical="@dimen/padding1"
+                android:scrollbars="vertical"
+                android:text="Dial"
+                android:textColor="@color/app_blue"
+                android:textColorHint="@color/app_grey" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvPhoneList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="48dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_calllog" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivVideo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/padding1"
+                android:background="@drawable/bg_new_message"
+                android:padding="6dp"
+                android:src="@drawable/ic_baseline_videocam_24"
+                android:visibility="gone"
+                app:tint="@color/colorPrimaryDark"
+                tools:visibility="visible" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

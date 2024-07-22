@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="45dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:id="@+id/tabAll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding2"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_dels_open"
+            android:gravity="center"
+            android:maxLines="1"
+            android:background="@drawable/selector_bottomtab"
+            android:textSize="@dimen/font_8"
+            android:text="Open"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/white"/>
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:id="@+id/tabPickups"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding2"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_bottomtab"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/ic_dels_current"
+            android:textSize="@dimen/font_8"
+            android:text="Current"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/white"/>
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+            android:id="@+id/tabDeliveries"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding2"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_bottomtab"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/ic_dels_past"
+            android:gravity="center"
+            android:textSize="@dimen/font_8"
+            android:text="Past"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panelScrollContents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansButton
+            android:id="@+id/btnDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonmain"
+            android:layout_marginTop="@dimen/padding2"
+            android:layout_marginStart="@dimen/padding5"
+            android:layout_marginEnd="@dimen/padding5"
+            android:minHeight="45dp"
+            android:text="See the Bids"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_6"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/panelBottomUser2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding3"
+            android:layout_marginTop="@dimen/padding2"
+            android:layout_marginRight="@dimen/padding3"
+            android:layout_marginBottom="@dimen/padding3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="From:"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_arrow_from" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtFromAddr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:layout_marginLeft="@dimen/padding1"
+                    android:backgroundTint="@color/colorAccent"
+                    android:drawableTint="@color/colorAccent"
+                    android:foregroundTint="@color/colorAccent"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="#80303030"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="To Address:"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_arrow_to" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtToAddr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding1"
+                    android:layout_weight="0.7"
+                    android:backgroundTint="@color/colorAccent"
+                    android:drawableTint="@color/colorAccent"
+                    android:foregroundTint="@color/colorAccent"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="#80303030"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/panelDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="Trip Distance:"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                    android:id="@+id/edtDistance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_marginLeft="@dimen/padding1"
+                    android:drawableTint="@color/colorAccent"
+                    android:editable="false"
+                    android:foregroundTint="@color/colorAccent"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="#80303030"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Following layouts, we don't use here-->
+        <LinearLayout
+            android:id="@+id/panelDriverDeliveries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15px"
+                android:layout_marginTop="@dimen/padding1"
+                android:background="@color/app_red" />
+
+            <LinearLayout
+                android:id="@+id/panelUser2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Enter Bid Amount"
+                        android:textSize="11sp" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Enter ETA minutes"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                        android:id="@+id/edtBidAmount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/colorAccent"
+                        android:drawableTint="@color/colorAccent"
+                        android:foregroundTint="@color/colorAccent"
+                        android:hint="Bid Amount"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="#80303030"
+                        android:textSize="15sp" />
+
+                    <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+                        android:id="@+id/edtETAMins"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/colorAccent"
+                        android:drawableTint="@color/colorAccent"
+                        android:foregroundTint="@color/colorAccent"
+                        android:hint="ETA minutes"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="#80303030"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansButton
+                    android:id="@+id/btnSendBid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_blueround"
+                    android:text="SEND BID"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                android:id="@+id/tvUserCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding3"
+                android:text="My Deliveries"
+                android:textColor="@color/app_grey_dark"
+                android:textSize="@dimen/font_4">
+
+            </hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:layout_marginTop="@dimen/padding1"
+                android:background="@color/app_red" />
+
+            <include layout="@layout/item_deliveries_header" />
+
+            <hawaiiappbuilders.omniversapp.global.ExpandableHeightListView
+                android:id="@+id/lvDataList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

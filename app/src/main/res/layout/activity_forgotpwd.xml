@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_back_main">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+        android:id="@+id/titleForgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:elevation="@dimen/padding1"
+        android:gravity="center"
+        android:padding="@dimen/padding3"
+        android:background="@color/app_back_main"
+        android:text="Find Password"
+        android:textColor="@color/app_teal_light"
+        android:textSize="@dimen/font_11"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/padding5"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/padding5"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Email"
+            android:layout_marginTop="@dimen/padding3"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_6" />
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansEditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:imeOptions="actionNext"
+            android:inputType="text|textEmailAddress"
+            android:maxLines="1"
+            android:padding="@dimen/padding2"
+            android:layout_marginTop="@dimen/padding1"
+            android:background="@drawable/bg_edittext_gray_round"
+            android:textColor="@color/white"
+            android:contentDescription="Email"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/app_grey_light"
+            android:textSize="@dimen/font_5" />
+
+
+        <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tip:\nRemember to check your SPAM folder\nChoose not to block"
+            android:layout_marginTop="@dimen/padding3"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_6" />
+
+    </LinearLayout>
+
+    <hawaiiappbuilders.omniversapp.global.OpenSansButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding3"
+        android:paddingHorizontal="@dimen/padding4"
+        android:minHeight="@dimen/padding8"
+        android:elevation="@dimen/padding1"
+        android:layout_gravity="right"
+        android:background="@drawable/buttonmain_round"
+        android:drawableLeft="@drawable/ic_menu_check"
+        android:drawablePadding="@dimen/padding1"
+        android:layout_marginBottom="@dimen/padding3"
+        android:textAllCaps="false"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_6" />
+
+</LinearLayout>

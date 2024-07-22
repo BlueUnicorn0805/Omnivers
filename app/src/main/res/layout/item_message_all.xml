@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/app_back_main"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/padding1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/padding1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/padding1">
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <hawaiiappbuilders.omniversapp.global.MaterialLetterIcon
+                android:id="@+id/ivCircleName"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:mli_initials="true"
+                app:mli_initials_number="2"
+                app:mli_letter="Family"
+                app:mli_letter_color="@color/white"
+                app:mli_letter_size="20"
+                app:mli_letters_number="2"
+                app:mli_shape_color="@color/app_red"
+                app:mli_shape_type="circle" />
+
+            <ImageView
+                android:id="@+id/ivUserAvatar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_dash_user" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/padding1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansBoldTextView
+                    android:id="@+id/tvName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="name Here"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_7" />
+
+                <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mar 7"
+                    android:textColor="@color/app_grey_medium"
+                    android:textSize="@dimen/font_8" />
+            </LinearLayout>
+
+            <hawaiiappbuilders.omniversapp.global.OpenSansTextView
+                android:id="@+id/tvMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding1"
+                android:text="Family"
+                android:textColor="@color/app_grey_medium"
+                android:textSize="@dimen/font_8" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="@dimen/padding1"
+        android:background="@color/app_grey_light" />
+
+</LinearLayout>
